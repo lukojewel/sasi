@@ -1,7 +1,6 @@
 /*Import Packages*/
 import React, { Component } from 'react';
-import $ from "jquery";
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter, Route} from 'react-router-dom';
 
 /*Import pages*/

@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+/*------------------- Home ------------------*/
+.ft-hm-banner-wrap{
+	background-image: url("../images/home-banner-bg.png");
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
