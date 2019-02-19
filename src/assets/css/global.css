@@ -1,0 +1,192 @@
+@charset "utf-8";
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    Fyers Thematic - trading domain
+Version:    1.0
+Created:    19.02.2019 12:25 PM
+Use:   Trading domain webapp template 
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Fonts import, Typography
+2. Colors
+3. Common styles
+4. Page loader / .page-loader
+5. Global components
+6. Buttons and CTA
+7. Forms fields
+8. Animations
+
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+
+1. Fonts import, Typography
+
+-------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:100,300,400,700');
+
+body,html{
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+}
+h1{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 48px;
+  line-height: 1.04;
+}
+h2{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 36px;
+  line-height: 1.04;
+}
+
+
+
+/*------------------------------------------------------------------
+
+2. Colors
+
+-------------------------------------------------------------------*/
+.ft-c-primary{color: #2e42b6;}
+.ft-c-secondary{color: #2e42b6;}
+.ft-c-white{color: #ffffff;}
+.ft-c-black{color: #000000;}
+.ft-c-grey{color: #828282;}
+.ft-c-brown{color: #474747;}
+.ft-c-green{color: #0edb30;}
+.ft-c-yellow{color: #ffc000;}
+.ft-c-red{color: #fe1800;}
+
+.ft-bg-black{background: #000000;}
+.ft-bg-white{background: #ffffff;}
+.ft-bg-light-gray{background: #f9f9f9}
+.ft-bg-drak-gray{background: #131313;}
+
+
+/*------------------------------------------------------------------
+
+3. Common styles
+
+-------------------------------------------------------------------*/
+
+.ft-align-center{ text-align:center !important; }
+.ft-align-left{ text-align:left !important;}
+.ft-align-right{ text-align:right !important; }
+.ft-f-left{float:left !important;}
+.ft-f-right{float:right !important;}
+.ft-relative{position:relative;}
+.ft-absolute{position:absolute;}
+.ft-hidden{display:none;}
+.ft-inline-block{display:inline-block;}
+.ft-full-height{height: 100%;}
+.ft-full-width{width: 100%;}
+.ft-display-block{display: block;}
+.ft-uppercase{text-transform: uppercase;}
+.ft-w-80{width: 80%!important;}
+.ft-w-90{width: 90%!important;}
+.ft-border-5{border-radius: 5px;}
+.ft-border-8{border-radius: 8px;}
+
+.ft-p-0{padding: 0 !important;}
+.ft-p-bottom-10{padding-bottom: 10px;}
+.ft-p-bottom-20{padding-bottom: 20px;}
+.ft-p-bottom-30{padding-bottom: 30px}
+.ft-p-bottom-40{padding-bottom: 40px;}
+.ft-p-bottom-50{padding-bottom: 50px;}
+.ft-p-right-10{padding-right: 10px;}
+.ft-p-right-20{padding-right: 20px;}
+.ft-p-right-30{padding-right: 30px;}
+.ft-p-top-10{padding-top: 10px;}
+.ft-p-top-20{padding-top: 20px;}
+.ft-p-top-30{padding-top: 30px;}
+.ft-p-top-40{padding-top: 40px;}
+.ft-p-top-50{padding-top: 50px;}
+.ft-p-top-100{padding-top: 100px;}
+.ft-p-top-120{padding-top: 120px;}
+.ft-p-top-130{padding-top: 130px;}
+.ft-p-equal-10{padding: 10px;}
+.ft-p-equal-20{padding: 20px;}
+.ft-p-equal-30{padding: 30px;}
+.ft-p-equal-40{padding: 40px;}
+.ft-p-equal-50{padding: 50px;}
+
+.ft-m-0{margin:0 !important;}
+.ft-m-bottom-10{margin-bottom: 10px;}
+.ft-m-bottom-20{margin-bottom: 20px;}
+.ft-m-bottom-30{margin-bottom: 30px;}
+.ft-m-bottom-40{margin-bottom: 40px;}
+.ft-m-bottom-50{margin-bottom: 50px;}
+.ft-m-top-10{margin-top: 10px;}
+.ft-m-top-20{margin-top: 20px;}
+.ft-m-top-30{margin-top: 30px;}
+.ft-m-right-10{margin-right: 10px;}
+.ft-m-right-20{margin-right: 20px;}
+.ft-m-right-30{margin-right: 30px;}
+.ft-m-left-10{margin-left: 10px;}
+.ft-m-left-20{margin-left: 20px;}
+.ft-m-left-30{margin-left: 30px;}
+.ft-m-top-100{margin-top: 100px;}
+.ft-m-top-120{margin-top: 120px;}
+.ft-m-top-130{margin-top: 130px;}
+
+
+
+
+/*------------------------------------------------------------------
+
+4. Page loader / .page-loader
+
+-------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
