@@ -16,7 +16,7 @@ Use:   Trading domain webapp template
 2. Colors
 3. Common styles
 4. Page loader / .page-loader
-5. Global components
+5. Global styles
 6. Buttons and CTA
 7. Forms fields
 8. Animations
@@ -28,7 +28,7 @@ Use:   Trading domain webapp template
 1. Fonts import, Typography
 
 -------------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:100,300,400,700,900');
 
 body,html{
   font-family: 'Lato', sans-serif;
@@ -38,14 +38,59 @@ h1{
   font-family: 'Abril Fatface', cursive;
   font-size: 48px;
   line-height: 1.04;
+  margin-bottom: 0;
+  padding: 15px 0;
 }
 h2{
   font-family: 'Abril Fatface', cursive;
   font-size: 36px;
-  line-height: 1.04;
+  line-height: 1.25;
+  margin-bottom: 0;
+  
 }
-
-
+h3{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 24px;
+  ;line-height: 1.25;
+}
+h4{
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.67;
+}
+h5{
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+h6{
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+p{
+  font-size: 15px;
+}
+a{
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+.ft-letter-space{
+  letter-spacing: 4px;
+}
+.ft-s-txt{
+  font-size: 13px;
+  font-weight: 300;
+}
+.ft-card-p-txt{
+  font-size: 14px;
+}
+.ft-x-small-txt{
+  font-size: 10px;
+}
 
 /*------------------------------------------------------------------
 
@@ -53,7 +98,8 @@ h2{
 
 -------------------------------------------------------------------*/
 .ft-c-primary{color: #2e42b6;}
-.ft-c-secondary{color: #2e42b6;}
+.ft-c-secondary{color: #298eed;}
+.ft-c-dull-secondary{color: #8da4ff}
 .ft-c-white{color: #ffffff;}
 .ft-c-black{color: #000000;}
 .ft-c-grey{color: #828282;}
@@ -62,6 +108,7 @@ h2{
 .ft-c-yellow{color: #ffc000;}
 .ft-c-red{color: #fe1800;}
 
+.ft-bg-primary{background: #2e42b6;}
 .ft-bg-black{background: #000000;}
 .ft-bg-white{background: #ffffff;}
 .ft-bg-light-gray{background: #f9f9f9}
@@ -91,16 +138,23 @@ h2{
 .ft-w-90{width: 90%!important;}
 .ft-border-5{border-radius: 5px;}
 .ft-border-8{border-radius: 8px;}
+.ft-txt-underline{text-decoration: underline;}
 
 .ft-p-0{padding: 0 !important;}
+.ft-p-right-0{padding-right: 0 !important;}
+.ft-p-left-0{padding-left: 0 !important;}
 .ft-p-bottom-10{padding-bottom: 10px;}
 .ft-p-bottom-20{padding-bottom: 20px;}
 .ft-p-bottom-30{padding-bottom: 30px}
 .ft-p-bottom-40{padding-bottom: 40px;}
 .ft-p-bottom-50{padding-bottom: 50px;}
+.ft-p-bottom-100{padding-bottom: 100px}
 .ft-p-right-10{padding-right: 10px;}
 .ft-p-right-20{padding-right: 20px;}
 .ft-p-right-30{padding-right: 30px;}
+.ft-p-left-10{padding-left: 10px;}
+.ft-p-left-20{padding-left: 20px;}
+.ft-p-left-30{padding-left: 30px;}
 .ft-p-top-10{padding-top: 10px;}
 .ft-p-top-20{padding-top: 20px;}
 .ft-p-top-30{padding-top: 30px;}
@@ -142,6 +196,112 @@ h2{
 4. Page loader / .page-loader
 
 -------------------------------------------------------------------*/
+
+
+
+
+
+
+/*------------------------------------------------------------------
+
+5. Global styles
+
+-------------------------------------------------------------------*/
+
+.ft-banner-head span{
+  background-image:
+  linear-gradient(to right, #2e42b6, #298eed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*Fyers themes card*/
+.ft-ftheme-card-wrap{
+  border-radius: 5px;
+  box-shadow: 0px 13px 15px 0 rgba(99, 99, 99, 0.1);
+  padding: 25px;
+  top: -80%;
+}
+.ft-ftheme-card-wrap img{
+  border-radius: 100%;
+  max-width: 125px;
+}
+.ft-ftheme-card-wrap a, .ft-ptheme-card-wrap a{
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 2.5;
+  color: #2e42b6;
+  text-transform: uppercase;
+}
+.ft-card-arrow-wrap{
+  top: 50px;
+}
+.ft-card-arrow-wrap span{
+  box-shadow: -1px 1px 15px 0 rgba(99, 99, 99, 0.1);
+  background-color: #ffffff;
+  padding: 12px;
+  display: inline-block;
+  line-height: 0;
+  border-radius: 100%;
+  opacity: .5;
+}
+.ft-card-arrow-wrap span img{
+  max-width: 10px;
+}
+.ft-right-arrow{
+  transform: rotateZ(180deg);
+}
+.ft-card-arrow-wrap span.active{
+  opacity: 1;
+  cursor: pointer;
+}
+.ft-card-pl-txt{
+  line-height: 1.25;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+/*Public theme card wrap*/
+.ft-ptheme-card-wrap{
+  padding: 15px 15px 20px 15px;
+  border-radius: 5px;
+  box-shadow: 0px 13px 15px 0 rgba(99, 99, 99, 0.1);
+  background-color: #ffffff;
+  z-index: 1;
+  position: relative;
+}
+.ft-ptheme-card-wrap img{
+  max-width: 100%;
+}
+.ft-ptheme-card-wrap a{
+  line-height: 1;
+}
+.ft-card-chrg-txt{
+  line-height: 1.25;
+  font-size: 12px;
+  font-weight: 600;
+}
+/*------------------------------------------------------------------
+
+5. Buttons and CTA
+
+-------------------------------------------------------------------*/
+.ft-p-btn, .ft-s-btn{
+  background: #2e42b6;
+  color: #ffffff;
+  padding: 16px 0px;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 5px;
+  width: 180px;
+  text-align: center;
+}
+.ft-s-btn{
+  background: #ffffff;
+  color: #2e42b6;
+  border: 1px solid #2e42b6;
+}
+
+
 
 
 
