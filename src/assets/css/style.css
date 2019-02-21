@@ -1,107 +1,170 @@
 @charset "utf-8";
 
 /*------------------- Home ------------------*/
-.ft-hm-banner-wrap{
+.e-hm-banner-wrap{
 	background-image: url("../images/home-banner-bg.png");
 	background-repeat: no-repeat;
 	background-position: right bottom;
 }
-.ft-hm-play-icn-wrap{
+.e-hm-play-icn-wrap{
 	padding: 12px 12px;
 	display: inline-block;
 	border-radius: 100%;
 	line-height: 0;
 	box-shadow: #2e42b694 0.5px 0.1rem 1.5rem 0px;
 }
-.ft-hm-play-icn-wrap img{
+.e-hm-play-icn-wrap img{
 	max-width: 11px;
 }
-.ft-hm-play-icn-txt{
+.e-hm-play-icn-txt{
 	top: 2px;
 }
-.ft-ftheme-card-wrap{
+/*.e-ftheme-card-wrap{
 	border-radius: 5px;
   box-shadow: 0px 13px 15px 0 rgba(99, 99, 99, 0.1);
   padding: 25px;
-  top: -80%;
-}
-.ft-hm-how-head-sec{
+}*/
+.e-hm-how-head-sec{
 	color: #a0b3ff;
 }
-.ft-hm-how-para{
+.e-hm-how-para{
 	color: #94aaff;
 	line-height: 1.5;
 }
-.ft-hm-how-items-wrap img{
+.e-hm-how-items-wrap img{
 	max-width: 75px;
 }
-.ft-hm-how-pick-wrap img{
+.e-hm-how-pick-wrap img{
 	content:url("../images/pick.svg");
 }
-.ft-hm-how-customize-wrap img{
+.e-hm-how-customize-wrap img{
 	content:url("../images/customize.svg");
 }
-.ft-hm-how-invest-wrap img{
+.e-hm-how-invest-wrap img{
 	content:url("../images/invest.svg");
 }
-.ft-hm-how-items-wrap a{
+.e-hm-how-items-wrap a{
 	color: #298eed;
 	line-height: 1.11;
 	font-size: 15px;
 	font-weight: 600;
 }
-.ft-hm-why-items-wrap img{
+.e-hm-why-items-wrap img{
 	max-width: 67px;
 }
-.ft-hm-why-items-wrap p{
+.e-hm-why-items-wrap p{
 	margin: 12px 0;
 }
-.ft-hm-why-easy-wrap img{
+.e-hm-why-easy-wrap img{
 	content:url("../images/easy-simple-icon.png");
 }
-.ft-hm-why-customizable-wrap img{
+.e-hm-why-customizable-wrap img{
 	content:url("../images/customizable.png");
 }
-.ft-hm-why-uPortfolio-wrap img{
+.e-hm-why-uPortfolio-wrap img{
 	content:url("../images/uPortfolio.png");
 }
-.ft-hm-why-researched-wrap img{
+.e-hm-why-researched-wrap img{
 	content:url("../images/researched.png");
 }
-.ft-hm-why-fee-wrap img{
+.e-hm-why-fee-wrap img{
 	content:url("../images/fee.png");
 }
-.ft-hm-why-ideas-wrap img{
+.e-hm-why-ideas-wrap img{
 	content:url("../images/ideas.png");
 }
-.ft-hm-why-mfunds-wrap img{
+.e-hm-why-mfunds-wrap img{
 	content:url("../images/mfunds.png");
 }
-.ft-hm-why-fcontrol-wrap img{
+.e-hm-why-fcontrol-wrap img{
 	content:url("../images/fcontrol.png");
 }
-.ft-hm-why-more-wrap img{
+.e-hm-why-more-wrap img{
 	content:url("../images/more.png");
 }
-.ft-top-theme-head-wrap{
+.e-top-theme-head-wrap{
 	border-top: 7px solid #298eed;
 	border-right: 7px solid #298eed;
 	padding-left: 9%;
 }
-.ft-top-themes-outer-wrap{
+.e-top-themes-outer-wrap{
 	background-image: -webkit-linear-gradient(bottom,#f2f2f2,#f2f2f2 35%,transparent 35%,transparent 100%);
 }
-.ft-top-theme-pattern-img-1, .ft-top-theme-pattern-img-2{
-	content: url("../images/hm-top-themes-patter-1.png");
+.e-top-theme-pattern-img-1, .e-top-theme-pattern-img-2{
+	content: url("../images/pattern-blue.svg");
 	max-width: 270px;
 	position: absolute;
 	right: 10%;
 	z-index: 0;
 }
-.ft-top-theme-pattern-img-2{
+.e-top-theme-pattern-img-2{
 	left: -12%;
 	bottom: -10%;
 }
-.ft-top-themes-more-txt{
+.e-top-themes-more-txt{
 	top: 5px;
+}
+.e-hm-trstwrthy-img-wrap{
+	top: -83%;
+	right: 10%;
+}
+.e-hm-trstwrthy-img-wrap img{
+	max-height: 42px;
+	box-shadow: 0px 12.5px 12.6px 0.9px rgba(139, 139, 139, 0.26);
+}
+.e-hm-subscribe-form input{
+	padding: 14px 18px;
+	width: 360px;
+	border-radius: 5px;
+	background-color: #ffffff;
+	border: 0;
+}
+.e-hm-subscribe-form img{
+	max-width: 30px;
+}
+.e-hm-subscribe-form input::-webkit-input-placeholder, .e-hm-subscribe-form input::placeholder{
+	color:#6f84fa;
+	font-weight: 500;
+	font-size: 16px;
+}
+.e-hm-subscribe-form{
+	top: 10px;
+}
+.e-hm-subscribe-form-submit{
+	padding: 15px;
+	position: relative;
+	left: -49px;
+	background: #298eed;
+	border-radius: 5px;
+	line-height: 0;
+}
+.e-hm-subscribe-form-submit img{
+	max-width: 18px;
+	content: url("../images/right-arrow-white.svg");
+}
+.e-hm-b-subscribe-wrap{
+	background-image: -webkit-linear-gradient(to right, #2e42b6, #298eed);
+	background-image: linear-gradient(to right, #2e42b6, #298eed);
+}
+.e-footer-pattern{
+	content: url("../images/subscribe-pattern.svg");
+	max-height: 200px;
+	position: absolute;
+	top: 0;
+	left: 14%;
+}
+.e-hw-to-pattern{
+	content: url("../images/how-to-pattern.svg");
+	position: absolute;
+	top: -18%;
+	max-height: 240px;
+	right: 8%;
+}
+.e-hm-ftheme-card-wrap{
+	top: -200px;
+}
+.e-ftheme-card-arrow-wrap{
+	position: absolute;
+	right: 0;
+	top: 25%;
 }
