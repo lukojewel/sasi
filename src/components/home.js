@@ -13,29 +13,29 @@ class Home extends Component {
   render() {
     return (
       <div className="e-body">
-        <header>
+        <header className="e-fixed e-bg-white">
           <div className="container">
             <div className="row">
-              <div className="col-7">
+              <div className="col-6">
                 <img className="e-border-5 e-footer-logo" src={fyersThematicLogo} alt="Fyers Logo"/>
               </div>
-              <div className="col-5">
-                <span className="e-nav-item e-c-brown">Search</span>
-                <span className="e-nav-item e-c-brown">Discover</span>
-                <span className="e-nav-item e-c-brown">Login</span>
-                <span className="e-nav-item e-c-primary">Open an account</span>
+              <div className="col-6 e-align-right e-p-right-0">
+                <a href="/" className="e-nav-item e-c-brown e-nav-item"><span className="e-search-icn"></span>Search</a>
+                <a href="/" className="e-nav-item e-c-brown e-nav-item">Discover</a>
+                <a href="/" className="e-nav-item e-c-brown e-nav-item">Login</a>
+                <a href="/" className="e-nav-item e-c-primary e-nav-item e-f-weight-900">Open an account</a>
               </div>
             </div>
           </div>
         </header>
         <section className="e-banner-wrap e-hm-banner-wrap">
           <div className="container vh-100 d-flex align-items-center">
-            <div className="align-middle">
+            <div className="align-middle e-p-top-100 e-p-left-50">
               <h6 className="e-c-primary e-letter-space">THEMATIC</h6>
               <h1 className="e-banner-head e-c-black">Invest in the next <span>significant idea.</span></h1>
               <h5 className="e-c-brown e-p-bottom-30">Be wealthy. Be successful.</h5>
               <div>
-                <span className="e-p-btn e-m-right-20">LOG IN</span><span className="e-s-btn">OPEN AN ACCOUNT</span>
+                <span className="e-p-btn e-m-right-20 e-p-btn-up-effect">LOG IN</span><span className="e-s-btn e-s-btn-up-effect">OPEN AN ACCOUNT</span>
               </div>
               <div>
                 <span className="e-hm-play-icn-wrap e-m-top-20">
@@ -70,7 +70,7 @@ class Home extends Component {
                     </div>
                   </div>
                   <div className="col-4 e-align-center ">
-                    <a href="/">Invest Now</a>
+                    <a href="/" aria-label="Invest now">Invest Now</a>
                   </div>
                 </div>
               </div>
@@ -98,19 +98,19 @@ class Home extends Component {
                   <img className="e-p-bottom-10" alt="How to work pick"/>
                   <h3 className="e-c-white e-p-bottom-10">Pick</h3>
                   <p className="e-hm-how-para e-p-bottom-10">Choose an existing theme from our inventory to start investing, evaluating or follow it.</p>
-                  <a href="/">VIEW THEMES</a>
+                  <a aria-label="View Themes" href="/">VIEW THEMES</a>
                 </div>
                 <div className="col-3 offset-md-1 e-hm-how-customize-wrap">
                   <img className="e-p-bottom-10" alt="How to work pick"/>
                   <h3 className="e-c-white e-p-bottom-10">Pick</h3>
                   <p className="e-hm-how-para e-p-bottom-10">If you want to add or remove any instrument to or from the chosen theme, you can do that.</p>
-                  <a href="/">VIEW THEMES</a>
+                  <a aria-label="View Themes" href="/">VIEW THEMES</a>
                 </div>
                 <div className="col-3 offset-md-1 e-hm-how-invest-wrap">
                   <img className="e-p-bottom-10" alt="How to work pick"/>
                   <h3 className="e-c-white e-p-bottom-10">Invest</h3>
                   <p className="e-hm-how-para e-p-bottom-10">If you believe the chosen theme or your customised idea can perform, start buying it.</p>
-                  <a href="/">VIEW THEMES</a>
+                  <a aria-label="View Themes" href="/">VIEW THEMES</a>
                 </div>
               </div>
             </div>
@@ -228,7 +228,7 @@ class Home extends Component {
                     <p className="e-card-p-txt e-c-brown">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
                     <div className="d-flex flex-row d-flex justify-content-between">
                       <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-green">5.6%</span></p>
-                      <a href="/">Invest now</a>
+                      <a aria-label="Invest Now" href="/">Invest now</a>
                     </div>
                   </div>
                 </div>
@@ -239,7 +239,7 @@ class Home extends Component {
                     <p className="e-card-p-txt e-c-brown">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
                     <div className="d-flex flex-row d-flex justify-content-between">
                       <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-green">5.6%</span></p>
-                      <a href="/">Invest now</a>
+                      <a aria-label="Invest Now" href="/">Invest now</a>
                     </div>
                   </div>
                 </div>
@@ -250,7 +250,7 @@ class Home extends Component {
                     <p className="e-card-p-txt e-c-brown">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
                     <div className="d-flex flex-row d-flex justify-content-between">
                       <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-green">5.6%</span></p>
-                      <a href="/">Invest now</a>
+                      <a aria-label="Invest Now" href="/">Invest now</a>
                     </div>
                   </div>
                 </div>
@@ -261,7 +261,7 @@ class Home extends Component {
                     <p className="e-card-p-txt e-c-brown">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
                     <div className="d-flex flex-row d-flex justify-content-between">
                       <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-green">5.6%</span></p>
-                      <a href="/">Invest now</a>
+                      <a aria-label="Invest Now" href="/">Invest now</a>
                     </div>
                   </div>
                 </div>
@@ -276,7 +276,7 @@ class Home extends Component {
                 <span className="active">
                   <img className="e-ftheme-card-img e-right-arrow" src={leftArrow} alt="Right arrow"/>
                 </span>
-                <a className="e-c-primary e-m-left-20 e-relative e-top-themes-more-txt" href="/">MORE THEMES</a>
+                <a aria-label="More Themes" className="e-c-primary e-m-left-20 e-relative e-top-themes-more-txt" href="/">MORE THEMES</a>
               </div>
             </div>
           </div>
@@ -321,7 +321,7 @@ class Home extends Component {
                 <span className="active">
                   <img className="e-ftheme-card-img e-right-arrow" src={leftArrow} alt="Right arrow"/>
                 </span>
-                <a className="e-c-primary e-m-left-20 e-relative e-top-themes-more-txt" href="/">MORE THEMES</a>
+                <a aria-label="More Themes" className="e-c-primary e-m-left-20 e-relative e-top-themes-more-txt" href="/">MORE THEMES</a>
               </div>
             </div>
           </div>
@@ -362,9 +362,9 @@ class Home extends Component {
               </div>
               <div className="col-4 e-footer-items-wrap ">
                 <h4 className="e-m-bottom-10">Connect with us 
-                  <a href="/"><span className="e-f-fb-logo e-f-social-logo e-relative"></span></a>
-                  <a href="/"><span className="e-f-tw-logo e-f-social-logo e-relative"></span></a>
-                  <a href="/"><span className="e-f-yt-logo e-f-social-logo e-relative"></span></a>
+                  <a aria-label="Facebook" href="/"><span className="e-f-fb-logo e-f-social-logo e-relative"></span></a>
+                  <a aria-label="Twitter" href="/"><span className="e-f-tw-logo e-f-social-logo e-relative"></span></a>
+                  <a aria-label="You Tube" href="/"><span className="e-f-yt-logo e-f-social-logo e-relative"></span></a>
                 </h4>
                 <p className="e-m-0 e-c-grey e-card-p-txt e-f-para">For any complaints pertaining to securities broking please write to complaints@fyers.com for DP related to dp@fyers.com. Please ensure you carefully read the Risk Disclosure Document as prescribed by SEBI | ICF</p>
               </div>

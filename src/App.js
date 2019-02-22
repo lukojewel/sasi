@@ -4,6 +4,7 @@ import {BrowserRouter, Route} from 'react-router-dom';
 
 /*Import pages*/
 import Home from './components/home.js';
+import test from './components/test.js';
 
 class App extends Component {
   render() {
@@ -14,5 +15,5 @@ class App extends Component {
     ); 
   } 
 }
-
+  
 export default App;
