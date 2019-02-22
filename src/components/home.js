@@ -116,7 +116,7 @@ class Home extends Component {
             </div>
           </div>
         </section>
-        <section className="  e-p-top-100 e-p-bottom-100">
+        <section className="e-p-top-100 e-p-bottom-100">
           <div className="container">
             <div className="col-6 e-p-bottom-30">
               <h2 className="e-p-bottom-20 e-c-black">Why investment in <br/><span className="e-c-grey">Ideas?</span></h2>

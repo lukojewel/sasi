@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 /*Style Import*/
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
 import './assets/css/global.css';
 import './assets/css/style.css';
 
