@@ -100,7 +100,7 @@ popularityOpen() {
                           <div className="row">
                             <div className="col-8">
                               <h4>Energy takeout targets</h4>
-                              <p className="e-card-p-txt e-p-bottom-10 e-c-brown">This is to gain exposure to mergers & acquisitions activity among oil & gas companies. Get a complete picture of the energy investment section and decid.</p>
+                              <p className="e-card-p-txt e-p-bottom-10 e-c-brown ">This is to gain exposure to mergers & acquisitions activity among oil & gas companies. Get a complete picture of the energy investment section and decid.</p>
                               <div className="row">
                                 <div className="col-7">
                                   <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-600">
@@ -205,7 +205,7 @@ popularityOpen() {
                       <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
                       <h4>Energy takeout targets</h4>
                       <p className="e-card-p-txt e-c-brown">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
-                      <div className="d-flex flex-row d-flex justify-content-between">
+                      <div className="d-flex flex-row justify-content-between">
                         <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-green">5.6%</span></p>
                         <a aria-label="Invest Now" href="/">Invest now</a>
                       </div>
@@ -216,7 +216,7 @@ popularityOpen() {
                       <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
                       <h4>Energy takeout targets</h4>
                       <p className="e-card-p-txt e-c-brown">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
-                      <div className="d-flex flex-row d-flex justify-content-between">
+                      <div className="d-flex flex-row justify-content-between">
                         <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-green">5.6%</span></p>
                         <a aria-label="Invest Now" href="/">Invest now</a>
                       </div>
@@ -227,7 +227,7 @@ popularityOpen() {
                       <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
                       <h4>Energy takeout targets</h4>
                       <p className="e-card-p-txt e-c-brown">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
-                      <div className="d-flex flex-row d-flex justify-content-between">
+                      <div className="d-flex justify-content-between">
                         <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-green">5.6%</span></p>
                         <a aria-label="Invest Now" href="/">Invest now</a>
                       </div>
@@ -238,7 +238,7 @@ popularityOpen() {
                       <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
                       <h4>Energy takeout targets</h4>
                       <p className="e-card-p-txt e-c-brown">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
-                      <div className="d-flex flex-row d-flex justify-content-between">
+                      <div className="d-flex flex-row justify-content-between">
                         <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-green">5.6%</span></p>
                         <a aria-label="Invest Now" href="/">Invest now</a>
                       </div>

@@ -183,3 +183,41 @@
 .e-dvr-explr-ctheme-pattern{
 	right: 3%;
 }
+
+/*Theme detail*/
+.e-td-top-card-bg{
+	background-image: -webkit-linear-gradient(to right, #2e42b6, #298eed);
+	background-image: linear-gradient(to right, #2e42b6, #298eed);
+	background-size: 100% 60%;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.e-td-top-card{
+	box-shadow: 0px 13px 15px 0 rgba(99, 99, 99, 0.1)
+}
+.e-td-top-card .e-td-theme-img{
+	max-width: 100%;
+	border-radius: 100%;
+	box-shadow: 0px 10px 15px 0 rgba(99, 99, 99, 0.1);
+}
+.e-td-rcmd-tag{
+	width: 100%;
+	display: block;
+	padding: 7px;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 5px;
+	text-align: center;
+}
+.e-td-top-card h5{
+	padding-bottom: 5px;
+}
+.e-td-catgry-tag{
+	padding: 7px 12px;
+	margin-right: 10px;
+	border-radius: 30px;
+}
+.e-td-values-card{
+  border: 1px dotted #ccc;
+  background: #fcfcfc;
+}
