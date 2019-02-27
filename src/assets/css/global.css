@@ -92,6 +92,7 @@ input{
 .e-f-weight-900{font-weight: 900 !important;}
 .e-letter-space{ letter-spacing: 4px;}
 .e-letter-space-2{ letter-spacing: 2px;}
+.e-double-l-height{line-height: 200%;}
 .e-sec-head{
   font-size: 14px;
   letter-spacing: 3px;
@@ -186,9 +187,6 @@ input{
 }
 .e-loss-value{
   color: #fe1800;
-}
-.e-loss-value img{
-
 }
 
 .e-p-0{padding: 0 !important;}

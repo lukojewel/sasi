@@ -221,3 +221,17 @@
   border: 1px dotted #ccc;
   background: #fcfcfc;
 }
+.e-td-sw-table-head {
+	padding-bottom: 15px;
+	border-bottom: 1px solid #ededed;
+}
+.e-td-sw-table-segment{
+	padding: 15px;
+	background: #d9dffc;
+}
+.e-td-sw-table-stock{
+	padding: 15px;
+}
+.e-td-vh-item-wrap{
+	border-bottom: 1px solid #ededed;
+}

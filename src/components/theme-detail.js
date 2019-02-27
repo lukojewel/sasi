@@ -70,75 +70,65 @@ popularityOpen() {
     //       }
     //     ]
     //   };
-
-
       const data = {
-  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-  datasets: [
-    {
-      label: 'Axis Bank',
-      fill: false,
-      lineTension: 0,
-      backgroundColor: '#fff',
-      borderColor: '#2e42b6',
-      borderCapStyle: 'butt',
-      borderDash: [],
-      borderDashOffset: 0.0,
-      borderJoinStyle: 'miter',
-      pointBorderColor: 'rgba(75,192,192,1)',
-      pointBackgroundColor: '#fff',
-      pointBorderWidth: 1,
-      pointHoverRadius: 5,
-      pointHoverBackgroundColor: '#2e42b6',
-      pointHoverBorderColor: '#2e42b6',
-      pointHoverBorderWidth: 1,
-      pointRadius: 0,
-      pointHitRadius: 10,
-      data: [65, 59, 80, 81, 56, 55, 40],
-      scaleShowGridLines : true,
-      bezierCurve : false,
-      pointDot : false,
-    },
-    {
-      label: 'ICICI Bank',
-      fill: false,
-      lineTension: 0,
-      backgroundColor: '#fff',
-      borderColor: '#298eed',
-      borderCapStyle: 'butt',
-      borderDash: [],
-      borderDashOffset: 0.0,
-      borderJoinStyle: 'miter',
-      pointBorderColor: 'rgba(75,192,192,1)',
-      pointBackgroundColor: '#fff',
-      pointBorderWidth: 1,
-      pointHoverRadius: 5,
-      pointHoverBackgroundColor: '#298eed',
-      pointHoverBorderColor: '#298eed',
-      pointHoverBorderWidth: 1,
-      pointRadius: 0,
-      pointHitRadius: 10,
-      data: [42, 56, 41, 67, 74, 86, 91],
-      scaleShowGridLines : true,
-      showXLabels: 2,
-      bezierCurve : false,
-      pointDot : false,
-      strokeStyle: '#298eed',
-      legend: {
-        "position": "top",
-        "usePointStyle": true,
+      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+      datasets: [
+        {
+          label: 'Axis Bank',
+          fill: false,
+          lineTension: 0,
+          backgroundColor: '#fff',
+          borderColor: '#2e42b6',
+          borderCapStyle: 'butt',
+          borderDash: [],
+          borderDashOffset: 0.0,
+          borderJoinStyle: 'miter',
+          pointBorderColor: 'rgba(75,192,192,1)',
+          pointBackgroundColor: '#fff',
+          pointBorderWidth: 1,
+          pointHoverRadius: 5,
+          pointHoverBackgroundColor: '#2e42b6',
+          pointHoverBorderColor: '#2e42b6',
+          pointHoverBorderWidth: 1,
+          pointRadius: 0,
+          pointHitRadius: 10,
+          data: [65, 59, 80, 81, 56, 55, 40],
+          scaleShowGridLines : true,
+          bezierCurve : false,
+          pointDot : false,
+        },
+        {
+          label: 'ICICI Bank',
+          fill: false,
+          lineTension: 0,
+          backgroundColor: '#fff',
+          borderColor: '#298eed',
+          borderCapStyle: 'butt',
+          borderDash: [],
+          borderDashOffset: 0.0,
+          borderJoinStyle: 'miter',
+          pointBorderColor: 'rgba(75,192,192,1)',
+          pointBackgroundColor: '#fff',
+          pointBorderWidth: 1,
+          pointHoverRadius: 5,
+          pointHoverBackgroundColor: '#298eed',
+          pointHoverBorderColor: '#298eed',
+          pointHoverBorderWidth: 1,
+          pointRadius: 0,
+          pointHitRadius: 10,
+          data: [42, 56, 41, 67, 74, 86, 91],
+          scaleShowGridLines : true,
+          showXLabels: 2,
+          bezierCurve : false,
+          pointDot : false,
+          strokeStyle: '#298eed',
+          legend: {
+            "position": "top",
+            "usePointStyle": true,
+            }
         }
-    }
-  ]
-};
-
-
-
-
-
-
-
-
+      ]
+    };
 
     var chartOptions = {
       scaleShowGridLines : true,
@@ -250,13 +240,13 @@ popularityOpen() {
                     <a className="nav-link active e-m-left-0" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true"><span className="e-font-16 e-c-medium-grey e-f-weight-600">Overview</span></a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" id="fthemes-tab" data-toggle="tab" href="#fthemes" role="tab" aria-controls="fthemes" aria-selected="false"><span className="e-font-16 e-c-medium-grey e-f-weight-600">Stocks & Weights</span></a>
+                    <a className="nav-link" id="stockWeights-tab" data-toggle="tab" href="#stockWeights" role="tab" aria-controls="stockWeights" aria-selected="false"><span className="e-font-16 e-c-medium-grey e-f-weight-600">Stocks & Weights</span></a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" id="pthemes-tab" data-toggle="tab" href="#pthemes" role="tab" aria-controls="pthemes" aria-selected="false"><span className="e-font-16 e-c-medium-grey e-f-weight-600">News & Insights</span></a>
+                    <a className="nav-link" id="NewsInsights-tab" data-toggle="tab" href="#NewsInsights" role="tab" aria-controls="NewsInsights" aria-selected="false"><span className="e-font-16 e-c-medium-grey e-f-weight-600">News & Insights</span></a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" id="pthemes-tab" data-toggle="tab" href="#pthemes" role="tab" aria-controls="pthemes" aria-selected="false"><span className="e-font-16 e-c-medium-grey e-f-weight-600">Version History</span></a>
+                    <a className="nav-link" id="vHistory-tab" data-toggle="tab" href="#vHistory" role="tab" aria-controls="vHistory" aria-selected="false"><span className="e-font-16 e-c-medium-grey e-f-weight-600">Version History</span></a>
                   </li>
                 </ul>
               </div>
@@ -264,7 +254,7 @@ popularityOpen() {
           </div>
         </section>
 
-        <section className="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+        <section className="tab-pane fade show active e-p-bottom-100" id="overview" role="tabpanel" aria-labelledby="overview-tab">
           <div className="container">
             <div className="row">
               <div className="col-8 e-p-top-50 e-p-bottom-50">
@@ -285,25 +275,167 @@ popularityOpen() {
               </div>
             </div>
           </div>
-        </section>
-
-        <section className="tab-pane fade show active e-p-bottom-100" id="overview" role="tabpanel" aria-labelledby="overview-tab">
-          <div className="container">
-            <div className="row">
-              <div className="col-8 e-p-top-50 e-p-bottom-50">
-                <h5 className="e-sec-head e-c-black e-p-bottom-30">THEME PERFORMANCE VS <span className="e-c-grey">NIFTY</span></h5>
+          <div className="tab-pane fade show active e-p-bottom-50" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+            <div className="container">
+              <div className="row">
+                <div className="col-8 e-p-top-50 e-p-bottom-50">
+                  <h5 className="e-sec-head e-c-black e-p-bottom-30">THEME PERFORMANCE VS <span className="e-c-grey">NIFTY</span></h5>
+                </div>
               </div>
-            </div>
-            <div className="row">
-              <div className="col-11 e-p-bottom-50">
-              <Line data={data}  options={chartOptions} />
+              <div className="row">
+                <div className="col-11">
+                <Line data={data}  options={chartOptions} />
+                </div>
               </div>
             </div>
           </div>
         </section>
 
+        <section className="tab-pane fade e-p-bottom-100" id="stockWeights" role="tabpanel" aria-labelledby="stockWeights-tab">
+          <div className="container">
+            <div className="row">
+              <div className="col-7 e-p-top-50 e-p-bottom-50">
+                <h5 className="e-sec-head e-c-black e-p-bottom-30">STOCKS & <span className="e-c-grey">WEIGHTS</span></h5>
+                <div className="e-td-sw-table-head d-flex justify-content-between e-m-bottom-10">
+                  <div className="e-c-black">Stocks & Segments</div>
+                  <div className="e-c-black">Weightage( % )</div>
+                </div>
+                <div className="col-12 d-flex justify-content-between e-td-sw-table-segment">
+                  <div className="e-c-black e-f-weight-600">Cement</div>
+                  <div className="e-c-black e-f-weight-600">15.00</div>
+                </div>
+                <div className="e-td-sw-table-stock-wrap e-p-bottom-10">
+                  <div className="col-12 d-flex justify-content-between e-td-sw-table-stock">
+                    <div className="e-c-black e-f-weight-500">Ambuja Cements Ltd</div>
+                    <div className="e-c-black e-f-weight-500">15.00</div>
+                  </div>
+                </div>
+                <div className="col-12 d-flex justify-content-between e-td-sw-table-segment">
+                  <div className="e-c-black e-f-weight-600">Fertilizers & Agro Chemicals</div>
+                  <div className="e-c-black e-f-weight-600">25.00</div>
+                </div>
+                <div className="e-td-sw-table-stock-wrap e-p-bottom-10">
+                  <div className="col-12 d-flex justify-content-between e-td-sw-table-stock">
+                    <div className="e-c-black e-f-weight-500">Coromandel International Ltd</div>
+                    <div className="e-c-black e-f-weight-500">12.50</div>
+                  </div>
+                  <div className="col-12 d-flex justify-content-between e-td-sw-table-stock">
+                    <div className="e-c-black e-f-weight-500">Rallis India Pvt Ltd</div>
+                    <div className="e-c-black e-f-weight-500">12.50</div>
+                  </div>
+                </div>
+                <div className="col-12 d-flex justify-content-between e-td-sw-table-segment">
+                  <div className="e-c-black e-f-weight-600">Cement</div>
+                  <div className="e-c-black e-f-weight-600">15.00</div>
+                </div>
+                <div className="e-td-sw-table-stock-wrap e-p-bottom-10">
+                  <div className="col-12 d-flex justify-content-between e-td-sw-table-stock">
+                    <div className="e-c-black e-f-weight-500">Ambuja Cements Ltd</div>
+                    <div className="e-c-black e-f-weight-500">15.00</div>
+                  </div>
+                </div>
+                <div className="col-12 d-flex justify-content-between e-td-sw-table-segment">
+                  <div className="e-c-black e-f-weight-600">Fertilizers & Agro Chemicals</div>
+                  <div className="e-c-black e-f-weight-600">25.00</div>
+                </div>
+                <div className="e-td-sw-table-stock-wrap e-p-bottom-10">
+                  <div className="col-12 d-flex justify-content-between e-td-sw-table-stock">
+                    <div className="e-c-black e-f-weight-500">Coromandel International Ltd</div>
+                    <div className="e-c-black e-f-weight-500">12.50</div>
+                  </div>
+                  <div className="col-12 d-flex justify-content-between e-td-sw-table-stock">
+                    <div className="e-c-black e-f-weight-500">Rallis India Pvt Ltd</div>
+                    <div className="e-c-black e-f-weight-500">12.50</div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-5 e-p-top-50 e-p-bottom-50">
+                <span className="e-s-txt e-f-weight-500">You can edit stocks & weight before buying</span>
+                <div className="e-p-top-20" >
+                  <span className="e-s-btn e-s-btn-up-effect e-s-normal-btn">CUSTOMIZE</span>
+                </div>
+                <h5 className="e-sec-head e-c-black e-p-bottom-30 e-p-top-30">SEGMENT <span className="e-c-grey">COMPOSITION</span></h5>
+                <div></div>
+                <h5 className="e-sec-head e-c-black e-p-bottom-30 e-p-top-30">REBALANCE <span className="e-c-grey">SCHEDULE</span></h5>
+                <div className="d-flex justify-content-between">
+                  <div className="e-c-grey e-x-s-txt">Last Rebalance <br/><span className="e-font-15 e-c-black">Dec 14, 2018</span></div>
+                  <div className="e-c-grey e-x-s-txt">Next Rebalance <br/><span className="e-font-15 e-c-black">Dec 14, 2018</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="tab-pane fade e-p-bottom-100 e-p-top-50" id="NewsInsights" role="tabpanel" aria-labelledby="NewsInsights-tab">
+          <div className="container">
+            <div className="col-12 d-flex flex-row e-p-equal-30 e-box-shadow-1 e-border-5 e-m-bottom-30">
+              <div className="col-3 e-p-left-0">
+                <img className="e-border-5 e-full-width" src={publicTheme1} alt="Segment news"/>
+              </div>
+              <div className="col-9">
+                <h4>MSCI’s new methodology may trigger 850 mn outlfow from equities</h4>
+                <p className="e-c-brown e-p-bottom-10">Business Standard<span className="e-s-txt e-p-left-10">23h ago</span></p>
+                <p className="e-double-l-height e-td-news-content e-m-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly  believable or nice.</p>
+              </div>
+            </div>
+            <div className="col-12 d-flex flex-row e-p-equal-30 e-box-shadow-1 e-border-5 e-m-bottom-30">
+              <div className="col-3 e-p-left-0">
+                <img className="e-border-5 e-full-width" src={publicTheme1} alt="Segment news"/>
+              </div>
+              <div className="col-9">
+                <h4>MSCI’s new methodology may trigger 850 mn outlfow from equities</h4>
+                <p className="e-c-brown e-p-bottom-10">Business Standard<span className="e-s-txt e-p-left-10">23h ago</span></p>
+                <p className="e-double-l-height e-td-news-content e-m-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly  believable or nice.</p>
+              </div>
+            </div>
+            <div className="col-12 d-flex flex-row e-p-equal-30 e-box-shadow-1 e-border-5 e-m-bottom-30">
+              <div className="col-3 e-p-left-0">
+                <img className="e-border-5 e-full-width" src={publicTheme1} alt="Segment news"/>
+              </div>
+              <div className="col-9">
+                <h4>MSCI’s new methodology may trigger 850 mn outlfow from equities</h4>
+                <p className="e-c-brown e-p-bottom-10">Business Standard<span className="e-s-txt e-p-left-10">23h ago</span></p>
+                <p className="e-double-l-height e-td-news-content e-m-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly  believable or nice.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="tab-pane fade e-p-bottom-100 e-p-top-20" id="vHistory" role="tabpanel" aria-labelledby="vHistory-tab">
+          <div className="container">
+            <div className="row">
+              <div className="col-12 e-m-bottom-20 ">
+                
 
 
+
+                <div className="d-flex justify-content-between e-td-vh-item-wrap e-p-bottom-20 e-p-top-20">
+                  <div className="">
+                    <p className="e-f-weight-500 e-m-0">MSCI’s new methodology may trigger 850 mn outlfow from equities</p>
+                    <span className="e-s-txt">Jan 04, 2019</span>
+                  </div>
+                  <div className="d-flex align-items-center">
+                    <a className="e-c-primary text-uppercase e-f-weight-600"><u>VIEW CHANGE</u></a>
+                  </div>
+                </div>
+
+                <div className="d-flex justify-content-between e-td-vh-item-wrap e-p-bottom-20 e-p-top-20">
+                  <div className="">
+                    <p className="e-f-weight-500 e-m-0">MSCI’s new methodology may trigger 850 mn outlfow from equities</p>
+                    <span className="e-s-txt">Jan 04, 2019</span>
+                  </div>
+                  <div className="d-flex align-items-center">
+                    <a className="e-c-primary text-uppercase e-f-weight-600"><u>VIEW CHANGE</u></a>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+
+          </div>
+        </section>
 
         <section className="e-p-top-50 e-p-bottom-100 e-relative">
           <img className="e-top-theme-pattern-img-1 e-cta-pattern" alt="Fyers pattern"/>
