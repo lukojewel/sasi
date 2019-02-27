@@ -235,3 +235,9 @@
 .e-td-vh-item-wrap{
 	border-bottom: 1px solid #ededed;
 }
+.e-td-vh-poup{
+	font-size: 14px;
+}
+.e-td-vh-poup .e-td-sw-table-segment, .e-td-vh-poup .e-td-sw-table-stock{
+	padding: 10px;
+}
