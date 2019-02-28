@@ -17,11 +17,13 @@ class Home extends Component {
           <div className="container">
             <div className="row">
               <div className="col-6">
-                <img className="e-header-logo" src={fyersThematicLogo} alt="Fyers Logo"/>
+                <a href="/">
+                  <img className="e-header-logo" src={fyersThematicLogo} alt="Fyers Logo"/>
+                </a>
               </div>
               <div className="col-6 e-align-right e-p-right-0">
                 <a href="/" className="e-nav-item e-c-brown e-nav-item"><span className="e-search-icn"></span>Search</a>
-                <a href="/" className="e-nav-item e-c-brown e-nav-item">Discover</a>
+                <a href="/discover" className="e-nav-item e-c-brown e-nav-item">Discover</a>
                 <a href="/" className="e-nav-item e-c-brown e-nav-item">Login</a>
                 <a href="/" className="e-nav-item e-c-primary e-nav-item e-f-weight-900">Open an account</a>
               </div>
@@ -222,6 +224,7 @@ class Home extends Component {
             <div className="col-12 e-p-top-50 e-ptheme-items-wrap e-p-left-0">
               <div className="row">
                 <div className="col-3">
+                  <a href="/theme-detail/overview">
                   <div className="e-ptheme-card-wrap">
                     <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
                     <h4>Energy takeout targets</h4>
@@ -231,6 +234,7 @@ class Home extends Component {
                       <a aria-label="Invest Now" href="/">Invest now</a>
                     </div>
                   </div>
+                  </a>
                 </div>
                 <div className="col-3">
                   <div className="e-ptheme-card-wrap">
@@ -349,28 +353,6 @@ class Home extends Component {
             </div>
           </div>
         </section>
-        <footer className="e-p-top-100 e-p-bottom-100 e-bg-light-gray">
-          <div className="container e-footer-container">
-            <div className="row">
-              <div className="col-4 e-footer-items-wrap">
-                <img className="e-m-bottom-20 e-m-right-20 e-border-5 e-footer-logo" src={fyersThematicLogo} alt="Fyers Logo"/>
-                <p className="e-m-0 e-c-grey e-card-p-txt e-footer-dbl-lh">CIN :U74900KA2015HYFM09H<br/>GSTIN :U74900KA2015HYFM09H<br/>SEBI Research Analyst INH20987532</p>
-              </div>
-              <div className="col-4 e-footer-items-wrap">
-                <h4 className="e-m-bottom-10">Registered address</h4>
-                <p className="e-m-0 e-c-grey e-card-p-txt e-footer-dbl-lh">No.19 & 20, 3rd Main, Gandhinagar,<br/>Bangalore 560009<br/>Call: 080 4625 1111</p>
-              </div>
-              <div className="col-4 e-footer-items-wrap ">
-                <h4 className="e-m-bottom-10">Connect with us 
-                  <a aria-label="Facebook" href="/"><span className="e-f-fb-logo e-f-social-logo e-relative"></span></a>
-                  <a aria-label="Twitter" href="/"><span className="e-f-tw-logo e-f-social-logo e-relative"></span></a>
-                  <a aria-label="You Tube" href="/"><span className="e-f-yt-logo e-f-social-logo e-relative"></span></a>
-                </h4>
-                <p className="e-m-0 e-c-grey e-card-p-txt e-f-para">For any complaints pertaining to securities broking please write to complaints@fyers.com for DP related to dp@fyers.com. Please ensure you carefully read the Risk Disclosure Document as prescribed by SEBI | ICF</p>
-              </div>
-            </div>
-          </div>
-        </footer>
       </div> 
     ); 
   } 

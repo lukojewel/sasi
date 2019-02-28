@@ -48,6 +48,8 @@ class App extends Component {
 	            </div>
 	          </div>
 	        </footer>
+
+	        
         </div>
       </BrowserRouter>
     ); 
