@@ -17,7 +17,7 @@ class Home extends Component {
           <div className="container">
             <div className="row">
               <div className="col-6">
-                <img className="e-border-5 e-footer-logo" src={fyersThematicLogo} alt="Fyers Logo"/>
+                <img className="e-header-logo" src={fyersThematicLogo} alt="Fyers Logo"/>
               </div>
               <div className="col-6 e-align-right e-p-right-0">
                 <a href="/" className="e-nav-item e-c-brown e-nav-item"><span className="e-search-icn"></span>Search</a>

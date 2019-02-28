@@ -1,12 +1,9 @@
 /*Package importing*/
 import React, { Component } from 'react';
-import playIcon from '../assets/images/play-icon.svg';
 import ideaImage1 from '../assets/images/fyers-themes-images-1.png';
 import leftArrow from '../assets/images/left-arrow.svg';
 import publicTheme1 from '../assets/images/publicTheme1.png';
 import news1 from '../assets/images/news1.png';
-import SEBILogo from '../assets/images/sebi-logo.png';
-import investorsLogo from '../assets/images/investors-logo.png';
 import fyersThematicLogo from '../assets/images/fyers-thematic-logo.png';
 
 class Discover extends Component {
@@ -45,7 +42,7 @@ popularityOpen() {
           <div className="container">
             <div className="row">
               <div className="col-6">
-                <img className="e-border-5 e-footer-logo" src={fyersThematicLogo} alt="Fyers Logo"/>
+                <img className="e-header-logo" src={fyersThematicLogo} alt="Fyers Logo"/>
               </div>
               <div className="col-6 e-align-right e-p-right-0">
                 <a href="/" className="e-nav-item e-c-brown e-nav-item"><span className="e-search-icn"></span>Search</a>

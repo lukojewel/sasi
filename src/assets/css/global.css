@@ -407,6 +407,10 @@ header{
   top: 4px;
   right: 3px;
 }
+.e-header-logo{
+  max-width: 200px;
+}
+
 
 /*loss and profit indicators*/
 .e-loss-value{
@@ -470,6 +474,9 @@ header{
 /*Tab Navigation*/
 .e-tab-nav-wrap{
   border-bottom: 5px solid #f2f2f2;
+}
+.nav-item{
+  margin: 0 30px;
 }
 .e-tab-nav-wrap .nav-item a{
   position: relative;
