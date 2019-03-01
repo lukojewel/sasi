@@ -137,10 +137,13 @@
 	background: #298eed;
 	border-radius: 5px;
 	line-height: 0;
+	cursor: pointer;
 }
 .e-hm-subscribe-form-submit img{
 	max-width: 18px;
 	content: url("../images/right-arrow-white.svg");
+	position: relative;
+	top: -2px;
 }
 .e-hm-b-subscribe-wrap{
 	background-image: -webkit-linear-gradient(to right, #2e42b6, #298eed);
@@ -168,7 +171,9 @@
 	right: 0;
 	top: 25%;
 }
-
+.e-hm-video-iframe{
+	height: 600px;
+}
 
 /*Discover*/
 .e-dvr-explr-wrap{

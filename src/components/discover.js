@@ -6,6 +6,8 @@ import publicTheme1 from '../assets/images/publicTheme1.png';
 import news1 from '../assets/images/news1.png';
 import fyersThematicLogo from '../assets/images/fyers-thematic-logo.png';
 
+import Header from './header.js';
+
 class Discover extends Component {
 
 state = {
@@ -38,23 +40,7 @@ popularityOpen() {
   render() {
     return (
       <div className="e-body">
-        <header className="e-fixed e-bg-white">
-          <div className="container">
-            <div className="row">
-              <div className="col-6">
-                <a href="/">
-                  <img className="e-header-logo" src={fyersThematicLogo} alt="Fyers Logo"/>
-                </a>
-              </div>
-              <div className="col-6 e-align-right e-p-right-0">
-                <a href="/" className="e-nav-item e-c-brown e-nav-item"><span className="e-search-icn"></span>Search</a>
-                <a href="/" className="e-nav-item e-c-brown e-nav-item">Discover</a>
-                <a href="/" className="e-nav-item e-c-brown e-nav-item">Login</a>
-                <a href="/" className="e-nav-item e-c-primary e-nav-item e-f-weight-900">Open an account</a>
-              </div>
-            </div>
-          </div>
-        </header>
+        <Header/>
         
         <section className="e-p-top-100 e-p-bottom-50 ">
           <div className="container e-vh-50 d-flex align-items-center">

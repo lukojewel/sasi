@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 import $ from 'jquery';
 import {Line} from 'react-chartjs-2';
 
+import '../../node_modules/react-vis/dist/style.css';
+import {XYPlot, XAxis, YAxis, VerticalGridLines, HorizontalGridLines, LineSeries, Crosshair} from 'react-vis';
+import DiscreteColorLegend from '../../node_modules/react-vis/dist/legends/discrete-color-legend';
+
 import DetailCTA from './detail-cta.js';
 
 class ThemeDetailOverview extends Component {
@@ -11,77 +15,43 @@ class ThemeDetailOverview extends Component {
 componentDidMount() {
   $("a").tooltip();
 }
+constructor(props) {
+      super(props);
+      this.state = {
+        crosshairValues: []
+      };
+    }
 
   render() {
-      const data = {
-      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-      datasets: [
-        {
-          label: 'Axis Bank',
-          fill: false,
-          lineTension: 0,
-          backgroundColor: '#fff',
-          borderColor: '#2e42b6',
-          borderCapStyle: 'butt',
-          borderDash: [],
-          borderDashOffset: 0.0,
-          borderJoinStyle: 'miter',
-          pointBorderColor: 'rgba(75,192,192,1)',
-          pointBackgroundColor: '#fff',
-          pointBorderWidth: 1,
-          pointHoverRadius: 5,
-          pointHoverBackgroundColor: '#2e42b6',
-          pointHoverBorderColor: '#2e42b6',
-          pointHoverBorderWidth: 1,
-          pointRadius: 0,
-          pointHitRadius: 10,
-          data: [65, 59, 80, 81, 56, 55, 40],
-          scaleShowGridLines : true,
-          bezierCurve : false,
-          pointDot : false,
-        },
-        {
-          label: 'ICICI Bank',
-          fill: false,
-          lineTension: 0,
-          backgroundColor: '#fff',
-          borderColor: '#298eed',
-          borderCapStyle: 'butt',
-          borderDash: [],
-          borderDashOffset: 0.0,
-          borderJoinStyle: 'miter',
-          pointBorderColor: 'rgba(75,192,192,1)',
-          pointBackgroundColor: '#fff',
-          pointBorderWidth: 1,
-          pointHoverRadius: 5,
-          pointHoverBackgroundColor: '#298eed',
-          pointHoverBorderColor: '#298eed',
-          pointHoverBorderWidth: 1,
-          pointRadius: 0,
-          pointHitRadius: 10,
-          data: [42, 56, 41, 67, 74, 86, 91],
-          scaleShowGridLines : true,
-          showXLabels: 2,
-          bezierCurve : false,
-          pointDot : false,
-          strokeStyle: '#298eed',
-          legend: {
-            "position": "top",
-            "usePointStyle": true,
-            }
-        }
-      ]
-    };
+    const DATA = [
+    [
+      {x: new Date('01/01/2018'), y: 12},
+      {x: new Date('01/14/2018'), y: 50},
+      {x: new Date('03/18/2018'), y: 60},
+      {x: new Date('04/01/2018'), y: 80},
+      {x: new Date('05/14/2018'), y: 75},
+      {x: new Date('06/18/2019'), y: 60}
+    ],
+    [
+      {x: new Date('01/01/2018'), y: 30},
+      {x: new Date('01/14/2018'), y: 32},
+      {x: new Date('03/18/2018'), y: 51},
+      {x: new Date('04/01/2018'), y: 80},
+      {x: new Date('05/14/2018'), y: 74},
+      {x: new Date('06/18/2019'), y: 73}
+    ]
+  ];
 
-    var chartOptions = {
-      scaleShowGridLines : true,
-      bezierCurve : false,
-      pointDot : true,
-      legend: {
-        "position": "top",
-        "usePointStyle": true,
-        }
-    }
+
+  const ITEMS = [
+    'Theme',
+    'NIFTY'
+  ];
+
+  const COLORS = [
+    '#298eed',
+    '#ffc000'
+  ];
     return (
       <div className="e-body">
         <section>
@@ -136,7 +106,22 @@ componentDidMount() {
               </div>
               <div className="row">
                 <div className="col-11">
-                <Line data={data}  options={chartOptions} />
+                  {/*<Line data={data}  options={chartOptions} />*/}
+                  <div className="e-align-right e-p-bottom-20">
+                    <DiscreteColorLegend height={"auto"} width={"100%"} items={ITEMS} colors={COLORS} orientation="horizontal"/>
+                  </div>
+                  <XYPlot xType="time"
+                    Padding={50}
+                    onMouseLeave={() => this.setState({crosshairValues: []})}
+                    width={920}
+                    height={300}>
+                    <HorizontalGridLines />
+                    <XAxis />
+                    <YAxis />
+                    <LineSeries color="#ffc000" animation onNearestX={(value, {index}) => this.setState({crosshairValues: DATA.map(d => d[index])})} data={DATA[0]}/>
+                    <LineSeries animation onNearestX={(value, {index}) => this.setState({crosshairValues: DATA.map(d => d[index])})} data={DATA[0]} animation data={DATA[1]}/>
+                    <Crosshair values={this.state.crosshairValues}/>
+                  </XYPlot>
                 </div>
               </div>
             </div>

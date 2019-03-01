@@ -1,5 +1,10 @@
 /*Package importing*/
 import React, { Component } from 'react';
+import $ from 'jquery';
+
+import Header from './header.js';
+
+
 import playIcon from '../assets/images/play-icon.svg';
 import ideaImage1 from '../assets/images/fyers-themes-images-1.png';
 import leftArrow from '../assets/images/left-arrow.svg';
@@ -10,26 +15,39 @@ import investorsLogo from '../assets/images/investors-logo.png';
 import fyersThematicLogo from '../assets/images/fyers-thematic-logo.png';
 
 class Home extends Component {
+  componentDidMount() {
+    $('#myModal').on('shown.bs.modal', function () {
+      $('#myInput').trigger('focus')
+    })
+  }
+  constructor(props){
+    super(props);
+    this.state = {
+        searchBoxShow: false,
+        fname: "",
+    }
+  }
+  videoOverlyClick(e){
+    $("iframe").remove();
+  }
+  hmPlayClick(e){
+    $(".e-hm-video-m-content").html('<iframe class="embed-responsive-item e-hm-video-iframe" src="https://www.youtube.com/embed/ApXoWvfEYVU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+  }
+  searchClick(e){  
+    e.preventDefault();
+    this.setState({ searchBoxShow: true});
+  }
+  searchClickReturn(e){  
+    e.preventDefault();
+    if(this.state.fname == ""){this.setState({ searchBoxShow: false});}
+  }
+  
+  fnameChange(e){  this.setState({ fname: e.target.value}) }
+
   render() {
     return (
       <div className="e-body">
-        <header className="e-fixed e-bg-white">
-          <div className="container">
-            <div className="row">
-              <div className="col-6">
-                <a href="/">
-                  <img className="e-header-logo" src={fyersThematicLogo} alt="Fyers Logo"/>
-                </a>
-              </div>
-              <div className="col-6 e-align-right e-p-right-0">
-                <a href="/" className="e-nav-item e-c-brown e-nav-item"><span className="e-search-icn"></span>Search</a>
-                <a href="/discover" className="e-nav-item e-c-brown e-nav-item">Discover</a>
-                <a href="/" className="e-nav-item e-c-brown e-nav-item">Login</a>
-                <a href="/" className="e-nav-item e-c-primary e-nav-item e-f-weight-900">Open an account</a>
-              </div>
-            </div>
-          </div>
-        </header>
+        <Header/>
         <section className="e-banner-wrap e-hm-banner-wrap">
           <div className="container vh-100 d-flex align-items-center">
             <div className="align-middle e-p-top-100 e-p-left-50">
@@ -39,11 +57,11 @@ class Home extends Component {
               <div>
                 <span className="e-p-btn e-m-right-20 e-p-btn-up-effect">LOG IN</span><span className="e-s-btn e-s-btn-up-effect">OPEN AN ACCOUNT</span>
               </div>
-              <div>
-                <span className="e-hm-play-icn-wrap e-m-top-20">
+              <div onClick={this.hmPlayClick.bind(this)}>
+                <span className="e-hm-play-icn-wrap e-m-top-20" >
                   <img className="ev-nav-logo-dark" src={playIcon} alt="Watch about Thematic"/>
                 </span>
-                <span className="e-s-txt e-c-brown e-p-left-10 e-relative e-hm-play-icn-txt e-txt-underline">Watch a quick video</span>
+                <span className="e-s-txt e-c-brown e-p-left-10 e-relative e-hm-play-icn-txt "><a href="/" className="e-c-grey" data-toggle="modal" data-target="#vHistoryModal">Watch a quick video</a></span>
               </div>
             </div>
           </div>
@@ -56,32 +74,34 @@ class Home extends Component {
                 <h5 className="e-c-brown">We help you to build a data-driven, diversified, low cost & long term successful portfolio based on the trend in the economy for free!</h5>
               </div>
               <div className="col-5 e-bg-white e-ftheme-card-wrap e-hm-ftheme-card-wrap e-relative">
-                <div className="row">
+                
+                <div className="row e-hm-topTheme-wrap e-show">
                     <div className="col-8">
                       <h4>Energy takeout targets</h4>
                       <p className="e-card-p-txt e-c-brown">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
                     </div>
                     <div className="col-4 e-align-center ">
-                      <img className="e-ftheme-card-img e-m-bottom-10" src={ideaImage1} alt="Themes by Fyers"/>
+                      <img className="e-ftheme-card-img e-m-bottom-10 e-full-width" src={ideaImage1} alt="Themes by Fyers"/>
                     </div>
                 </div>
+
                 <div className="row">
                   <div className="col-8">
                     <div className="d-flex ">
                       <p className="e-card-pl-txt e-p-0 e-m-0 e-c-brown mt-auto p-2">MONTHLY RETURNS <span className="e-c-green">5.6%</span></p>
                     </div>
                   </div>
-                  <div className="col-4 e-align-center ">
-                    <a href="/" aria-label="Invest now">Invest Now</a>
+                  <div className="col-4 e-align-center">
+                    <a href="/" className="e-a-primary-c" aria-label="Invest now">Invest Now</a>
                   </div>
                 </div>
               </div>
             </div>
             <div className="e-align-right e-card-arrow-wrap e-ftheme-card-arrow-wrap e-relative"> 
-              <span className="e-m-right-20">
+              <span className="e-m-right-20 e-hm-topTheme-leftArrow">
                 <img className="e-ftheme-card-img" src={leftArrow} alt="Left arrow"/>
               </span>
-              <span className="active">
+              <span className="active e-hm-topTheme-rightArrow">
                 <img className="e-ftheme-card-img e-right-arrow" src={leftArrow} alt="Right arrow"/>
               </span>
             </div>
@@ -90,9 +110,11 @@ class Home extends Component {
         <section className="e-bg-primary e-p-top-100 e-p-bottom-100 e-relative">
           <img className="e-hw-to-pattern" alt="How to work pattern"/>
           <div className="container">
-            <div className="col-6 e-p-bottom-30">
-              <h2 className="e-p-bottom-20 e-c-white">How to start <br/><span className="e-c-dull-secondary">Thematic?</span></h2>
-              <h5 className="e-c-brown e-hm-how-head-sec">With 3 simple steps you can begin your bright investment future with us</h5>
+            <div className="row">
+              <div className="col-6 e-p-bottom-30">
+                <h2 className="e-p-bottom-20 e-c-white">How to start <br/><span className="e-c-dull-secondary">Thematic?</span></h2>
+                <h5 className="e-c-brown e-hm-how-head-sec">With 3 simple steps you can begin your bright investment future with us</h5>
+              </div>
             </div>
             <div className="col-11 e-p-top-50 e-hm-how-items-wrap">
               <div className="row">
@@ -100,19 +122,19 @@ class Home extends Component {
                   <img className="e-p-bottom-10" alt="How to work pick"/>
                   <h3 className="e-c-white e-p-bottom-10">Pick</h3>
                   <p className="e-hm-how-para e-p-bottom-10">Choose an existing theme from our inventory to start investing, evaluating or follow it.</p>
-                  <a aria-label="View Themes" href="/">VIEW THEMES</a>
+                  <a aria-label="View Themes" className="e-a-bg-secondary-c" href="/">VIEW THEMES</a>
                 </div>
                 <div className="col-3 offset-md-1 e-hm-how-customize-wrap">
                   <img className="e-p-bottom-10" alt="How to work pick"/>
                   <h3 className="e-c-white e-p-bottom-10">Pick</h3>
                   <p className="e-hm-how-para e-p-bottom-10">If you want to add or remove any instrument to or from the chosen theme, you can do that.</p>
-                  <a aria-label="View Themes" href="/">VIEW THEMES</a>
+                  <a aria-label="View Themes" className="e-a-bg-secondary-c" href="/">VIEW THEMES</a>
                 </div>
                 <div className="col-3 offset-md-1 e-hm-how-invest-wrap">
                   <img className="e-p-bottom-10" alt="How to work pick"/>
                   <h3 className="e-c-white e-p-bottom-10">Invest</h3>
                   <p className="e-hm-how-para e-p-bottom-10">If you believe the chosen theme or your customised idea can perform, start buying it.</p>
-                  <a aria-label="View Themes" href="/">VIEW THEMES</a>
+                  <a aria-label="View Themes" className="e-a-bg-secondary-c" href="/">VIEW THEMES</a>
                 </div>
               </div>
             </div>
@@ -223,49 +245,47 @@ class Home extends Component {
             </div>
             <div className="col-12 e-p-top-50 e-ptheme-items-wrap e-p-left-0">
               <div className="row">
-                <div className="col-3">
-                  <a href="/theme-detail/overview">
-                  <div className="e-ptheme-card-wrap">
+                <div className="col-3 ">
+                  <div className="e-ptheme-card-wrap e-card-hover">
                     <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
                     <h4>Energy takeout targets</h4>
                     <p className="e-card-p-txt e-c-brown">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
                     <div className="d-flex flex-row d-flex justify-content-between">
                       <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-green">5.6%</span></p>
-                      <a aria-label="Invest Now" href="/">Invest now</a>
-                    </div>
-                  </div>
-                  </a>
-                </div>
-                <div className="col-3">
-                  <div className="e-ptheme-card-wrap">
-                    <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
-                    <h4>Energy takeout targets</h4>
-                    <p className="e-card-p-txt e-c-brown">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
-                    <div className="d-flex flex-row d-flex justify-content-between">
-                      <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-green">5.6%</span></p>
-                      <a aria-label="Invest Now" href="/">Invest now</a>
+                      <a aria-label="Invest Now" className="e-a-primary-c" href="/">Invest now</a>
                     </div>
                   </div>
                 </div>
                 <div className="col-3">
-                  <div className="e-ptheme-card-wrap">
+                  <div className="e-ptheme-card-wrap e-card-hover">
                     <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
                     <h4>Energy takeout targets</h4>
                     <p className="e-card-p-txt e-c-brown">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
                     <div className="d-flex flex-row d-flex justify-content-between">
                       <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-green">5.6%</span></p>
-                      <a aria-label="Invest Now" href="/">Invest now</a>
+                      <a aria-label="Invest Now" className="e-a-primary-c" href="/">Invest now</a>
                     </div>
                   </div>
                 </div>
                 <div className="col-3">
-                  <div className="e-ptheme-card-wrap">
+                  <div className="e-ptheme-card-wrap e-card-hover">
                     <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
                     <h4>Energy takeout targets</h4>
                     <p className="e-card-p-txt e-c-brown">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
                     <div className="d-flex flex-row d-flex justify-content-between">
                       <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-green">5.6%</span></p>
-                      <a aria-label="Invest Now" href="/">Invest now</a>
+                      <a aria-label="Invest Now" className="e-a-primary-c" href="/">Invest now</a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-3">
+                  <div className="e-ptheme-card-wrap e-card-hover">
+                    <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
+                    <h4>Energy takeout targets</h4>
+                    <p className="e-card-p-txt e-c-brown">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
+                    <div className="d-flex flex-row d-flex justify-content-between">
+                      <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-green">5.6%</span></p>
+                      <a aria-label="Invest Now" className="e-a-primary-c" href="/">Invest now</a>
                     </div>
                   </div>
                 </div>
@@ -280,7 +300,7 @@ class Home extends Component {
                 <span className="active">
                   <img className="e-ftheme-card-img e-right-arrow" src={leftArrow} alt="Right arrow"/>
                 </span>
-                <a aria-label="More Themes" className="e-c-primary e-m-left-20 e-relative e-top-themes-more-txt" href="/">MORE THEMES</a>
+                <a aria-label="More Themes" className="e-c-primary e-m-left-20 e-relative e-top-themes-more-txt e-a-primary-c" href="/">MORE THEMES</a>
               </div>
             </div>
           </div>
@@ -294,21 +314,21 @@ class Home extends Component {
             <div className="col-12 e-p-top-20 e-ptheme-items-wrap e-p-left-0">
               <div className="row">
                 <div className="col-4">
-                  <div className="e-ptheme-card-wrap">
+                  <div className="e-ptheme-card-wrap e-card-hover">
                     <img className="e-m-bottom-10 e-border-5" src={news1} alt="Themes by Fyers"/>
                     <h4>Benefits of Investing in a Diversified Portfolio</h4>
                     <span className="e-x-s-txt e-c-grey">1 day ago</span>
                   </div>
                 </div>
                 <div className="col-4">
-                  <div className="e-ptheme-card-wrap">
+                  <div className="e-ptheme-card-wrap e-card-hover">
                     <img className="e-m-bottom-10 e-border-5" src={news1} alt="Themes by Fyers"/>
                     <h4>Benefits of Investing in a Diversified Portfolio</h4>
                     <span className="e-x-s-txt e-c-grey">1 day ago</span>
                   </div>
                 </div>
                 <div className="col-4">
-                  <div className="e-ptheme-card-wrap">
+                  <div className="e-ptheme-card-wrap e-card-hover">
                     <img className="e-m-bottom-10 e-border-5" src={news1} alt="Themes by Fyers"/>
                     <h4>Benefits of Investing in a Diversified Portfolio</h4>
                     <span className="e-x-s-txt e-c-grey">1 day ago</span>
@@ -325,7 +345,7 @@ class Home extends Component {
                 <span className="active">
                   <img className="e-ftheme-card-img e-right-arrow" src={leftArrow} alt="Right arrow"/>
                 </span>
-                <a aria-label="More Themes" className="e-c-primary e-m-left-20 e-relative e-top-themes-more-txt" href="/">MORE THEMES</a>
+                <a aria-label="More Themes" className="e-c-primary e-m-left-20 e-relative e-top-themes-more-txt e-a-primary-c" href="/">MORE THEMES</a>
               </div>
             </div>
           </div>
@@ -336,7 +356,7 @@ class Home extends Component {
             <div className="row">
               <div className="col-6">
                 <h2 className="e-p-bottom-20 e-c-white">Know more <br/><span className="e-c-dull-secondary">About Us?</span></h2>
-                <h5 className="e-c-brown e-hm-how-head-sec">Need clarification for opening an account or have queries?</h5>
+                <h5 className="e-c-white e-hm-how-head-sec">Need clarification for opening an account or have queries?</h5>
               </div>
               <div className="col-5 offset-md-1 d-flex align-items-end">
                 <div className="e-hm-trstwrthy-img-wrap row e-absolute">
@@ -345,7 +365,7 @@ class Home extends Component {
                 </div>
                 <form className="e-hm-subscribe-form align-bottom e-relative">
                   <input id="pnumber" type="text" placeholder="Phone number" required/>
-                  <span className="e-hm-subscribe-form-submit">
+                  <span className="e-hm-subscribe-form-submit e-s-c-btn-up-effect">
                     <img alt="White right arrow"/>
                   </span>
                 </form>
@@ -353,6 +373,14 @@ class Home extends Component {
             </div>
           </div>
         </section>
+
+        {/* View History modal*/}
+        <div className="modal fade" onClick={this.videoOverlyClick.bind(this)} id="vHistoryModal" role="dialog" aria-labelledby="vHistoryModal Label" aria-hidden="true">
+          <div className="modal-dialog"  role="document">
+            <div className="modal-content e-hm-video-m-content"></div>
+          </div>
+        </div>
+
       </div> 
     ); 
   } 
