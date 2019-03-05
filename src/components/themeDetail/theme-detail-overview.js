@@ -157,7 +157,7 @@ whyInvestReadMoreClick() {
                 </a>
                 <p className="e-c-brown e-p-top-10">Thematic Investments</p>
                 <div className="e-p-top-20">
-                  <a href="/" className="e-c-secondary text-uppercase e-f-weight-600 e-m-right-20 e-a-secondary-c">READ BLOG POSTS <img className="e-read-blog-icon" alt="Read Blog"/></a>
+                  <a href="/" className="e-c-secondary text-uppercase e-f-weight-600 e-m-right-20 e-a-secondary-c ">READ BLOG POSTS <img className="e-read-blog-icon" alt="Read Blog"/></a>
                   <a href="/" className="e-c-primary text-uppercase e-f-weight-600 e-a-primary-c">METHODOLOGY <img className="e-methodology-icon" alt="Methodology"/></a>
                 </div>
               </div>
@@ -172,12 +172,12 @@ whyInvestReadMoreClick() {
               </div>
               <div className="row">
                 <div className="col-12">
-                  <ul className="nav nav-tabs e-tab-nav-wrap" id="themesTab" role="tablist">
-                    <li class="active" className="nav-item e-m-left-0">
-                      <a data-toggle="tab" href="#menu1" className="nav-link active e-m-left-0 e-font-18 e-c-medium-grey e-f-weight-300" to="/theme-detail/overview"><span>LUMPSUM</span></a>
+                  <ul className="nav nav-tabs nav-tabs-style-2 e-tab-nav-wrap" id="themesTab" role="tablist">
+                    <li className="active" className="nav-item e-m-left-0">
+                      <a data-toggle="tab" href="#menu1" className="nav-link active e-m-left-0 e-font-18 e-c-medium-grey e-f-weight-300 e-no-transition" to="/theme-detail/overview"><span>LUMPSUM</span></a>
                     </li>
                     <li className="nav-item">
-                      <a data-toggle="tab" href="#menu2" className="nav-link e-m-left-0 e-font-18 e-c-medium-grey e-f-weight-300" to="/theme-detail/stockweight"><span>SIP</span></a>
+                      <a data-toggle="tab" href="#menu2" className="nav-link e-m-left-0 e-font-18 e-c-medium-grey e-f-weight-300 e-no-transition" to="/theme-detail/stockweight"><span>SIP</span></a>
                     </li>
                   </ul>
                 </div>

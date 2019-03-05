@@ -594,6 +594,16 @@ footer{
   background: linear-gradient(to right, #2e42b6, #298eed) left bottom #fff no-repeat;
   background-size:100% 5px;
 }
+.nav-tabs.nav-tabs-style-2 .nav-item.show .nav-link, .nav-tabs.nav-tabs-style-2 .nav-link.active{
+  background-color: transparent;
+  text-align:center;
+  padding-bottom:2px;
+  background: linear-gradient(to right, #2e42b6, #298eed) left bottom #fff no-repeat;
+  background-size:100% 2px;
+}
+.nav-tabs-style-2{
+  border-bottom: 2px solid #f2f2f2;
+}
 .nav-link{
   padding: .5rem 0;
   margin: 0 20px;
@@ -602,6 +612,12 @@ footer{
   background-size: 100% 5px;
 }
 .nav-tabs .nav-link:hover{
+  background-size: 0% 0px;
+}
+.nav-tabsnav-tabs-style-2 .nav-link.active:hover{
+  background-size: 100% 2px;
+}
+.nav-tabsnav-tabs-style-2 .nav-link:hover{
   background-size: 0% 0px;
 }
 .fade:not(.show){
