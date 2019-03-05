@@ -1,7 +1,6 @@
 /*Package importing*/
 import React, { Component } from 'react';
 import $ from 'jquery';
-
 import Header from './header.js';
 
 
@@ -68,6 +67,7 @@ class Home extends Component {
         </section>
         <section className="e-p-top-100 e-p-bottom-50">
           <div className="container e-relative">
+            
             <div className="row">
               <div className="col-7">
                 <h2 className="e-p-bottom-20">Brilliant Ideas for <br/><span className="e-c-grey">Zero Fee</span></h2>
@@ -84,7 +84,6 @@ class Home extends Component {
                       <img className="e-ftheme-card-img e-m-bottom-10 e-full-width" src={ideaImage1} alt="Themes by Fyers"/>
                     </div>
                 </div>
-
                 <div className="row">
                   <div className="col-8">
                     <div className="d-flex ">
@@ -92,11 +91,13 @@ class Home extends Component {
                     </div>
                   </div>
                   <div className="col-4 e-align-center">
-                    <a href="/" className="e-a-primary-c" aria-label="Invest now">Invest Now</a>
+                    <a href="/theme-detail/overview" className="e-a-primary-c" aria-label="Invest now">Invest Now</a>
                   </div>
                 </div>
               </div>
             </div>
+            
+
             <div className="e-align-right e-card-arrow-wrap e-ftheme-card-arrow-wrap e-relative"> 
               <span className="e-m-right-20 e-hm-topTheme-leftArrow">
                 <img className="e-ftheme-card-img" src={leftArrow} alt="Left arrow"/>

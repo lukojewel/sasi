@@ -3,7 +3,48 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import $ from 'jquery';
 
+import {Doughnut} from 'react-chartjs-2';
+
+const data = {
+  labels: [
+    'Cement',
+    'Fertilizers & Agro Chemicals',
+    'Home Electronics & Appliances',
+    'FMCG - Personal Products',
+    'Tractors',
+  ],
+  datasets: [{
+    data: [300, 50, 100, 110, 40],
+    backgroundColor: [
+    '#85bf57',
+    '#36A2EB',
+    '#FFCE56',
+    '#2e42b6',
+    '#41f1ec',
+    ],
+    hoverBackgroundColor: [
+    '#85bf57',
+    '#36A2EB',
+    '#FFCE56',
+    '#2e42b6',
+    '#41f1ec',
+    ],
+    borderWidth: ['1px']
+  }]
+};
+
+const options={
+  rotation: 1 * Math.PI,
+  circumference: 1 * Math.PI,
+  legend: {
+      display: false,
+      
+  }
+}
+
 class ThemeDetailVersionHistory extends Component {
+
+
 
 componentDidMount() {
   $('#myModal').on('shown.bs.modal', function () {
@@ -21,16 +62,16 @@ componentDidMount() {
               <div className="col-12">
                 <ul className="nav nav-tabs e-tab-nav-wrap" id="themesTab" role="tablist">
                   <li className="nav-item e-m-left-0">
-                    <Link className="nav-link e-m-left-0 e-font-16 e-c-medium-grey e-f-weight-600" to="/theme-detail/overview"><span>Overview</span></Link>
+                    <Link className="nav-link e-m-left-0 e-font-18 e-c-medium-grey e-f-weight-300" to="/theme-detail/overview"><span>Overview</span></Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link e-m-left-0 e-font-16 e-c-medium-grey e-f-weight-600" to="/theme-detail/stockweight"><span>Stocks & Weights</span></Link>
+                    <Link className="nav-link e-m-left-0 e-font-18 e-c-medium-grey e-f-weight-300" to="/theme-detail/stockweight"><span>Stocks & Weights</span></Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link e-m-left-0 e-font-16 e-c-medium-grey e-f-weight-600" to="/theme-detail/news"><span>News & Insights</span></Link>
+                    <Link className="nav-link e-m-left-0 e-font-18 e-c-medium-grey e-f-weight-300" to="/theme-detail/news"><span>News & Insights</span></Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link active e-m-left-0 e-font-16 e-c-medium-grey e-f-weight-600" to="/theme-detail/versions"><span>Version History</span></Link>
+                    <Link className="nav-link active e-m-left-0 e-font-18 e-c-medium-grey e-f-weight-300" to="/theme-detail/versions"><span>Version History</span></Link>
                   </li>
                 </ul>
               </div>
@@ -48,7 +89,7 @@ componentDidMount() {
                     <span className="e-s-txt">Jan 04, 2019</span>
                   </div>
                   <div className="d-flex align-items-center">
-                    <a href="/" className="e-c-primary text-uppercase e-f-weight-600" data-toggle="modal" data-target="#vHistoryModal"><u>VIEW CHANGE</u></a>
+                    <a href="/" className="e-c-primary text-uppercase e-f-weight-600 e-a-primary-c" data-toggle="modal" data-target="#vHistoryModal">VIEW CHANGE</a>
                   </div>
                 </div>
                 <div className="d-flex justify-content-between e-td-vh-item-wrap e-p-bottom-20 e-p-top-20">
@@ -57,7 +98,7 @@ componentDidMount() {
                     <span className="e-s-txt">Jan 04, 2019</span>
                   </div>
                   <div className="d-flex align-items-center">
-                    <a href="/" className="e-c-primary text-uppercase e-f-weight-600" data-toggle="modal" data-target="#vHistoryModal"><u>VIEW CHANGE</u></a>
+                    <a href="/" className="e-c-primary text-uppercase e-f-weight-600 e-a-primary-c" data-toggle="modal" data-target="#vHistoryModal">VIEW CHANGE</a>
                   </div>
                 </div>
               </div>
@@ -135,7 +176,22 @@ componentDidMount() {
                   </div>
                   <div className="col-5 e-p-top-50 e-p-bottom-50">
                     <h5 className="e-sec-head e-c-black e-p-bottom-30">SEGMENT <span className="e-c-grey">COMPOSITION</span></h5>
-                    <div></div>
+                    <div >
+                      <Doughnut data={data} options={options} />
+                    </div>
+                    <div className="e-p-bottom-20">
+                      <div className="d-flex flex-row e-p-top-20 e-doughnut-chart-legend-wrap">
+                        <div className="col-6 e-doughnut-chart-legend-item e-font-13 e-c-brown e-p-ellipsis"><span style={{background: "#85bf57"}}></span>Cement</div>
+                        <div className="col-6 e-doughnut-chart-legend-item e-font-13 e-c-brown e-p-ellipsis"><span style={{background: "#36A2EB"}}></span>Fertilizers & Agro Chemicals</div>
+                      </div>
+                      <div className="d-flex flex-row e-p-top-20 e-doughnut-chart-legend-wrap">
+                        <div className="col-6 e-doughnut-chart-legend-item e-font-13 e-c-brown e-p-ellipsis"><span style={{background: "#FFCE56"}}></span>Home Electronics & Appliances</div>
+                        <div className="col-6 e-doughnut-chart-legend-item e-font-13 e-c-brown e-p-ellipsis"><span style={{background: "#2e42b6"}}></span>FMCG - Personal Products</div>
+                      </div>
+                      <div className="d-flex flex-row e-p-top-20 e-doughnut-chart-legend-wrap">
+                        <div className="col-6 e-doughnut-chart-legend-item e-font-13 e-c-brown e-p-ellipsis"><span style={{background: "#41f1ec"}}></span>Tractors</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

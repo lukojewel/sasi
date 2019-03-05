@@ -6,12 +6,15 @@ import fyersThematicLogo from './assets/images/fyers-thematic-logo.png';
 
 /*Import pages*/
 import Home from './components/home.js';
-import Discover from './components/discover.js';
-import ThemeDetail from './components/theme-detail.js';
-import ThemeDetailOverview from './components/theme-detail-overview.js';
-import ThemeDetailStockWeight from './components/theme-detail-stock-weight.js';
-import ThemeDetailNewsInsight from './components/theme-detail-news-insight.js';
-import ThemeDetailVersionHistory from './components/theme-detail-version-history.js';
+import Discover from './components/discover/discover.js';
+import DiscoverExplore from './components/discover/discover-explore.js';
+import DiscoverFyersThemes from './components/discover/discover-fyers-themes.js';
+import DiscoverPublicThemes from './components/discover/discover-public-themes.js';
+import ThemeDetail from './components/themeDetail/theme-detail.js';
+import ThemeDetailOverview from './components/themeDetail/theme-detail-overview.js';
+import ThemeDetailStockWeight from './components/themeDetail/theme-detail-stock-weight.js';
+import ThemeDetailNewsInsight from './components/themeDetail/theme-detail-news-insight.js';
+import ThemeDetailVersionHistory from './components/themeDetail/theme-detail-version-history.js';
 import test from './components/test.js';
 
 class App extends Component {
@@ -21,6 +24,9 @@ class App extends Component {
       	<div>
 	        <Route path="/" exact component={Home}/>
 	        <Route path="/discover" component={Discover}/>
+	        <Route path="/discover/explore" component={DiscoverExplore}/>
+	        <Route path="/discover/fyers-themes" component={DiscoverFyersThemes}/>
+	        <Route path="/discover/public-themes" component={DiscoverPublicThemes}/>
 	        <Route path="/theme-detail" component={ThemeDetail}/>
 	        <Route path="/theme-detail/overview" component={ThemeDetailOverview}/>
 	        <Route path="/theme-detail/stockweight" component={ThemeDetailStockWeight}/>
