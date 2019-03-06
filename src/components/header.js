@@ -8,6 +8,7 @@ class Header extends Component {
     this.state = {
         searchBoxShow: false,
         skeyward: "",
+        mMenuCliked: false,
     }
   }
   searchClick(e){  
@@ -18,13 +19,17 @@ class Header extends Component {
     e.preventDefault();
     if(this.state.skeyward == ""){this.setState({ searchBoxShow: false});}
   }
+  mMenuClick(e){  
+    e.preventDefault();
+    this.setState({ mMenuCliked: !this.state.mMenuCliked});
+  }
   
   searchChange(e){  this.setState({ skeyward: e.target.value}) }
 
   render() {
     return (
       <div>
-        {/*<header className="e-fixed e-bg-white">
+        <header className="e-fixed e-bg-white e-desktop-hide">
           <div className="container">
             <div className="row">
               <div className="col-6">
@@ -51,8 +56,8 @@ class Header extends Component {
               </div>
             </div>
           </div>
-        </header>*/}
-        <div className="navbar navbar-inverse navbar-fixed-top">
+        </header>
+        <div className="navbar navbar-inverse navbar-fixed-top e-m-navbar e-mobile-hide">
           <div className="container">
             <div className="navbar-header d-flex justify-content-between e-full-width">
               <div>
@@ -60,12 +65,14 @@ class Header extends Component {
                   <img className="e-header-logo" src={fyersThematicLogo} alt="Fyers Logo"/>
                 </a>
               </div>
-              <div className="">
-                <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span className="icon-bar"></span>
-                    <span className="icon-bar"></span>
-                    <span className="icon-bar"></span>
-                </button>
+              <div className="" onClick={this.mMenuClick.bind(this)}>
+                
+                {
+                  this.state.mMenuCliked ?
+                    <button type="button" className="navbar-toggle navbar-close" data-toggle="collapse" data-target=".navbar-collapse"></button>
+                  :
+                    <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
+                }
               </div>
             </div>
             <div className="navbar-collapse collapse e-navbar-collapse">

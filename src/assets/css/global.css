@@ -191,6 +191,8 @@ input{
 .e-hide{display: none;}
 .e-show{display: auto;}
 .e-no-transition{transition: none !important;}
+.e-mobile-hide{display: none;}
+.e-desktop-hide{display: auto;}
 
 .e-box-shadow-1{box-shadow: 0px 13px 15px 0 rgba(99, 99, 99, 0.1);}
 .bg-gradient{
@@ -505,17 +507,39 @@ header{
   max-width: 200px;
 }
 .e-navbar-collapse{
-  background: rgba(204, 204, 204, 0.17);
+  background: #f1f1f1;
   position: absolute;
   width: 100%;
   left: 0px;
-  top: 50px;
+  top: 68px;
   padding: 30px 0;
   z-index: 9;
+  box-shadow: 0px 5px 15px 0 rgba(197, 190, 190, 0.1);
 }
 .e-navbar-collapse .dropdown{
   padding: 10px 0;
 }
+.e-m-navbar{
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  z-index: 999;
+  padding: 20px 0;
+  box-shadow: 0px 5px 15px 0 rgba(197, 190, 190, 0.1);
+}
+.e-m-navbar .navbar-toggle{
+  width: 25px;
+  height: 25px;
+  outline: none;
+  border: 0;  background-image: url("../images/menu.svg");
+}
+.e-m-navbar .navbar-toggle.navbar-close{
+  width: 15px;
+  height: 15px;
+  outline: none;
+  border: 0;  background-image: url("../images/close.svg");
+}
+
 
 /*loss and profit indicators*/
 .e-loss-value{

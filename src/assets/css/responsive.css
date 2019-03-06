@@ -44,6 +44,12 @@
    Phone
    ============================== */
 @media only screen and (max-width: 575px) {
+	.e-mobile-hide{
+		display: block;
+	}
+	.e-desktop-hide{
+		display: none;
+	}
 	.em-no-p-left{
 		padding-left: 0;
 	}
@@ -76,6 +82,9 @@
 	}
 	.e-p-bottom-100{
 		padding-bottom: 60px;
+	}
+	.e-header-logo{
+		max-width: 160px;
 	}
 
 	body{
