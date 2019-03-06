@@ -34,22 +34,27 @@
    Tablet Portrait
    ============================== */
 @media only screen and (max-width: 768px) {
-	
+	.em-display-none{
+		display: none;
+	}
 
 }
 
 /* ==============================
    Phone
    ============================== */
-@media only screen and (max-width: 578px) {
+@media only screen and (max-width: 575px) {
 	.em-no-p-left{
 		padding-left: 0;
 	}
-	.e-p-left-50{
+	.em-p-left-30{
 		padding-left: 30px;
 	}
-	.e-m-p-bottom-30{
+	.em-p-bottom-30{
 		padding-bottom: 30px;
+	}
+	.e-p-left-50{
+		padding-left: 30px;
 	}
 	.e-m-p-bottom-30{
 		padding-bottom: 30px;
@@ -149,7 +154,26 @@
     	top: 28px;
     	z-index: 1;
 	}
-	.e-hm-topTheme-wrap{}
+	.e-top-theme-head-wrap{
+		padding-left: 3%;
+	}
+	.e-card-arrow-wrap{
+		top: 35px;
+	}
+	.e-hm-trstwrthy-img-wrap{
+		top: -40%;
+    	right: -6%;
+	}
+	.e-hm-trstwrthy-img-wrap img{
+		max-height: 32px;
+	}
+	.e-footer-pattern{
+		max-height: 140px;
+	}
+	.e-hm-subscribe-form-submit{
+		left: -47px;
+		padding: 14px;
+	}
 
 }
 

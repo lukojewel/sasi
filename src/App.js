@@ -36,15 +36,15 @@ class App extends Component {
 	        <footer className="e-p-top-100 e-p-bottom-100 e-bg-light-gray">
 	          <div className="container e-footer-container">
 	            <div className="row">
-	              <div className="col-4 e-footer-items-wrap">
+	              <div className="col-lg-4 col-sm-12 e-footer-items-wrap em-p-bottom-30">
 	                <img className="e-m-bottom-20 e-m-right-20 e-footer-logo" src={fyersThematicLogo} alt="Fyers Logo"/>
 	                <p className="e-m-0 e-c-grey e-card-p-txt e-footer-dbl-lh">CIN :U74900KA2015HYFM09H<br/>GSTIN :U74900KA2015HYFM09H<br/>SEBI Research Analyst INH20987532</p>
 	              </div>
-	              <div className="col-4 e-footer-items-wrap">
+	              <div className="col-lg-4 col-sm-12 e-footer-items-wrap em-p-bottom-30">
 	                <h4 className="e-m-bottom-10">Registered address</h4>
 	                <p className="e-m-0 e-c-grey e-card-p-txt e-footer-dbl-lh">No.19 & 20, 3rd Main, Gandhinagar,<br/>Bangalore 560009<br/>Call: 080 4625 1111</p>
 	              </div>
-	              <div className="col-4 e-footer-items-wrap ">
+	              <div className="col-lg-4 col-sm-12 e-footer-items-wrap ">
 	                <h4 className="e-m-bottom-10">Connect with us 
 	                  <a className="e-no-animation" aria-label="Facebook" href="/"><span className="e-f-fb-logo e-f-social-logo e-relative e-no-animation e-card-hover"></span></a>
 	                  <a className="e-no-animation" aria-label="Twitter" href="/"><span className="e-f-tw-logo e-f-social-logo e-relative e-no-animation e-card-hover"></span></a>
