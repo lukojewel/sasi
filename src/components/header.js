@@ -32,12 +32,12 @@ class Header extends Component {
         <header className="e-fixed e-bg-white e-desktop-hide">
           <div className="container">
             <div className="row">
-              <div className="col-6">
+              <div className="col-lg-6 col-md-5">
                 <a className="e-no-animation" href="/"> 
                   <img className="e-header-logo" src={fyersThematicLogo} alt="Fyers Logo"/>
                 </a>
               </div>
-              <div className="col-6 e-align-right e-p-right-0 m-linkitem">
+              <div className="col-lg-6 col-md-7 e-align-right e-p-right-0 m-linkitem">
                 {
                   this.state.searchBoxShow ?
                     <span className="">
@@ -57,7 +57,7 @@ class Header extends Component {
             </div>
           </div>
         </header>
-        <div className="navbar navbar-inverse navbar-fixed-top e-m-navbar e-mobile-hide">
+        <div className="navbar navbar-inverse navbar-fixed-top e-m-navbar e-mobile-hide e-tablet-hide">
           <div className="container">
             <div className="navbar-header d-flex justify-content-between e-full-width">
               <div>

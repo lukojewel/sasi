@@ -33,7 +33,7 @@ class App extends Component {
 	        <Route path="/theme-detail/news" component={ThemeDetailNewsInsight}/>
 	        <Route path="/theme-detail/versions" component={ThemeDetailVersionHistory}/>
 	        
-	        <footer className="e-p-top-100 e-p-bottom-100 e-bg-light-gray">
+	        <footer className="e-p-top-100  e-bg-light-gray">
 	          <div className="container e-footer-container">
 	            <div className="row">
 	              <div className="col-lg-4 col-sm-12 e-footer-items-wrap em-p-bottom-30">
@@ -52,6 +52,9 @@ class App extends Component {
 	                </h4>
 	                <p className="e-m-0 e-c-grey e-card-p-txt e-f-para">For any complaints pertaining to securities broking please write to complaints@fyers.com for DP related to dp@fyers.com. Please ensure you carefully read the Risk Disclosure Document as prescribed by SEBI | ICF</p>
 	              </div>
+	            </div>
+	            <div className="e-footer-copyright-wrap e-p-bottom-10 e-p-top-50 e-font-12 e-c-grey">
+	            	© 2018 Fyers securities. All rights reserved. Powered by <a href="/">Evoque Innovative lab</a>
 	            </div>
 	          </div>
 	        </footer>

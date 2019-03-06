@@ -69,33 +69,36 @@ class Home extends Component {
           <div className="container e-relative">
             
             <div className="row ">
-              <div className="col-sm-12 d-flex flex-row m-flex-column ">
-                <div className="col-md-7 col-sm-12 e-p-left-0 em-p-bottom">
+              <div className="d-flex flex-row m-flex-column e-tl-no-flex-display">
+                <div className="col-lg-7 col-md-12 col-sm-12  em-p-bottom">
                   <h2 className="e-p-bottom-20">Brilliant Ideas for <br/><span className="e-c-grey">Zero Fee</span></h2>
                   <h5 className="e-c-brown">We help you to build a data-driven, diversified, low cost & long term successful portfolio based on the trend in the economy for free!</h5>
                 </div>
-                <div className="col-md-5 col-sm-12 e-bg-white e-ftheme-card-wrap e-hm-ftheme-card-wrap e-relative ">
-                  
-                  <div className="row e-hm-topTheme-wrap e-show">
-                      <div className="col-8">
-                        <h4>Energy takeout targets</h4>
-                        <p className="e-card-p-txt e-c-brown">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
-                      </div>
-                      <div className="col-4 e-align-center ">
-                        <img className="e-ftheme-card-img e-m-bottom-10 e-full-width" src={ideaImage1} alt="Themes by Fyers"/>
-                      </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-8">
-                      <div className="d-flex ">
-                        <p className="e-card-pl-txt e-p-0 e-m-0 e-c-brown mt-auto p-2">MONTHLY RETURNS <span className="e-c-green">5.6%</span></p>
-                      </div>
+                <div className="col-lg-5 col-md-12 col-sm-12 ">
+                  <div className="e-bg-white e-ftheme-card-wrap e-hm-ftheme-card-wrap e-relative ">
+                    <div className="row e-hm-topTheme-wrap e-show">
+                        <div className="col-8">
+                          <h4>Energy takeout targets</h4>
+                          <p className="e-card-p-txt e-c-brown">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
+                        </div>
+                        <div className="col-4 e-align-center ">
+                          <img className="e-ftheme-card-img e-m-bottom-10 e-full-width" src={ideaImage1} alt="Themes by Fyers"/>
+                        </div>
                     </div>
-                    <div className="col-4 e-align-center">
-                      <a href="/theme-detail/overview" className="e-a-primary-c" aria-label="Invest now">Invest Now</a>
+                    <div className="row">
+                      <div className="col-8">
+                        <div className="d-flex ">
+                          <p className="e-card-pl-txt e-p-0 e-m-0 e-c-brown mt-auto p-2">MONTHLY RETURNS <span className="e-c-green">5.6%</span></p>
+                        </div>
+                      </div>
+                      <div className="col-4 e-align-center">
+                        <a href="/theme-detail/overview" className="e-a-primary-c" aria-label="Invest now">Invest Now</a>
+                      </div>
                     </div>
                   </div>
                 </div>
+
+
               </div>
             </div>
             
@@ -243,7 +246,7 @@ class Home extends Component {
             </div>
             <div className="col-md-12 col-sm-12 e-p-top-50 e-ptheme-items-wrap e-p-left-0">
               <div className="row">
-                <div className="col-md-3 col-sm-6 col-12">
+                <div className="col-lg-3 col-md-4 col-sm-6 col-12">
                   <div className="e-ptheme-card-wrap e-card-hover">
                     <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
                     <h4>Energy takeout targets</h4>
@@ -254,7 +257,7 @@ class Home extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-3 col-sm-6 col-12 em-display-none">
+                <div className="col-lg-3 col-md-4 col-sm-6 col-12 em-display-none">
                   <div className="e-ptheme-card-wrap e-card-hover">
                     <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
                     <h4>Energy takeout targets</h4>
@@ -265,7 +268,7 @@ class Home extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-3 col-sm-6 col-12 em-display-none">
+                <div className="col-lg-3 col-md-4 col-sm-6 col-12 em-display-none em-tablet-display-none">
                   <div className="e-ptheme-card-wrap e-card-hover">
                     <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
                     <h4>Energy takeout targets</h4>
@@ -276,7 +279,7 @@ class Home extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-3 col-sm-6 col-12 em-display-none">
+                <div className="col-lg-3 col-md-4 col-sm-6 col-12 em-display-none em-tablet-display-none e-tl-no-flex-display-none">
                   <div className="e-ptheme-card-wrap e-card-hover">
                     <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
                     <h4>Energy takeout targets</h4>
@@ -288,7 +291,7 @@ class Home extends Component {
                   </div>
                 </div>
               </div>
-              <img className="e-top-theme-pattern-img-2 em-display-none" alt="Fyers pattern"/>
+              <img className="e-top-theme-pattern-img-2 em-display-none em-tablet-display-none" alt="Fyers pattern"/>
             </div>
             <div className="row em-p-left-30">
               <div className="e-align-right e-card-arrow-wrap e-relative"> 
@@ -325,7 +328,7 @@ class Home extends Component {
                     <span className="e-x-s-txt e-c-grey">1 day ago</span>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-4 col-sm-6 col-12 em-display-none">
+                <div className="col-lg-4 col-md-4 col-sm-6 col-12 em-display-none em-tablet-display-none">
                   <div className="e-ptheme-card-wrap e-card-hover">
                     <img className="e-m-bottom-10 e-border-5" src={news1} alt="Themes by Fyers"/>
                     <h4>Benefits of Investing in a Diversified Portfolio</h4>
@@ -333,7 +336,7 @@ class Home extends Component {
                   </div>
                 </div>
               </div>
-              <img className="e-top-theme-pattern-img-2 em-display-none" alt="Fyers pattern"/>
+              <img className="e-top-theme-pattern-img-2 em-display-none em-tablet-display-none" alt="Fyers pattern"/>
             </div>
             <div className="row em-p-left-30">
               <div className="e-align-right e-card-arrow-wrap e-relative"> 
@@ -352,12 +355,12 @@ class Home extends Component {
           <img className="e-footer-pattern" alt="Footer pattern"/>
           <div className="container">
             <div className="row">
-              <div className="col-lg-6 col-sm-12">
+              <div className="col-lg-6 col-md-12 col-sm-12">
                 <h2 className="e-p-bottom-20 e-c-white">Know more <br/><span className="e-c-dull-secondary">About Us?</span></h2>
                 <h5 className="e-c-white e-hm-how-head-sec em-p-bottom-30">Need clarification for opening an account or have queries?</h5>
               </div>
-              <div className="col-lg-5 col-sm-12 offset-md-1 d-flex align-items-end">
-                <div className="e-hm-trstwrthy-img-wrap row e-absolute em-p-bottom-30 em-display-none">
+              <div className="col-lg-5 col-md-12 col-sm-12 offset-lg-1 d-flex align-items-end ">
+                <div className="e-hm-trstwrthy-img-wrap row e-absolute em-p-bottom-30 em-display-none em-tablet-display-none">
                   <img className="e-m-bottom-10 e-m-right-20 e-border-5" src={investorsLogo} alt="Trustful investors"/>
                   <img className="e-m-bottom-10 e-border-5" src={SEBILogo} alt="SEBI registered investment advisor"/> 
                 </div>

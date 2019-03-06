@@ -578,7 +578,12 @@ header{
 .e-footer-logo{
   max-width: 160px;
 }
-
+.e-footer-copyright-wrap{
+    text-align: center;
+}
+.e-footer-copyright-wrap a{
+  font-size: 12px !important;
+}
 /*Detail page footer CTA*/
 .e-cta{
   box-shadow: 0px 13px 15px 0 rgba(99, 99, 99, 0.1);
