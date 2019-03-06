@@ -504,7 +504,18 @@ header{
 .e-header-logo{
   max-width: 200px;
 }
-
+.e-navbar-collapse{
+  background: rgba(204, 204, 204, 0.17);
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 50px;
+  padding: 30px 0;
+  z-index: 9;
+}
+.e-navbar-collapse .dropdown{
+  padding: 10px 0;
+}
 
 /*loss and profit indicators*/
 .e-loss-value{

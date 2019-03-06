@@ -155,7 +155,7 @@ class Home extends Component {
                   <div className="media">
                     <img alt="Easy & simple method to invest"/>
                     <div className="media-body">
-                      <p className="e-c-black e-p-left-20">Easy & simple method to invest</p>
+                      <p className="e-c-black e-p-left-20">Easy & simple <br/>method to invest</p>
                     </div>
                   </div>
                 </div>
@@ -163,7 +163,7 @@ class Home extends Component {
                   <div className="media">
                     <img alt="Easy & simple method to invest"/>
                     <div className="media-body">
-                      <p className="e-c-black e-p-left-20">Gets thoroughly researched portfolios</p>
+                      <p className="e-c-black e-p-left-20">Gets thoroughly <br/>researched portfolios</p>
                     </div>
                   </div>
                 </div>
@@ -171,7 +171,7 @@ class Home extends Component {
                   <div className="media">
                     <img alt="Easy & simple method to invest"/>
                     <div className="media-body">
-                      <p className="e-c-black e-p-left-20">Outperform mutual funds in every way</p>
+                      <p className="e-c-black e-p-left-20">Outperform mutual <br/>funds in every way</p>
                     </div>
                   </div>
                 </div>
@@ -179,7 +179,7 @@ class Home extends Component {
                   <div className="media">
                     <img alt="Easy & simple method to invest"/>
                     <div className="media-body">
-                      <p className="e-c-black e-p-left-20">Highly customizable to perform</p>
+                      <p className="e-c-black e-p-left-20">Highly customizable <br/>to perform</p>
                     </div>
                   </div>
                 </div>
@@ -187,7 +187,7 @@ class Home extends Component {
                   <div className="media">
                     <img alt="Easy & simple method to invest"/>
                     <div className="media-body">
-                      <p className="e-c-black e-p-left-20">No management fee, no hidden costs</p>
+                      <p className="e-c-black e-p-left-20">No management fee, <br/>no hidden costs</p>
                     </div>
                   </div>
                 </div>
@@ -195,7 +195,7 @@ class Home extends Component {
                   <div className="media">
                     <img alt="Easy & simple method to invest"/>
                     <div className="media-body">
-                      <p className="e-c-black e-p-left-20">Full control over your portfolio</p>
+                      <p className="e-c-black e-p-left-20">Full control over <br/>your portfolio</p>
                     </div>
                   </div>
                 </div>
@@ -203,7 +203,7 @@ class Home extends Component {
                   <div className="media">
                     <img alt="Easy & simple method to invest"/>
                     <div className="media-body">
-                      <p className="e-c-black e-p-left-20">100+ unique portfolios to follow</p>
+                      <p className="e-c-black e-p-left-20">100+ unique <br/>portfolios to follow</p>
                     </div>
                   </div>
                 </div>
@@ -211,7 +211,7 @@ class Home extends Component {
                   <div className="media">
                     <img alt="Easy & simple method to invest"/>
                     <div className="media-body">
-                      <p className="e-c-black e-p-left-20">Invest in your own ideas you believe</p>
+                      <p className="e-c-black e-p-left-20">Invest in your own <br/>ideas you believe</p>
                     </div>
                   </div>
                 </div>
@@ -236,14 +236,14 @@ class Home extends Component {
           </div>
           <div className="container">
             <div className="row">
-              <div className="col-7 col-lg-7">
+              <div className="col-10 col-lg-7">
                 <h5 className="e-c-black">Themes from Fyers which outperform the mutual funds</h5>
               </div>
               <img className="e-top-theme-pattern-img-1" alt="Fyers pattern"/>
             </div>
             <div className="col-md-12 col-sm-12 e-p-top-50 e-ptheme-items-wrap e-p-left-0">
               <div className="row">
-                <div className="col-md-3 col-sm-6 col-6">
+                <div className="col-md-3 col-sm-6 col-12">
                   <div className="e-ptheme-card-wrap e-card-hover">
                     <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
                     <h4>Energy takeout targets</h4>
@@ -254,7 +254,7 @@ class Home extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-3 col-sm-6 col-6">
+                <div className="col-md-3 col-sm-6 col-12 em-display-none">
                   <div className="e-ptheme-card-wrap e-card-hover">
                     <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
                     <h4>Energy takeout targets</h4>
@@ -265,7 +265,7 @@ class Home extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-3 col-sm-6 col-6 em-display-none">
+                <div className="col-md-3 col-sm-6 col-12 em-display-none">
                   <div className="e-ptheme-card-wrap e-card-hover">
                     <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
                     <h4>Energy takeout targets</h4>
@@ -276,7 +276,7 @@ class Home extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-3 col-sm-6 col-6 em-display-none">
+                <div className="col-md-3 col-sm-6 col-12 em-display-none">
                   <div className="e-ptheme-card-wrap e-card-hover">
                     <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
                     <h4>Energy takeout targets</h4>
@@ -311,21 +311,21 @@ class Home extends Component {
             </div>
             <div className="col-lg-12 col-md-12 col-sm-12 e-p-top-20 e-ptheme-items-wrap e-p-left-0">
               <div className="row">
-                <div className="col-lg-4 col-md-4 col-sm-6 col-6">
+                <div className="col-lg-4 col-md-4 col-sm-6 col-12 em-display-none">
                   <div className="e-ptheme-card-wrap e-card-hover">
                     <img className="e-m-bottom-10 e-border-5" src={news1} alt="Themes by Fyers"/>
                     <h4>Benefits of Investing in a Diversified Portfolio</h4>
                     <span className="e-x-s-txt e-c-grey">1 day ago</span>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-4 col-sm-6 col-6">
+                <div className="col-lg-4 col-md-4 col-sm-6 col-12">
                   <div className="e-ptheme-card-wrap e-card-hover">
                     <img className="e-m-bottom-10 e-border-5" src={news1} alt="Themes by Fyers"/>
                     <h4>Benefits of Investing in a Diversified Portfolio</h4>
                     <span className="e-x-s-txt e-c-grey">1 day ago</span>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-4 col-sm-6 col-6 em-display-none">
+                <div className="col-lg-4 col-md-4 col-sm-6 col-12 em-display-none">
                   <div className="e-ptheme-card-wrap e-card-hover">
                     <img className="e-m-bottom-10 e-border-5" src={news1} alt="Themes by Fyers"/>
                     <h4>Benefits of Investing in a Diversified Portfolio</h4>
