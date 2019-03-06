@@ -49,7 +49,7 @@ class Home extends Component {
         <Header/>
         <section className="e-banner-wrap e-hm-banner-wrap">
           <div className="container vh-100 d-flex align-items-center">
-            <div className="align-middle e-p-top-100 e-p-left-50">
+            <div className="align-middle e-p-top-100 e-p-left-50 ">
               <h6 className="e-c-primary e-letter-space">THEMATIC</h6>
               <h1 className="e-banner-head e-c-black">Invest in the next <span>significant idea.</span></h1>
               <h5 className="e-c-brown e-p-bottom-30">Be wealthy. Be successful.</h5>

@@ -175,7 +175,7 @@ whyInvestReadMoreClick() {
                   <ul className="nav nav-tabs nav-tabs-style-2 e-tab-nav-wrap" id="themesTab" role="tablist">
                     <li className="active" className="nav-item e-m-left-0">
                       <a data-toggle="tab" href="#menu1" className="nav-link active e-m-left-0 e-font-18 e-c-medium-grey e-f-weight-300 e-no-transition" to="/theme-detail/overview"><span>LUMPSUM</span></a>
-                    </li>
+                    </li> 
                     <li className="nav-item">
                       <a data-toggle="tab" href="#menu2" className="nav-link e-m-left-0 e-font-18 e-c-medium-grey e-f-weight-300 e-no-transition" to="/theme-detail/stockweight"><span>SIP</span></a>
                     </li>

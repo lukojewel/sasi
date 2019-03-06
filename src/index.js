@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import './assets/css/global.css';
 import './assets/css/style.css';
-
+import './assets/css/responsive.css';
 
 import App from './App';
 import * as serviceWorker from './serviceWorker';
