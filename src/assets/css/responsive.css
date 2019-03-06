@@ -41,12 +41,33 @@
 /* ==============================
    Phone
    ============================== */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 578px) {
 	.em-no-p-left{
 		padding-left: 0;
 	}
 	.e-p-left-50{
 		padding-left: 30px;
+	}
+	.e-m-p-bottom-30{
+		padding-bottom: 30px;
+	}
+	.e-m-p-bottom-30{
+		padding-bottom: 30px;
+	}
+	.m-flex-column{
+		flex-direction: column !important;
+	}
+	.e-p-top-100{
+		padding-top: 60px;
+	}
+	.e-p-bottom-10{
+		padding-bottom: 5px !important;
+	}
+	.e-p-bottom-30{
+		padding-bottom: 15px;
+	}
+	.e-p-bottom-100{
+		padding-bottom: 60px;
 	}
 
 	body{
@@ -84,22 +105,22 @@
 		font-size: 12px;
 	}
 	::-webkit-input-placeholder, ::placeholder {
-	  font-size: 13px;
+		font-size: 13px;
 	}
 	.e-s-txt{
-	  font-size: 12px;
+		font-size: 12px;
 	}
 	.e-card-p-txt{
-	  font-size: 13px;
+		font-size: 13px;
 	}
 	.e-x-s-txt{
-	  font-size: 9px;
+		font-size: 9px;
 	}
 	.e-xx-s-txt{
-	  font-size: 7px;
+		font-size: 7px;
 	}
 	.e-nav-item{
-	  font-size: 14px;
+		font-size: 14px;
 	}
 	.e-hm-banner-wrap{
 		background-size: 85%;
@@ -109,6 +130,26 @@
 		font-size: 12px !important;
 		padding: 12px 0px;
 	}
+	.e-hm-ftheme-card-wrap{
+		top: 0;
+		margin-top: 30px;
+		z-index: 1;
+	}
+	.e-hw-to-pattern{
+		top: -10%;
+    	max-height: 190px;
+    	right: 1%;
+	}
+	.e-card-arrow-wrap span{
+		background-color: #c1c1c1;
+	}
+	.e-ftheme-card-arrow-wrap{
+		position: relative;
+    	right: 0;
+    	top: 28px;
+    	z-index: 1;
+	}
+	.e-hm-topTheme-wrap{}
 
 }
 
