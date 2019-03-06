@@ -145,90 +145,85 @@ class Home extends Component {
         </section>
         <section className="e-p-top-100 e-p-bottom-100">
           <div className="container">
-            <div className="col-md-6 e-p-bottom-30">
+            <div className="col-lg-6 e-p-bottom-30">
               <h2 className="e-p-bottom-20 e-c-black">Why investment in <br/><span className="e-c-grey">Ideas?</span></h2>
               <h5 className="e-c-black">Investing in multiple stocks can reduce risk and can beat other investment techniques, also</h5>
             </div>
-            <div className="col-md-11 e-p-top-50 e-hm-why-items-wrap">
-              <div className="row">
-                <div className="col-md-3 offset-md-1 e-m-p-bottom-30">
-                  <div className="row e-p-bottom-50 e-hm-why-easy-wrap">
-                    <div className="col-md-4 ">
-                      <img alt="Easy & simple method to invest"/>
-                    </div>
-                    <div className="col-md-8 e-p-right-0">
-                      <p className="e-c-black">Easy & simple method to invest</p>
-                    </div>
-                  </div>
-                  <div className="row e-p-bottom-50 e-hm-why-customizable-wrap">
-                    <div className="col-md-4">
-                      <img alt="Highly customizable to perform"/>
-                    </div>
-                    <div className="col-md-8 e-p-right-0">
-                      <p className="e-c-black">Highly customizable to perform</p>
-                    </div>
-                  </div>
-                  <div className="row e-hm-why-uPortfolio-wrap">
-                    <div className="col-md-4">
-                      <img alt="100+ unique portfolios to follow"/>
-                    </div>
-                    <div className="col-md-8 e-p-right-0">
-                      <p className="e-c-black">100+ unique portfolios to follow</p>
+            <div className=" e-p-top-50 e-hm-why-items-wrap">
+              <div className="row e-m-p-bottom-30">
+                <div className="col-lg-3 col-md-5 col-sm-5 offset-md-1 e-p-bottom-50 e-hm-why-easy-wrap">
+                  <div className="media">
+                    <img alt="Easy & simple method to invest"/>
+                    <div className="media-body">
+                      <p className="e-c-black e-p-left-20">Easy & simple method to invest</p>
                     </div>
                   </div>
                 </div>
-                <div className="col-md-3  offset-md-1 e-m-p-bottom-30">
-                  <div className="row e-p-bottom-50 e-hm-why-researched-wrap">
-                    <div className="col-md-4">
-                      <img alt="Gets thoroughly researched portfolios"/>
-                    </div>
-                    <div className="col-md-8 e-p-right-0">
-                      <p className="e-c-black">Gets thoroughly researched portfolios</p>
-                    </div>
-                  </div>
-                  <div className="row e-p-bottom-50 e-hm-why-fee-wrap">
-                    <div className="col-md-4">
-                      <img alt="No management fee,no hidden costs"/>
-                    </div>
-                    <div className="col-md-8 e-p-right-0">
-                      <p className="e-c-black">No management fee,no hidden costs</p>
-                    </div>
-                  </div>
-                  <div className="row e-hm-why-ideas-wrap">
-                    <div className="col-md-4">
-                      <img alt="Invest in your own ideas you believe"/>
-                    </div>
-                    <div className="col-md-8 e-p-right-0">
-                      <p className="e-c-black">Invest in your own ideas you believe</p>
+                <div className="col-lg-3 col-md-5 col-sm-5 offset-md-1 e-p-bottom-50 e-hm-why-researched-wrap">
+                  <div className="media">
+                    <img alt="Easy & simple method to invest"/>
+                    <div className="media-body">
+                      <p className="e-c-black e-p-left-20">Gets thoroughly researched portfolios</p>
                     </div>
                   </div>
                 </div>
-                <div className="col-md-3  offset-md-1">
-                  <div className="row e-p-bottom-50 e-hm-why-mfunds-wrap">
-                    <div className="col-md-4">
-                      <img alt="Outperform mutual funds in every way"/>
-                    </div>
-                    <div className="col-md-8 e-p-right-0">
-                      <p className="e-c-black">Outperform mutual funds in every way</p>
-                    </div>
-                  </div>
-                  <div className="row e-p-bottom-50 e-hm-why-fcontrol-wrap">
-                    <div className="col-md-4">
-                      <img alt="Full control over your portfolio"/>
-                    </div>
-                    <div className="col-md-8 e-p-right-0">
-                      <p className="e-c-black">Full control over your portfolio</p>
-                    </div>
-                  </div>
-                  <div className="row e-hm-why-more-wrap">
-                    <div className="col-md-4">
-                      <img alt="And a lot more"/>
-                    </div>
-                    <div className="col-md-8 e-p-right-0">
-                      <p className="e-c-black">And a lot more</p>
+                <div className="col-lg-3 col-md-5 col-sm-5 offset-md-1 e-p-bottom-50 e-hm-why-mfunds-wrap">
+                  <div className="media">
+                    <img alt="Easy & simple method to invest"/>
+                    <div className="media-body">
+                      <p className="e-c-black e-p-left-20">Outperform mutual funds in every way</p>
                     </div>
                   </div>
                 </div>
+                <div className="col-lg-3 col-md-5 col-sm-5 offset-md-1 e-p-bottom-50 e-hm-why-customizable-wrap">
+                  <div className="media">
+                    <img alt="Easy & simple method to invest"/>
+                    <div className="media-body">
+                      <p className="e-c-black e-p-left-20">Highly customizable to perform</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-3 col-md-5 col-sm-5 offset-md-1 e-p-bottom-50 e-hm-why-fee-wrap">
+                  <div className="media">
+                    <img alt="Easy & simple method to invest"/>
+                    <div className="media-body">
+                      <p className="e-c-black e-p-left-20">No management fee, no hidden costs</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-3 col-md-5 col-sm-5 offset-md-1 e-p-bottom-50 e-hm-why-fcontrol-wrap">
+                  <div className="media">
+                    <img alt="Easy & simple method to invest"/>
+                    <div className="media-body">
+                      <p className="e-c-black e-p-left-20">Full control over your portfolio</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-3 col-md-5 col-sm-5 offset-md-1 e-p-bottom-50 e-hm-why-uPortfolio-wrap">
+                  <div className="media">
+                    <img alt="Easy & simple method to invest"/>
+                    <div className="media-body">
+                      <p className="e-c-black e-p-left-20">100+ unique portfolios to follow</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-3 col-md-5 col-sm-5 offset-md-1 e-p-bottom-50 e-hm-why-ideas-wrap">
+                  <div className="media">
+                    <img alt="Easy & simple method to invest"/>
+                    <div className="media-body">
+                      <p className="e-c-black e-p-left-20">Invest in your own ideas you believe</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-3 col-md-5 col-sm-5 offset-md-1 e-p-bottom-50 e-hm-why-more-wrap">
+                  <div className="media">
+                    <img alt="Easy & simple method to invest"/>
+                    <div className="media-body">
+                      <p className="e-c-black e-p-left-20">And a lot more</p>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
