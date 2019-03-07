@@ -79,34 +79,65 @@ popularityOpen() {
               <div className="col-lg-10 col-md-12 col-12 offset-lg-2 e-p-bottom-20 ">
                 <div className="row">
                   <div className="col-lg-3 col-md-3 col-6 e-relative em-p-bottom-10">
-                    
                     {
-                      this.state.popularityOpen ?
+                      this.state.minInvestOpen ?
                         <div>
-                          <div className="e-filter-drpdown active e-font-15 e-c-black e-border-5" onClick={this.popularityOpen.bind(this)}>
-                            <img className="e-m-right-10 e-ftheme-card-img e-filter-risk-icon e-filter-popularity-icon" alt="Filter Popularity"/>
-                            Popularity
+                          <div className="e-filter-drpdown active e-font-15 e-c-black e-border-5" onClick={this.minInvestOpen.bind(this)}>
+                            <img className="e-m-right-10 e-ftheme-card-img e-filter-risk-icon e-filter-minInvest-icon" alt="Filter Risk"/>
+                            Min Investment
                             <img className="e-m-left-10 e-ftheme-card-img e-up-arrow" alt="Down arrow"/>
                           </div>
                           <span className="e-absolute e-bg-white e-border-5 e-box-shadow-1 e-filter-items-wrap em-left e-min-invest-item-wrap">
                             <div className="e-filter-item">
-                              <input id="popularity-1" type="checkbox" placeholder="hey"/>
-                              <label for="popularity-1">Less than 5000</label>
+                              <input id="minInvest-1" type="checkbox" placeholder="hey"/>
+                              <label for="minInvest-1">Less than 5000</label>
                             </div>
                             <div className="e-filter-item">
-                              <input id="popularity-2" type="checkbox" placeholder="hey"/>
-                              <label for="popularity-2">Less than 5000</label>
+                              <input id="minInvest-2" type="checkbox" placeholder="hey"/>
+                              <label for="minInvest-2">Less than 5000</label>
                             </div>
                             <div className="e-filter-item">
-                              <input id="popularity-3" type="checkbox" placeholder="hey"/>
-                              <label for="popularity-3">Less than 5000</label>
+                              <input id="minInvest-3" type="checkbox" placeholder="hey"/>
+                              <label for="minInvest-3">Less than 5000</label>
                             </div>
                           </span>
                         </div>
                       :
-                      <div className="e-filter-drpdown e-font-15 e-c-black e-border-5" onClick={this.popularityOpen.bind(this)}>
-                        <img className="e-m-right-10 e-ftheme-card-img e-filter-risk-icon e-filter-popularity-icon" alt="Filter Popularity"/>
-                        Popularity
+                      <div className="e-filter-drpdown e-font-15 e-c-black e-border-5" onClick={this.minInvestOpen.bind(this)}>
+                        <img className="e-m-right-10 e-ftheme-card-img e-filter-risk-icon e-filter-minInvest-icon" alt="Filter Risk"/>
+                        Min Investment
+                        <img className="e-m-left-10 e-ftheme-card-img e-down-arrow" alt="Down arrow"/>
+                      </div>
+                    }
+                  </div>
+                  <div className="col-lg-3 col-md-3 col-6 e-relative em-p-bottom-10">
+                    {
+                      this.state.catgryOpen ?
+                        <div>
+                          <div className="e-filter-drpdown active e-font-15 e-c-black e-border-5" onClick={this.catgryOpen.bind(this)}>
+                            <img className="e-m-right-10 e-ftheme-card-img e-filter-risk-icon e-filter-categories-icon" alt="Filter Risk"/>
+                            Categories
+                            <img className="e-m-left-10 e-ftheme-card-img e-up-arrow" alt="Down arrow"/>
+                          </div>
+                          <span className="e-absolute e-bg-white e-border-5 e-box-shadow-1 e-filter-items-wrap e-min-invest-item-wrap">
+                            <div className="e-filter-item">
+                              <input id="catgry-1" type="checkbox" placeholder="hey"/>
+                              <label for="catgry-1">Less than 5000</label>
+                            </div>
+                            <div className="e-filter-item">
+                              <input id="catgry-2" type="checkbox" placeholder="hey"/>
+                              <label for="catgry-2">Less than 5000</label>
+                            </div>
+                            <div className="e-filter-item">
+                              <input id="catgry-3" type="checkbox" placeholder="hey"/>
+                              <label for="catgry-3">Less than 5000</label>
+                            </div>
+                          </span>
+                        </div>
+                      :
+                      <div className="e-filter-drpdown e-font-15 e-c-black e-border-5" onClick={this.catgryOpen.bind(this)}>
+                        <img className="e-m-right-10 e-ftheme-card-img e-filter-risk-icon e-filter-categories-icon" alt="Filter Risk"/>
+                        Categories
                         <img className="e-m-left-10 e-ftheme-card-img e-down-arrow" alt="Down arrow"/>
                       </div>
                     }
@@ -120,7 +151,7 @@ popularityOpen() {
                             Risk Type
                             <img className="e-m-left-10 e-ftheme-card-img e-up-arrow" alt="Down arrow"/>
                           </div>
-                          <span className="e-absolute e-bg-white e-border-5 e-box-shadow-1 e-filter-items-wrap e-min-invest-item-wrap">
+                          <span className="e-absolute e-bg-white e-border-5 e-box-shadow-1 e-filter-items-wrap em-left e-min-invest-item-wrap">
                             <div className="e-filter-item">
                               <input id="risk-1" type="checkbox" placeholder="hey"/>
                               <label for="risk-1">Less than 5000</label>
@@ -144,72 +175,38 @@ popularityOpen() {
                     }
                   </div>
                   <div className="col-lg-3 col-md-3 col-6 e-relative em-p-bottom-10">
+                    
                     {
-                      this.state.catgryOpen ?
+                      this.state.popularityOpen ?
                         <div>
-                          <div className="e-filter-drpdown active e-font-15 e-c-black e-border-5" onClick={this.catgryOpen.bind(this)}>
-                            <img className="e-m-right-10 e-ftheme-card-img e-filter-risk-icon e-filter-categories-icon" alt="Filter Risk"/>
-                            Categories
-                            <img className="e-m-left-10 e-ftheme-card-img e-up-arrow" alt="Down arrow"/>
-                          </div>
-                          <span className="e-absolute e-bg-white e-border-5 e-box-shadow-1 e-filter-items-wrap em-left e-min-invest-item-wrap">
-                            <div className="e-filter-item">
-                              <input id="catgry-1" type="checkbox" placeholder="hey"/>
-                              <label for="catgry-1">Less than 5000</label>
-                            </div>
-                            <div className="e-filter-item">
-                              <input id="catgry-2" type="checkbox" placeholder="hey"/>
-                              <label for="catgry-2">Less than 5000</label>
-                            </div>
-                            <div className="e-filter-item">
-                              <input id="catgry-3" type="checkbox" placeholder="hey"/>
-                              <label for="catgry-3">Less than 5000</label>
-                            </div>
-                          </span>
-                        </div>
-                      :
-                      <div className="e-filter-drpdown e-font-15 e-c-black e-border-5" onClick={this.catgryOpen.bind(this)}>
-                        <img className="e-m-right-10 e-ftheme-card-img e-filter-risk-icon e-filter-categories-icon" alt="Filter Risk"/>
-                        Categories
-                        <img className="e-m-left-10 e-ftheme-card-img e-down-arrow" alt="Down arrow"/>
-                      </div>
-                    }
-                  </div>
-
-                  <div className="col-lg-3 col-md-3 col-6 e-relative em-p-bottom-10">
-                    {
-                      this.state.minInvestOpen ?
-                        <div>
-                          <div className="e-filter-drpdown active e-font-15 e-c-black e-border-5" onClick={this.minInvestOpen.bind(this)}>
-                            <img className="e-m-right-10 e-ftheme-card-img e-filter-risk-icon e-filter-minInvest-icon" alt="Filter Risk"/>
-                            Min Investment
+                          <div className="e-filter-drpdown active e-font-15 e-c-black e-border-5" onClick={this.popularityOpen.bind(this)}>
+                            <img className="e-m-right-10 e-ftheme-card-img e-filter-risk-icon e-filter-popularity-icon" alt="Filter Popularity"/>
+                            Popularity
                             <img className="e-m-left-10 e-ftheme-card-img e-up-arrow" alt="Down arrow"/>
                           </div>
                           <span className="e-absolute e-bg-white e-border-5 e-box-shadow-1 e-filter-items-wrap e-min-invest-item-wrap">
                             <div className="e-filter-item">
-                              <input id="minInvest-1" type="checkbox" placeholder="hey"/>
-                              <label for="minInvest-1">Less than 5000</label>
+                              <input id="popularity-1" type="checkbox" placeholder="hey"/>
+                              <label for="popularity-1">Less than 5000</label>
                             </div>
                             <div className="e-filter-item">
-                              <input id="minInvest-2" type="checkbox" placeholder="hey"/>
-                              <label for="minInvest-2">Less than 5000</label>
+                              <input id="popularity-2" type="checkbox" placeholder="hey"/>
+                              <label for="popularity-2">Less than 5000</label>
                             </div>
                             <div className="e-filter-item">
-                              <input id="minInvest-3" type="checkbox" placeholder="hey"/>
-                              <label for="minInvest-3">Less than 5000</label>
+                              <input id="popularity-3" type="checkbox" placeholder="hey"/>
+                              <label for="popularity-3">Less than 5000</label>
                             </div>
                           </span>
                         </div>
                       :
-                      <div className="e-filter-drpdown e-font-15 e-c-black e-border-5" onClick={this.minInvestOpen.bind(this)}>
-                        <img className="e-m-right-10 e-ftheme-card-img e-filter-risk-icon e-filter-minInvest-icon" alt="Filter Risk"/>
-                        Min Investment
+                      <div className="e-filter-drpdown e-font-15 e-c-black e-border-5" onClick={this.popularityOpen.bind(this)}>
+                        <img className="e-m-right-10 e-ftheme-card-img e-filter-risk-icon e-filter-popularity-icon" alt="Filter Popularity"/>
+                        Popularity
                         <img className="e-m-left-10 e-ftheme-card-img e-down-arrow" alt="Down arrow"/>
                       </div>
                     }
                   </div>
-
-                  
                 </div>
               </div>
             </div>

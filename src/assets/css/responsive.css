@@ -368,6 +368,9 @@
 	.e-filter-items-wrap.em-left{
 		left: 15px;
 	}
+	.e-filter-items-wrap label{
+		top: 0;
+	}
 
 }
 

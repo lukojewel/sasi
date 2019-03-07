@@ -76,9 +76,105 @@ popularityOpen() {
         <section className="tab-pane show fade e-p-bottom-100 e-p-top-20" id="pthemes" role="tabpanel" aria-labelledby="pthemes-tab">
           <div className="container">
             <div className="row"> 
-              <div className="col-10 offset-md-2 e-p-bottom-20 e-p-right-0">
-                <div className="d-flex flex-row-reverse">
-                  <div className="col-3 e-relative">
+              <div className="col-lg-10 col-md-12 col-12 offset-lg-2 e-p-bottom-20 ">
+                <div className="row">
+                  <div className="col-lg-3 col-md-3 col-6 e-relative em-p-bottom-10">
+                    {
+                      this.state.minInvestOpen ?
+                        <div>
+                          <div className="e-filter-drpdown active e-font-15 e-c-black e-border-5" onClick={this.minInvestOpen.bind(this)}>
+                            <img className="e-m-right-10 e-ftheme-card-img e-filter-risk-icon e-filter-minInvest-icon" alt="Filter Risk"/>
+                            Min Investment
+                            <img className="e-m-left-10 e-ftheme-card-img e-up-arrow" alt="Down arrow"/>
+                          </div>
+                          <span className="e-absolute e-bg-white e-border-5 e-box-shadow-1 e-filter-items-wrap em-left e-min-invest-item-wrap">
+                            <div className="e-filter-item">
+                              <input id="minInvest-1" type="checkbox" placeholder="hey"/>
+                              <label for="minInvest-1">Less than 5000</label>
+                            </div>
+                            <div className="e-filter-item">
+                              <input id="minInvest-2" type="checkbox" placeholder="hey"/>
+                              <label for="minInvest-2">Less than 5000</label>
+                            </div>
+                            <div className="e-filter-item">
+                              <input id="minInvest-3" type="checkbox" placeholder="hey"/>
+                              <label for="minInvest-3">Less than 5000</label>
+                            </div>
+                          </span>
+                        </div>
+                      :
+                      <div className="e-filter-drpdown e-font-15 e-c-black e-border-5" onClick={this.minInvestOpen.bind(this)}>
+                        <img className="e-m-right-10 e-ftheme-card-img e-filter-risk-icon e-filter-minInvest-icon" alt="Filter Risk"/>
+                        Min Investment
+                        <img className="e-m-left-10 e-ftheme-card-img e-down-arrow" alt="Down arrow"/>
+                      </div>
+                    }
+                  </div>
+                  <div className="col-lg-3 col-md-3 col-6 e-relative em-p-bottom-10">
+                    {
+                      this.state.catgryOpen ?
+                        <div>
+                          <div className="e-filter-drpdown active e-font-15 e-c-black e-border-5" onClick={this.catgryOpen.bind(this)}>
+                            <img className="e-m-right-10 e-ftheme-card-img e-filter-risk-icon e-filter-categories-icon" alt="Filter Risk"/>
+                            Categories
+                            <img className="e-m-left-10 e-ftheme-card-img e-up-arrow" alt="Down arrow"/>
+                          </div>
+                          <span className="e-absolute e-bg-white e-border-5 e-box-shadow-1 e-filter-items-wrap e-min-invest-item-wrap">
+                            <div className="e-filter-item">
+                              <input id="catgry-1" type="checkbox" placeholder="hey"/>
+                              <label for="catgry-1">Less than 5000</label>
+                            </div>
+                            <div className="e-filter-item">
+                              <input id="catgry-2" type="checkbox" placeholder="hey"/>
+                              <label for="catgry-2">Less than 5000</label>
+                            </div>
+                            <div className="e-filter-item">
+                              <input id="catgry-3" type="checkbox" placeholder="hey"/>
+                              <label for="catgry-3">Less than 5000</label>
+                            </div>
+                          </span>
+                        </div>
+                      :
+                      <div className="e-filter-drpdown e-font-15 e-c-black e-border-5" onClick={this.catgryOpen.bind(this)}>
+                        <img className="e-m-right-10 e-ftheme-card-img e-filter-risk-icon e-filter-categories-icon" alt="Filter Risk"/>
+                        Categories
+                        <img className="e-m-left-10 e-ftheme-card-img e-down-arrow" alt="Down arrow"/>
+                      </div>
+                    }
+                  </div>
+                  <div className="col-lg-3 col-md-3 col-6 e-relative em-p-bottom-10">
+                    {
+                      this.state.riskTypeOpen ?
+                        <div>
+                          <div className="e-filter-drpdown active e-font-15 e-c-black e-border-5" onClick={this.riskTypeOpen.bind(this)}>
+                            <img className="e-m-right-10 e-ftheme-card-img e-filter-risk-icon e-filter-risk-icon" alt="Filter Risk"/>
+                            Risk Type
+                            <img className="e-m-left-10 e-ftheme-card-img e-up-arrow" alt="Down arrow"/>
+                          </div>
+                          <span className="e-absolute e-bg-white e-border-5 e-box-shadow-1 e-filter-items-wrap em-left e-min-invest-item-wrap">
+                            <div className="e-filter-item">
+                              <input id="risk-1" type="checkbox" placeholder="hey"/>
+                              <label for="risk-1">Less than 5000</label>
+                            </div>
+                            <div className="e-filter-item">
+                              <input id="risk-2" type="checkbox" placeholder="hey"/>
+                              <label for="risk-2">Less than 5000</label>
+                            </div>
+                            <div className="e-filter-item">
+                              <input id="risk-3" type="checkbox" placeholder="hey"/>
+                              <label for="risk-3">Less than 5000</label>
+                            </div>
+                          </span>
+                        </div>
+                      :
+                      <div className="e-filter-drpdown e-font-15 e-c-black e-border-5" onClick={this.riskTypeOpen.bind(this)}>
+                        <img className="e-m-right-10 e-ftheme-card-img e-filter-risk-icon e-filter-risk-icon" alt="Filter Risk"/>
+                        Risk Type
+                        <img className="e-m-left-10 e-ftheme-card-img e-down-arrow" alt="Down arrow"/>
+                      </div>
+                    }
+                  </div>
+                  <div className="col-lg-3 col-md-3 col-6 e-relative em-p-bottom-10">
                     
                     {
                       this.state.popularityOpen ?
@@ -111,287 +207,110 @@ popularityOpen() {
                       </div>
                     }
                   </div>
-                  <div className="col-3 e-relative">
-                    {
-                      this.state.riskTypeOpen ?
-                        <div>
-                          <div className="e-filter-drpdown active e-font-15 e-c-black e-border-5" onClick={this.riskTypeOpen.bind(this)}>
-                            <img className="e-m-right-10 e-ftheme-card-img e-filter-risk-icon e-filter-risk-icon" alt="Filter Risk"/>
-                            Risk Type
-                            <img className="e-m-left-10 e-ftheme-card-img e-up-arrow" alt="Down arrow"/>
-                          </div>
-                          <span className="e-absolute e-bg-white e-border-5 e-box-shadow-1 e-filter-items-wrap e-min-invest-item-wrap">
-                            <div className="e-filter-item">
-                              <input id="risk-1" type="checkbox" placeholder="hey"/>
-                              <label for="risk-1">Less than 5000</label>
-                            </div>
-                            <div className="e-filter-item">
-                              <input id="risk-2" type="checkbox" placeholder="hey"/>
-                              <label for="risk-2">Less than 5000</label>
-                            </div>
-                            <div className="e-filter-item">
-                              <input id="risk-3" type="checkbox" placeholder="hey"/>
-                              <label for="risk-3">Less than 5000</label>
-                            </div>
-                          </span>
-                        </div>
-                      :
-                      <div className="e-filter-drpdown e-font-15 e-c-black e-border-5" onClick={this.riskTypeOpen.bind(this)}>
-                        <img className="e-m-right-10 e-ftheme-card-img e-filter-risk-icon e-filter-risk-icon" alt="Filter Risk"/>
-                        Risk Type
-                        <img className="e-m-left-10 e-ftheme-card-img e-down-arrow" alt="Down arrow"/>
-                      </div>
-                    }
-                  </div>
-                  <div className="col-3 e-relative">
-                    {
-                      this.state.catgryOpen ?
-                        <div>
-                          <div className="e-filter-drpdown active e-font-15 e-c-black e-border-5" onClick={this.catgryOpen.bind(this)}>
-                            <img className="e-m-right-10 e-ftheme-card-img e-filter-risk-icon e-filter-categories-icon" alt="Filter Risk"/>
-                            Categories
-                            <img className="e-m-left-10 e-ftheme-card-img e-up-arrow" alt="Down arrow"/>
-                          </div>
-                          <span className="e-absolute e-bg-white e-border-5 e-box-shadow-1 e-filter-items-wrap e-min-invest-item-wrap">
-                            <div className="e-filter-item">
-                              <input id="catgry-1" type="checkbox" placeholder="hey"/>
-                              <label for="catgry-1">Less than 5000</label>
-                            </div>
-                            <div className="e-filter-item">
-                              <input id="catgry-2" type="checkbox" placeholder="hey"/>
-                              <label for="catgry-2">Less than 5000</label>
-                            </div>
-                            <div className="e-filter-item">
-                              <input id="catgry-3" type="checkbox" placeholder="hey"/>
-                              <label for="catgry-3">Less than 5000</label>
-                            </div>
-                          </span>
-                        </div>
-                      :
-                      <div className="e-filter-drpdown e-font-15 e-c-black e-border-5" onClick={this.catgryOpen.bind(this)}>
-                        <img className="e-m-right-10 e-ftheme-card-img e-filter-risk-icon e-filter-categories-icon" alt="Filter Risk"/>
-                        Categories
-                        <img className="e-m-left-10 e-ftheme-card-img e-down-arrow" alt="Down arrow"/>
-                      </div>
-                    }
-                  </div>
-
-                  <div className="col-3 e-relative">
-                    {
-                      this.state.minInvestOpen ?
-                        <div>
-                          <div className="e-filter-drpdown active e-font-15 e-c-black e-border-5" onClick={this.minInvestOpen.bind(this)}>
-                            <img className="e-m-right-10 e-ftheme-card-img e-filter-risk-icon e-filter-minInvest-icon" alt="Filter Risk"/>
-                            Min Investment
-                            <img className="e-m-left-10 e-ftheme-card-img e-up-arrow" alt="Down arrow"/>
-                          </div>
-                          <span className="e-absolute e-bg-white e-border-5 e-box-shadow-1 e-filter-items-wrap e-min-invest-item-wrap">
-                            <div className="e-filter-item">
-                              <input id="minInvest-1" type="checkbox" placeholder="hey"/>
-                              <label for="minInvest-1">Less than 5000</label>
-                            </div>
-                            <div className="e-filter-item">
-                              <input id="minInvest-2" type="checkbox" placeholder="hey"/>
-                              <label for="minInvest-2">Less than 5000</label>
-                            </div>
-                            <div className="e-filter-item">
-                              <input id="minInvest-3" type="checkbox" placeholder="hey"/>
-                              <label for="minInvest-3">Less than 5000</label>
-                            </div>
-                          </span>
-                        </div>
-                      :
-                      <div className="e-filter-drpdown e-font-15 e-c-black e-border-5" onClick={this.minInvestOpen.bind(this)}>
-                        <img className="e-m-right-10 e-ftheme-card-img e-filter-risk-icon e-filter-minInvest-icon" alt="Filter Risk"/>
-                        Min Investment
-                        <img className="e-m-left-10 e-ftheme-card-img e-down-arrow" alt="Down arrow"/>
-                      </div>
-                    }
-                  </div>
-
-                  
                 </div>
               </div>
             </div>
-            <div className="col-12 e-ptheme-items-wrap e-p-left-0">
+            <div className="col-12 e-ptheme-items-wrap e-p-0">
                 <div className="row">
-                  <div className="col-3 e-m-bottom-20">
-                    <div className="e-ptheme-card-wrap e-card-hover">
+                  <div className="col-lg-3 col-md-6 col-sm-12 e-p-bottom-30">
+                    <div className="e-ptheme-card-wrap e-card-hover e-p-bottom-10">
                       <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
                       <h4 className="e-f-weight-600">Energy takeout targets</h4>
                       <p className="e-card-p-txt e-c-brown e-p-bottom-10">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
-                      <div className="row e-p-bottom-10">
-                        <div className="col-5">
-                          <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0 e-f-weight-400">CARG <span className="e-c-green e-f-weight-600">5.6%</span></p>
-                        </div>
-                        <div className="col-7">
-                          <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0 e-f-weight-300">Daily Change <span className="e-c-green e-f-weight-600">5.6%</span></p>
-                        </div>
+                      <div className="d-flex flex-row justify-content-between">
+                        <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-green">5.6%</span></p>
+                        <p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                          Monthly Return <span className="e-c-green e-f-weight-500"> 5.6%</span>
+                        </p>
                       </div>
-                      <div className="row">
-                        <div className="col-12">
-                          <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0 e-f-weight-300">Min Investment <span className="e-f-weight-600">₹14500.00</span></p>
-                        </div>
+                      <div className="d-flex flex-row justify-content-between"><p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                          Min Investment <span className="e-c-black e-f-weight-500"> ₹14500.00</span>
+                        </p>
                       </div>
                     </div>
                   </div>
-                  <div className="col-3 e-m-bottom-20">
-                    <div className="e-ptheme-card-wrap e-card-hover">
+                  <div className="col-lg-3 col-md-6 col-sm-12 e-p-bottom-30">
+                    <div className="e-ptheme-card-wrap e-card-hover e-p-bottom-10">
                       <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
                       <h4 className="e-f-weight-600">Energy takeout targets</h4>
                       <p className="e-card-p-txt e-c-brown e-p-bottom-10">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
-                      <div className="row e-p-bottom-10">
-                        <div className="col-5">
-                          <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0 e-f-weight-400">CARG <span className="e-c-green e-f-weight-600">5.6%</span></p>
-                        </div>
-                        <div className="col-7">
-                          <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0 e-f-weight-300">Daily Change <span className="e-c-green e-f-weight-600">5.6%</span></p>
-                        </div>
+                      <div className="d-flex flex-row justify-content-between">
+                        <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-green">5.6%</span></p>
+                        <p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                          Monthly Return <span className="e-c-green e-f-weight-500"> 5.6%</span>
+                        </p>
                       </div>
-                      <div className="row">
-                        <div className="col-12">
-                          <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0 e-f-weight-300">Min Investment <span className="e-f-weight-600">₹14500.00</span></p>
-                        </div>
+                      <div className="d-flex flex-row justify-content-between"><p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                          Min Investment <span className="e-c-black e-f-weight-500"> ₹14500.00</span>
+                        </p>
                       </div>
                     </div>
                   </div>
-                  <div className="col-3 e-m-bottom-20">
-                    <div className="e-ptheme-card-wrap e-card-hover">
+                  <div className="col-lg-3 col-md-6 col-sm-12 e-p-bottom-30">
+                    <div className="e-ptheme-card-wrap e-card-hover e-p-bottom-10">
                       <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
                       <h4 className="e-f-weight-600">Energy takeout targets</h4>
                       <p className="e-card-p-txt e-c-brown e-p-bottom-10">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
-                      <div className="row e-p-bottom-10">
-                        <div className="col-5">
-                          <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0 e-f-weight-400">CARG <span className="e-c-green e-f-weight-600">5.6%</span></p>
-                        </div>
-                        <div className="col-7">
-                          <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0 e-f-weight-300">Daily Change <span className="e-c-green e-f-weight-600">5.6%</span></p>
-                        </div>
+                      <div className="d-flex flex-row justify-content-between">
+                        <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-green">5.6%</span></p>
+                        <p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                          Monthly Return <span className="e-c-green e-f-weight-500"> 5.6%</span>
+                        </p>
                       </div>
-                      <div className="row">
-                        <div className="col-12">
-                          <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0 e-f-weight-300">Min Investment <span className="e-f-weight-600">₹14500.00</span></p>
-                        </div>
+                      <div className="d-flex flex-row justify-content-between"><p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                          Min Investment <span className="e-c-black e-f-weight-500"> ₹14500.00</span>
+                        </p>
                       </div>
                     </div>
                   </div>
-                  <div className="col-3 e-m-bottom-20">
-                    <div className="e-ptheme-card-wrap e-card-hover">
+                  <div className="col-lg-3 col-md-6 col-sm-12 e-p-bottom-30">
+                    <div className="e-ptheme-card-wrap e-card-hover e-p-bottom-10">
                       <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
                       <h4 className="e-f-weight-600">Energy takeout targets</h4>
                       <p className="e-card-p-txt e-c-brown e-p-bottom-10">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
-                      <div className="row e-p-bottom-10">
-                        <div className="col-5">
-                          <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0 e-f-weight-400">CARG <span className="e-c-green e-f-weight-600">5.6%</span></p>
-                        </div>
-                        <div className="col-7">
-                          <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0 e-f-weight-300">Daily Change <span className="e-c-green e-f-weight-600">5.6%</span></p>
-                        </div>
+                      <div className="d-flex flex-row justify-content-between">
+                        <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-green">5.6%</span></p>
+                        <p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                          Monthly Return <span className="e-c-green e-f-weight-500"> 5.6%</span>
+                        </p>
                       </div>
-                      <div className="row">
-                        <div className="col-12">
-                          <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0 e-f-weight-300">Min Investment <span className="e-f-weight-600">₹14500.00</span></p>
-                        </div>
+                      <div className="d-flex flex-row justify-content-between"><p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                          Min Investment <span className="e-c-black e-f-weight-500"> ₹14500.00</span>
+                        </p>
                       </div>
                     </div>
                   </div>
-                  <div className="col-3 e-m-bottom-20">
-                    <div className="e-ptheme-card-wrap e-card-hover">
+                  <div className="col-lg-3 col-md-6 col-sm-12 e-p-bottom-30">
+                    <div className="e-ptheme-card-wrap e-card-hover e-p-bottom-10">
                       <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
                       <h4 className="e-f-weight-600">Energy takeout targets</h4>
                       <p className="e-card-p-txt e-c-brown e-p-bottom-10">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
-                      <div className="row e-p-bottom-10">
-                        <div className="col-5">
-                          <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0 e-f-weight-400">CARG <span className="e-c-green e-f-weight-600">5.6%</span></p>
-                        </div>
-                        <div className="col-7">
-                          <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0 e-f-weight-300">Daily Change <span className="e-c-green e-f-weight-600">5.6%</span></p>
-                        </div>
+                      <div className="d-flex flex-row justify-content-between">
+                        <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-green">5.6%</span></p>
+                        <p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                          Monthly Return <span className="e-c-green e-f-weight-500"> 5.6%</span>
+                        </p>
                       </div>
-                      <div className="row">
-                        <div className="col-12">
-                          <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0 e-f-weight-300">Min Investment <span className="e-f-weight-600">₹14500.00</span></p>
-                        </div>
+                      <div className="d-flex flex-row justify-content-between"><p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                          Min Investment <span className="e-c-black e-f-weight-500"> ₹14500.00</span>
+                        </p>
                       </div>
                     </div>
                   </div>
-                  <div className="col-3 e-m-bottom-20">
-                    <div className="e-ptheme-card-wrap e-card-hover">
+                  <div className="col-lg-3 col-md-6 col-sm-12 e-p-bottom-30">
+                    <div className="e-ptheme-card-wrap e-card-hover e-p-bottom-10">
                       <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
                       <h4 className="e-f-weight-600">Energy takeout targets</h4>
                       <p className="e-card-p-txt e-c-brown e-p-bottom-10">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
-                      <div className="row e-p-bottom-10">
-                        <div className="col-5">
-                          <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0 e-f-weight-400">CARG <span className="e-c-green e-f-weight-600">5.6%</span></p>
-                        </div>
-                        <div className="col-7">
-                          <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0 e-f-weight-300">Daily Change <span className="e-c-green e-f-weight-600">5.6%</span></p>
-                        </div>
+                      <div className="d-flex flex-row justify-content-between">
+                        <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-green">5.6%</span></p>
+                        <p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                          Monthly Return <span className="e-c-green e-f-weight-500"> 5.6%</span>
+                        </p>
                       </div>
-                      <div className="row">
-                        <div className="col-12">
-                          <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0 e-f-weight-300">Min Investment <span className="e-f-weight-600">₹14500.00</span></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-3 e-m-bottom-20">
-                    <div className="e-ptheme-card-wrap e-card-hover">
-                      <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
-                      <h4 className="e-f-weight-600">Energy takeout targets</h4>
-                      <p className="e-card-p-txt e-c-brown e-p-bottom-10">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
-                      <div className="row e-p-bottom-10">
-                        <div className="col-5">
-                          <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0 e-f-weight-400">CARG <span className="e-c-green e-f-weight-600">5.6%</span></p>
-                        </div>
-                        <div className="col-7">
-                          <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0 e-f-weight-300">Daily Change <span className="e-c-green e-f-weight-600">5.6%</span></p>
-                        </div>
-                      </div>
-                      <div className="row">
-                        <div className="col-12">
-                          <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0 e-f-weight-300">Min Investment <span className="e-f-weight-600">₹14500.00</span></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-3 e-m-bottom-20">
-                    <div className="e-ptheme-card-wrap e-card-hover">
-                      <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
-                      <h4 className="e-f-weight-600">Energy takeout targets</h4>
-                      <p className="e-card-p-txt e-c-brown e-p-bottom-10">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
-                      <div className="row e-p-bottom-10">
-                        <div className="col-5">
-                          <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0 e-f-weight-400">CARG <span className="e-c-green e-f-weight-600">5.6%</span></p>
-                        </div>
-                        <div className="col-7">
-                          <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0 e-f-weight-300">Daily Change <span className="e-c-green e-f-weight-600">5.6%</span></p>
-                        </div>
-                      </div>
-                      <div className="row">
-                        <div className="col-12">
-                          <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0 e-f-weight-300">Min Investment <span className="e-f-weight-600">₹14500.00</span></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-3 e-m-bottom-20">
-                    <div className="e-ptheme-card-wrap e-card-hover">
-                      <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
-                      <h4 className="e-f-weight-600">Energy takeout targets</h4>
-                      <p className="e-card-p-txt e-c-brown e-p-bottom-10">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
-                      <div className="row e-p-bottom-10">
-                        <div className="col-5">
-                          <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0 e-f-weight-400">CARG <span className="e-c-green e-f-weight-600">5.6%</span></p>
-                        </div>
-                        <div className="col-7">
-                          <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0 e-f-weight-300">Daily Change <span className="e-c-green e-f-weight-600">5.6%</span></p>
-                        </div>
-                      </div>
-                      <div className="row">
-                        <div className="col-12">
-                          <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0 e-f-weight-300">Min Investment <span className="e-f-weight-600">₹14500.00</span></p>
-                        </div>
+                      <div className="d-flex flex-row justify-content-between"><p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                          Min Investment <span className="e-c-black e-f-weight-500"> ₹14500.00</span>
+                        </p>
                       </div>
                     </div>
                   </div>

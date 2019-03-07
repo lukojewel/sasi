@@ -262,7 +262,7 @@ popularityOpen() {
             <div className="container">
               <div className="row">
                 <div className="col-lg-7 col-md-7">
-                  <h5 className="e-sec-head e-c-black e-p-bottom-20">RECENTLY<span className="e-c-grey">VIEWED</span></h5>
+                  <h5 className="e-sec-head e-c-black e-p-bottom-20">RECENTLY <span className="e-c-grey">VIEWED</span></h5>
                 </div>
               </div>
               <div className="col-lg-12 e-p-top-20 e-ptheme-items-wrap e-p-left-0">
@@ -455,14 +455,6 @@ popularityOpen() {
           <div className="e-p-bottom-100 e-p-top-100 ">
             <img className="e-top-theme-pattern-img-1 e-dvr-explr-ctheme-pattern" alt="Fyers pattern"/>
             <div className="container">
-              <div className="row e-p-bottom-10">
-                <div className="col-lg-6">
-                  
-                  </div>
-                <div className="col-lg-6">
-                  
-                </div>
-              </div>
               <div className="row">
                 <div className="col-lg-6 col-md-12 col-12">
                   <h5 className="e-sec-head e-c-black e-p-bottom-40 e-f-para">BEST PERFORMING <br/><span className="e-c-grey">COMMUNITY THEMES</span></h5>
