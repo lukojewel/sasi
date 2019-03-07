@@ -66,7 +66,7 @@ popularityOpen() {
             <div className="container">
               <div className="tab-content e-p-top-50 e-p-bottom-50" id="themesTabContent">
                 <h5 className="e-sec-head e-c-black e-p-bottom-50">HIGHLY <span className="e-c-grey">RECOMMENDED</span></h5>
-                <div className="col-lg-12">
+                <div className="">
                     <div className="row ">
                       <div className="col-lg-6 e-p-bottom-30"> 
                         <div className="col-lg-12 e-bg-white e-ftheme-card-wrap e-card-hover">

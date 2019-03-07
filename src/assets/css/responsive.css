@@ -39,6 +39,9 @@
 }
 
 @media only screen and (max-width: 992px) {
+	.e-tl-no-flex-display-none{
+		display: none;
+	}
 	.e-tl-no-flex-display{
 		display: block !important;
 	}
@@ -433,9 +436,9 @@
 }
 
 @media only screen and (max-width: 380px) {
-
-
-
+	.e-hm-subscribe-form input {
+	    width: 260px;
+	}
 }
 
 
