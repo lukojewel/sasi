@@ -76,9 +76,9 @@ popularityOpen() {
         <section className="tab-pane fade show e-p-bottom-100 e-p-top-20" id="fthemes" role="tabpanel" aria-labelledby="fthemes-tab">
           <div className="container">
             <div className="row"> 
-              <div className="col-10 offset-md-2 e-p-bottom-20 e-p-right-0">
-                <div className="d-flex flex-row-reverse">
-                  <div className="col-3 e-relative">
+              <div className="col-lg-10 col-md-12 col-12 offset-lg-2 e-p-bottom-20 ">
+                <div className="row">
+                  <div className="col-lg-3 col-md-3 col-6 e-relative em-p-bottom-10">
                     
                     {
                       this.state.popularityOpen ?
@@ -88,7 +88,7 @@ popularityOpen() {
                             Popularity
                             <img className="e-m-left-10 e-ftheme-card-img e-up-arrow" alt="Down arrow"/>
                           </div>
-                          <span className="e-absolute e-bg-white e-border-5 e-box-shadow-1 e-filter-items-wrap e-min-invest-item-wrap">
+                          <span className="e-absolute e-bg-white e-border-5 e-box-shadow-1 e-filter-items-wrap em-left e-min-invest-item-wrap">
                             <div className="e-filter-item">
                               <input id="popularity-1" type="checkbox" placeholder="hey"/>
                               <label for="popularity-1">Less than 5000</label>
@@ -111,7 +111,7 @@ popularityOpen() {
                       </div>
                     }
                   </div>
-                  <div className="col-3 e-relative">
+                  <div className="col-lg-3 col-md-3 col-6 e-relative em-p-bottom-10">
                     {
                       this.state.riskTypeOpen ?
                         <div>
@@ -143,7 +143,7 @@ popularityOpen() {
                       </div>
                     }
                   </div>
-                  <div className="col-3 e-relative">
+                  <div className="col-lg-3 col-md-3 col-6 e-relative em-p-bottom-10">
                     {
                       this.state.catgryOpen ?
                         <div>
@@ -152,7 +152,7 @@ popularityOpen() {
                             Categories
                             <img className="e-m-left-10 e-ftheme-card-img e-up-arrow" alt="Down arrow"/>
                           </div>
-                          <span className="e-absolute e-bg-white e-border-5 e-box-shadow-1 e-filter-items-wrap e-min-invest-item-wrap">
+                          <span className="e-absolute e-bg-white e-border-5 e-box-shadow-1 e-filter-items-wrap em-left e-min-invest-item-wrap">
                             <div className="e-filter-item">
                               <input id="catgry-1" type="checkbox" placeholder="hey"/>
                               <label for="catgry-1">Less than 5000</label>
@@ -176,7 +176,7 @@ popularityOpen() {
                     }
                   </div>
 
-                  <div className="col-3 e-relative">
+                  <div className="col-lg-3 col-md-3 col-6 e-relative em-p-bottom-10">
                     {
                       this.state.minInvestOpen ?
                         <div>
@@ -214,155 +214,239 @@ popularityOpen() {
               </div>
             </div>
             <div className="row e-p-bottom-30">
-              <div className="col-12 d-flex flex-row">
-                <div className="col-6 e-p-left-0"> 
-                  <div className="col-12 e-bg-white e-ftheme-card-wrap e-card-hover">
-                    <div className="row">
-                      <div className="col-8">
-                        <h4 className="e-f-weight-600">Energy takeout targets</h4>
-                        <p className="e-card-p-txt e-p-bottom-10 e-c-brown">This is to gain exposure to mergers & acquisitions activity among oil & gas companies. Get a complete picture of the energy investment section and decid.</p>
-                        <div className="row">
-                          <div className="col-7">
-                            <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
-                              Yearly Return <span className="e-c-green e-f-weight-600">25.5%</span>
-                            </p>
+              <div className="col-lg-12">
+                <div className="row">
+                  <div className="col-lg-6 e-p-bottom-30"> 
+                    <div className="col-lg-12 e-bg-white e-ftheme-card-wrap e-card-hover">
+                      <div className="row">
+                        <div className="col-lg-8 col-md-8 col-sm-8 col-8">
+                          <h4 className="e-f-weight-600">Energy takeout targets</h4>
+                          <p className="e-card-p-txt e-p-bottom-10 e-c-brown ">This is to gain exposure to mergers & acquisitions activity among oil & gas companies. Get a complete picture of the energy investment section and decid.</p>
+                        </div>
+                        <div className="col-lg-4 col-md-4 col-sm-4 col-4">
+                          <img className="e-ftheme-card-img e-m-bottom-10 e-m-max-width-full" src={ideaImage1} alt="Themes by Fyers"/>
+                        </div>
+                        <div className="col-lg-12">
+                          <div className="row">
+                            <div className="col-lg-5 col-md-7 col-sm-7 col-7">
+                              <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                                Yearly Return <span className="e-c-green e-f-weight-500"> 25.5%</span>
+                              </p> 
+                            </div>
+                            <div className="col-lg-5 col-md-5 col-sm-5 col-5">
+                              <p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                                Monthly Return <span className="e-c-green e-f-weight-500"> 5.6%</span>
+                              </p>
+                            </div>
                           </div>
-                          <div className="col-5">
-                            <p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
-                              Monthly Return <span className="e-c-green e-f-weight-600">5.6%</span>
-                            </p>
+                          <div className="row">
+                            <div className="col-lg-5 col-md-7 col-sm-7 col-7">
+                              <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                                Min Investment <span className="e-c-black e-f-weight-500"> ₹14500.00</span>
+                              </p>
+                            </div>
+                            <div className="col-lg-5 col-md-5 col-sm-5 col-5">
+                              <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                                Risk <span className="e-c-red e-f-weight-500"> High</span>
+                              </p>
+                            </div>
                           </div>
                         </div>
-                        <div className="row">
-                          <div className="col-7">
-                            <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
-                              Min Investment <span className="e-f-weight-600">₹14500.00</span>
-                            </p>
-                          </div>
-                          <div className="col-5">
-                            <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
-                              Risk <span className="e-c-red e-f-weight-600">High</span>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-4">
-                        <img className="e-ftheme-card-img e-m-bottom-10" src={ideaImage1} alt="Themes by Fyers"/>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="col-6 e-p-right-0"> 
-                  <div className="col-12 e-bg-white e-ftheme-card-wrap e-card-hover">
-                    <div className="row">
-                      <div className="col-8">
-                        <h4 className="e-f-weight-600">Energy takeout targets</h4>
-                        <p className="e-card-p-txt e-p-bottom-10 e-c-brown">This is to gain exposure to mergers & acquisitions activity among oil & gas companies. Get a complete picture of the energy investment section and decid.</p>
-                        <div className="row">
-                          <div className="col-7">
-                            <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
-                              Yearly Return <span className="e-c-green e-f-weight-600">25.5%</span>
-                            </p>
+                  <div className="col-lg-6 e-p-bottom-30"> 
+                    <div className="col-lg-12 e-bg-white e-ftheme-card-wrap e-card-hover">
+                      <div className="row">
+                        <div className="col-lg-8 col-md-8 col-sm-8 col-8">
+                          <h4 className="e-f-weight-600">Energy takeout targets</h4>
+                          <p className="e-card-p-txt e-p-bottom-10 e-c-brown ">This is to gain exposure to mergers & acquisitions activity among oil & gas companies. Get a complete picture of the energy investment section and decid.</p>
+                        </div>
+                        <div className="col-lg-4 col-md-4 col-sm-4 col-4">
+                          <img className="e-ftheme-card-img e-m-bottom-10 e-m-max-width-full" src={ideaImage1} alt="Themes by Fyers"/>
+                        </div>
+                        <div className="col-lg-12">
+                          <div className="row">
+                            <div className="col-lg-5 col-md-7 col-sm-7 col-7">
+                              <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                                Yearly Return <span className="e-c-green e-f-weight-500"> 25.5%</span>
+                              </p> 
+                            </div>
+                            <div className="col-lg-5 col-md-5 col-sm-5 col-5">
+                              <p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                                Monthly Return <span className="e-c-green e-f-weight-500"> 5.6%</span>
+                              </p>
+                            </div>
                           </div>
-                          <div className="col-5">
-                            <p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
-                              Monthly Return <span className="e-c-green e-f-weight-600">5.6%</span>
-                            </p>
+                          <div className="row">
+                            <div className="col-lg-5 col-md-7 col-sm-7 col-7">
+                              <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                                Min Investment <span className="e-c-black e-f-weight-500"> ₹14500.00</span>
+                              </p>
+                            </div>
+                            <div className="col-lg-5 col-md-5 col-sm-5 col-5">
+                              <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                                Risk <span className="e-c-red e-f-weight-500"> High</span>
+                              </p>
+                            </div>
                           </div>
                         </div>
-                        <div className="row">
-                          <div className="col-7">
-                            <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
-                              Min Investment <span className="e-f-weight-600">₹14500.00</span>
-                            </p>
-                          </div>
-                          <div className="col-5">
-                            <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
-                              Risk <span className="e-c-red e-f-weight-600">High</span>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-4">
-                        <img className="e-ftheme-card-img e-m-bottom-10" src={ideaImage1} alt="Themes by Fyers"/>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div className="row e-p-bottom-30">
-              <div className="col-12 d-flex flex-row">
-                <div className="col-6 e-p-left-0"> 
-                  <div className="col-12 e-bg-white e-ftheme-card-wrap e-card-hover">
-                    <div className="row">
-                      <div className="col-8">
-                        <h4 className="e-f-weight-600">Energy takeout targets</h4>
-                        <p className="e-card-p-txt e-p-bottom-10 e-c-brown">This is to gain exposure to mergers & acquisitions activity among oil & gas companies. Get a complete picture of the energy investment section and decid.</p>
-                        <div className="row">
-                          <div className="col-7">
-                            <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
-                              Yearly Return <span className="e-c-green e-f-weight-600">25.5%</span>
-                            </p>
+                  <div className="col-lg-6 e-p-bottom-30"> 
+                    <div className="col-lg-12 e-bg-white e-ftheme-card-wrap e-card-hover">
+                      <div className="row">
+                        <div className="col-lg-8 col-md-8 col-sm-8 col-8">
+                          <h4 className="e-f-weight-600">Energy takeout targets</h4>
+                          <p className="e-card-p-txt e-p-bottom-10 e-c-brown ">This is to gain exposure to mergers & acquisitions activity among oil & gas companies. Get a complete picture of the energy investment section and decid.</p>
+                        </div>
+                        <div className="col-lg-4 col-md-4 col-sm-4 col-4">
+                          <img className="e-ftheme-card-img e-m-bottom-10 e-m-max-width-full" src={ideaImage1} alt="Themes by Fyers"/>
+                        </div>
+                        <div className="col-lg-12">
+                          <div className="row">
+                            <div className="col-lg-5 col-md-7 col-sm-7 col-7">
+                              <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                                Yearly Return <span className="e-c-green e-f-weight-500"> 25.5%</span>
+                              </p> 
+                            </div>
+                            <div className="col-lg-5 col-md-5 col-sm-5 col-5">
+                              <p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                                Monthly Return <span className="e-c-green e-f-weight-500"> 5.6%</span>
+                              </p>
+                            </div>
                           </div>
-                          <div className="col-5">
-                            <p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
-                              Monthly Return <span className="e-c-green e-f-weight-600">5.6%</span>
-                            </p>
+                          <div className="row">
+                            <div className="col-lg-5 col-md-7 col-sm-7 col-7">
+                              <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                                Min Investment <span className="e-c-black e-f-weight-500"> ₹14500.00</span>
+                              </p>
+                            </div>
+                            <div className="col-lg-5 col-md-5 col-sm-5 col-5">
+                              <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                                Risk <span className="e-c-red e-f-weight-500"> High</span>
+                              </p>
+                            </div>
                           </div>
                         </div>
-                        <div className="row">
-                          <div className="col-7">
-                            <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
-                              Min Investment <span className="e-f-weight-600">₹14500.00</span>
-                            </p>
-                          </div>
-                          <div className="col-5">
-                            <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
-                              Risk <span className="e-c-red e-f-weight-600">High</span>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-4">
-                        <img className="e-ftheme-card-img e-m-bottom-10" src={ideaImage1} alt="Themes by Fyers"/>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="col-6 e-p-right-0"> 
-                  <div className="col-12 e-bg-white e-ftheme-card-wrap e-card-hover">
-                    <div className="row">
-                      <div className="col-8">
-                        <h4 className="e-f-weight-600">Energy takeout targets</h4>
-                        <p className="e-card-p-txt e-p-bottom-10 e-c-brown">This is to gain exposure to mergers & acquisitions activity among oil & gas companies. Get a complete picture of the energy investment section and decid.</p>
-                        <div className="row">
-                          <div className="col-7">
-                            <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
-                              Yearly Return <span className="e-c-green e-f-weight-600">25.5%</span>
-                            </p>
-                          </div>
-                          <div className="col-5">
-                            <p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
-                              Monthly Return <span className="e-c-green e-f-weight-600">5.6%</span>
-                            </p>
-                          </div>
+                  <div className="col-lg-6 e-p-bottom-30"> 
+                    <div className="col-lg-12 e-bg-white e-ftheme-card-wrap e-card-hover">
+                      <div className="row">
+                        <div className="col-lg-8 col-md-8 col-sm-8 col-8">
+                          <h4 className="e-f-weight-600">Energy takeout targets</h4>
+                          <p className="e-card-p-txt e-p-bottom-10 e-c-brown ">This is to gain exposure to mergers & acquisitions activity among oil & gas companies. Get a complete picture of the energy investment section and decid.</p>
                         </div>
-                        <div className="row">
-                          <div className="col-7">
-                            <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
-                              Min Investment <span className="e-f-weight-600">₹14500.00</span>
-                            </p>
+                        <div className="col-lg-4 col-md-4 col-sm-4 col-4">
+                          <img className="e-ftheme-card-img e-m-bottom-10 e-m-max-width-full" src={ideaImage1} alt="Themes by Fyers"/>
+                        </div>
+                        <div className="col-lg-12">
+                          <div className="row">
+                            <div className="col-lg-5 col-md-7 col-sm-7 col-7">
+                              <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                                Yearly Return <span className="e-c-green e-f-weight-500"> 25.5%</span>
+                              </p> 
+                            </div>
+                            <div className="col-lg-5 col-md-5 col-sm-5 col-5">
+                              <p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                                Monthly Return <span className="e-c-green e-f-weight-500"> 5.6%</span>
+                              </p>
+                            </div>
                           </div>
-                          <div className="col-5">
-                            <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
-                              Risk <span className="e-c-red e-f-weight-600">High</span>
-                            </p>
+                          <div className="row">
+                            <div className="col-lg-5 col-md-7 col-sm-7 col-7">
+                              <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                                Min Investment <span className="e-c-black e-f-weight-500"> ₹14500.00</span>
+                              </p>
+                            </div>
+                            <div className="col-lg-5 col-md-5 col-sm-5 col-5">
+                              <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                                Risk <span className="e-c-red e-f-weight-500"> High</span>
+                              </p>
+                            </div>
                           </div>
                         </div>
                       </div>
-                      <div className="col-4">
-                        <img className="e-ftheme-card-img e-m-bottom-10" src={ideaImage1} alt="Themes by Fyers"/>
+                    </div>
+                  </div>
+                  <div className="col-lg-6 e-p-bottom-30"> 
+                    <div className="col-lg-12 e-bg-white e-ftheme-card-wrap e-card-hover">
+                      <div className="row">
+                        <div className="col-lg-8 col-md-8 col-sm-8 col-8">
+                          <h4 className="e-f-weight-600">Energy takeout targets</h4>
+                          <p className="e-card-p-txt e-p-bottom-10 e-c-brown ">This is to gain exposure to mergers & acquisitions activity among oil & gas companies. Get a complete picture of the energy investment section and decid.</p>
+                        </div>
+                        <div className="col-lg-4 col-md-4 col-sm-4 col-4">
+                          <img className="e-ftheme-card-img e-m-bottom-10 e-m-max-width-full" src={ideaImage1} alt="Themes by Fyers"/>
+                        </div>
+                        <div className="col-lg-12">
+                          <div className="row">
+                            <div className="col-lg-5 col-md-7 col-sm-7 col-7">
+                              <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                                Yearly Return <span className="e-c-green e-f-weight-500"> 25.5%</span>
+                              </p> 
+                            </div>
+                            <div className="col-lg-5 col-md-5 col-sm-5 col-5">
+                              <p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                                Monthly Return <span className="e-c-green e-f-weight-500"> 5.6%</span>
+                              </p>
+                            </div>
+                          </div>
+                          <div className="row">
+                            <div className="col-lg-5 col-md-7 col-sm-7 col-7">
+                              <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                                Min Investment <span className="e-c-black e-f-weight-500"> ₹14500.00</span>
+                              </p>
+                            </div>
+                            <div className="col-lg-5 col-md-5 col-sm-5 col-5">
+                              <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                                Risk <span className="e-c-red e-f-weight-500"> High</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-6 e-p-bottom-30"> 
+                    <div className="col-lg-12 e-bg-white e-ftheme-card-wrap e-card-hover">
+                      <div className="row">
+                        <div className="col-lg-8 col-md-8 col-sm-8 col-8">
+                          <h4 className="e-f-weight-600">Energy takeout targets</h4>
+                          <p className="e-card-p-txt e-p-bottom-10 e-c-brown ">This is to gain exposure to mergers & acquisitions activity among oil & gas companies. Get a complete picture of the energy investment section and decid.</p>
+                        </div>
+                        <div className="col-lg-4 col-md-4 col-sm-4 col-4">
+                          <img className="e-ftheme-card-img e-m-bottom-10 e-m-max-width-full" src={ideaImage1} alt="Themes by Fyers"/>
+                        </div>
+                        <div className="col-lg-12">
+                          <div className="row">
+                            <div className="col-lg-5 col-md-7 col-sm-7 col-7">
+                              <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                                Yearly Return <span className="e-c-green e-f-weight-500"> 25.5%</span>
+                              </p> 
+                            </div>
+                            <div className="col-lg-5 col-md-5 col-sm-5 col-5">
+                              <p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                                Monthly Return <span className="e-c-green e-f-weight-500"> 5.6%</span>
+                              </p>
+                            </div>
+                          </div>
+                          <div className="row">
+                            <div className="col-lg-5 col-md-7 col-sm-7 col-7">
+                              <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                                Min Investment <span className="e-c-black e-f-weight-500"> ₹14500.00</span>
+                              </p>
+                            </div>
+                            <div className="col-lg-5 col-md-5 col-sm-5 col-5">
+                              <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                                Risk <span className="e-c-red e-f-weight-500"> High</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
