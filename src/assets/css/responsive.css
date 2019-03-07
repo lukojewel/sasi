@@ -42,8 +42,8 @@
 	.e-tl-no-flex-display{
 		display: block !important;
 	}
-	.e-tl-no-flex-display-none{
-		display: none;
+	.e-tl-no-flex-display{
+		display: auto;
 	}
 	.e-hm-ftheme-card-wrap{
 		top: 0;
@@ -188,6 +188,9 @@
 	.e-p-bottom-50{
 		padding-bottom: 30px;
 	}
+	.e-p-top-50{
+		padding-bottom: 30px;
+	}
 	.e-p-left-50{
 		padding-left: 30px;
 	}
@@ -208,6 +211,9 @@
 	.e-td-profile-fixed .e-p-normal-btn{
 		font-size: 14px;
 		width: 150px;
+	}
+	.nav-tabs .nav-link{
+		font-size: 14px;
 	}
 
 }
@@ -399,6 +405,19 @@
 		font-size: 14px;
 		width: 150px;
 		padding: 12px 0;
+	}
+	.nav-tabs .nav-item{
+		padding-right: 0;
+		margin: 0;
+	}
+	.nav-tabs .nav-item a{
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		width: 80px;
+		display: block;
+		overflow: hidden;
+		-webkit-line-clamp: 1;
+		margin-right: 10px;
 	}
 
 }

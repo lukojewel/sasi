@@ -5,7 +5,7 @@ import $ from 'jquery';
 import {Line} from 'react-chartjs-2';
 
 import '../../../node_modules/react-vis/dist/style.css';
-import {XYPlot, XAxis, YAxis, VerticalGridLines, HorizontalGridLines, LineSeries, Crosshair} from 'react-vis';
+import {XYPlot, XAxis, YAxis, VerticalGridLines, HorizontalGridLines, LineSeries, Crosshair, makeWidthFlexible, FlexibleXYPlot} from 'react-vis';
 import DiscreteColorLegend from '../../../node_modules/react-vis/dist/legends/discrete-color-legend';
 
 import DetailCTA from '../detail-cta.js';
@@ -133,7 +133,7 @@ whyInvestReadMoreClick() {
         <section className="e-p-bottom-100" >
           <div className="container">
             <div className="row">
-              <div className="col-8 e-p-top-50 e-p-bottom-50">
+              <div className="col-lg-8 col-md-8 colsm-12 e-p-top-50 e-p-bottom-50">
                 <h5 className="e-sec-head e-c-black e-p-bottom-30">WHY INVEST IN THIS <span className="e-c-grey">THEME?</span></h5>
                 
                 {
@@ -150,15 +150,15 @@ whyInvestReadMoreClick() {
                 }
                 
               </div>
-              <div className="col-4 e-p-top-50 e-p-bottom-50">
+              <div className="col-lg-4 col-md-4 col-sm-12 e-p-top-50 e-p-bottom-50">
                 Created by
                 <a href="/" data-toggle="tooltip" data-placement="right" title="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et">
                   <img className="e-tooltip-icon" alt="Tooltip"/>
                 </a>
                 <p className="e-c-brown e-p-top-10">Thematic Investments</p>
                 <div className="e-p-top-20">
-                  <a href="/" className="e-c-secondary text-uppercase e-f-weight-600 e-m-right-20 e-a-secondary-c ">READ BLOG POSTS <img className="e-read-blog-icon" alt="Read Blog"/></a>
-                  <a href="/" className="e-c-primary text-uppercase e-f-weight-600 e-a-primary-c">METHODOLOGY <img className="e-methodology-icon" alt="Methodology"/></a>
+                  <a href="/" className="e-c-secondary text-uppercase e-f-weight-600 e-m-right-20 e-a-secondary-c ">READ BLOG POSTS <img className="e-read-blog-icon em-tablet-display-none" alt="Read Blog"/></a>
+                  <a href="/" className="e-c-primary text-uppercase e-f-weight-600 e-a-primary-c">METHODOLOGY <img className="e-methodology-icon em-tablet-display-none" alt="Methodology"/></a>
                 </div>
               </div>
             </div>
@@ -184,16 +184,15 @@ whyInvestReadMoreClick() {
               </div>
               <div className="tab-content">
                 <div id="menu1"  className="row tab-pane active">
-                  <div className="col-10">
+                  <div className="col-lg-10">
                     {/*<Line data={data}  options={chartOptions} />*/}
                     <div className="d-flex justify-content-end e-p-top-20 e-doughnut-chart-legend-wrap e-align-right">
                       <div className="e-doughnut-chart-legend-item e-font-13 e-c-brown e-p-right-30"><span style={{background: "#ffc000"}}></span>NIFTY</div>
                       <div className="e-doughnut-chart-legend-item e-font-13 e-c-brown"><span style={{background: "#36A2EB"}}></span>Themes</div>
                     </div>
-                    <XYPlot xType="time"
+                    <FlexibleXYPlot xType="time"
                       yDomain={[0, 1500]}
                       onMouseLeave={() => this.setState({crosshairValues: []})}
-                      width={950}
                       height={380}>
                       <HorizontalGridLines style={{strokeWidth: .5}}/>
                       <XAxis style={{strokeWidth: .1}} />
@@ -201,21 +200,20 @@ whyInvestReadMoreClick() {
                       <LineSeries  color="#ffc000" animation onNearestX={(value, {index}) => this.setState({crosshairValues: DATA.map(d => d[index])})} data={DATA[0]}/>
                       <LineSeries animation onNearestX={(value, {index}) => this.setState({crosshairValues: DATA.map(d => d[index])})} data={DATA[0]} animation data={DATA[1]}/>
                       <Crosshair values={this.state.crosshairValues}/>
-                    </XYPlot>
+                    </FlexibleXYPlot>
                   </div>
                 </div>
 
                 <div id="menu2" className="row tab-pane fade">
-                  <div className="col-10">
+                  <div className="col-lg-10 ">
                     {/*<Line data={data}  options={chartOptions} />*/}
                     <div className="d-flex justify-content-end e-p-top-20 e-doughnut-chart-legend-wrap e-align-right">
                       <div className="e-doughnut-chart-legend-item e-font-13 e-c-brown e-p-right-30"><span style={{background: "#ffc000"}}></span>NIFTY</div>
                       <div className="e-doughnut-chart-legend-item e-font-13 e-c-brown"><span style={{background: "#36A2EB"}}></span>Themes</div>
                     </div>
-                    <XYPlot xType="time"
+                    <FlexibleXYPlot xType="time"
                       yDomain={[0, 1500]}
                       onMouseLeave={() => this.setState({crosshairValues: []})}
-                      width={950}
                       height={380}>
                       <HorizontalGridLines style={{strokeWidth: .5}}/>
                       <XAxis style={{strokeWidth: .1}} />
@@ -223,7 +221,7 @@ whyInvestReadMoreClick() {
                       <LineSeries  color="#ffc000" animation onNearestX={(value, {index}) => this.setState({crosshairValues: DATA2.map(d => d[index])})} data={DATA2[0]}/>
                       <LineSeries animation onNearestX={(value, {index}) => this.setState({crosshairValues: DATA2.map(d => d[index])})} data={DATA2[0]} animation data={DATA2[1]}/>
                       <Crosshair values={this.state.crosshairValues}/>
-                    </XYPlot>
+                    </FlexibleXYPlot>
                   </div>
                 </div>
               </div>
