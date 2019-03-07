@@ -50,7 +50,7 @@ class Header extends Component {
                       <a href="/" className="e-nav-item e-c-brown e-nav-item e-m-left-0">Search</a>
                     </span>
                 }
-                <a href="/discover" className="e-nav-item e-c-brown e-nav-item">Discover</a>
+                <a href="/discover/explore" className="e-nav-item e-c-brown e-nav-item">Discover</a>
                 <a href="/" className="e-nav-item e-c-brown e-nav-item">Login</a>
                 <a href="/" className="e-nav-item e-c-primary e-nav-item e-f-weight-900 e-m-right-0 e-a-primary-c">Open an account</a>
               </div>
@@ -78,7 +78,7 @@ class Header extends Component {
             <div className="navbar-collapse collapse e-navbar-collapse">
               <ul className="nav navbar-nav">
                 <li className="dropdown">
-                  <a href="/discover" className="e-nav-item e-c-brown e-nav-item">Discover</a>
+                  <a href="/discover/explore" className="e-nav-item e-c-brown e-nav-item">Discover</a>
                 
                 </li>
                 <li className="dropdown">
