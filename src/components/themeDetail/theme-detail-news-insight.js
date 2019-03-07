@@ -36,31 +36,31 @@ class ThemeDetailNewsInsight extends Component {
 
         <section className="e-p-bottom-100 e-p-top-50" >
           <div className="container">
-            <div className="col-12 d-flex flex-row e-p-equal-30 e-box-shadow-1 e-border-5 e-m-bottom-30 e-card-hover">
-              <div className="col-3 e-p-left-0">
+            <div className="col-lg-12 d-flex flex-row e-p-equal-30 e-box-shadow-1 e-border-5 e-m-bottom-30 e-card-hover">
+              <div className="col-lg-3 e-p-left-0">
                 <img className="e-border-5 e-full-width" src={publicTheme1} alt="Segment news"/>
               </div>
-              <div className="col-9">
+              <div className="col-lg-9">
                 <h4 className="e-f-weight-600">MSCI’s new methodology may trigger 850 mn outlfow from equities</h4>
                 <p className="e-c-brown e-p-bottom-10">Business Standard<span className="e-s-txt e-p-left-10">23h ago</span></p>
                 <p className="e-double-l-height e-td-news-content e-m-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly  believable or nice.</p>
               </div>
             </div>
-            <div className="col-12 d-flex flex-row e-p-equal-30 e-box-shadow-1 e-border-5 e-m-bottom-30 e-card-hover">
-              <div className="col-3 e-p-left-0">
+            <div className="col-lg-12 d-flex flex-row e-p-equal-30 e-box-shadow-1 e-border-5 e-m-bottom-30 e-card-hover">
+              <div className="col-lg-3 e-p-left-0">
                 <img className="e-border-5 e-full-width" src={publicTheme1} alt="Segment news"/>
               </div>
-              <div className="col-9">
+              <div className="col-lg-9">
                 <h4 className="e-f-weight-600">MSCI’s new methodology may trigger 850 mn outlfow from equities</h4>
                 <p className="e-c-brown e-p-bottom-10">Business Standard<span className="e-s-txt e-p-left-10">23h ago</span></p>
                 <p className="e-double-l-height e-td-news-content e-m-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly  believable or nice.</p>
               </div>
             </div>
-            <div className="col-12 d-flex flex-row e-p-equal-30 e-box-shadow-1 e-border-5 e-m-bottom-30 e-card-hover">
-              <div className="col-3 e-p-left-0">
+            <div className="col-lg-12 d-flex flex-row e-p-equal-30 e-box-shadow-1 e-border-5 e-m-bottom-30 e-card-hover">
+              <div className="col-lg-3 e-p-left-0">
                 <img className="e-border-5 e-full-width" src={publicTheme1} alt="Segment news"/>
               </div>
-              <div className="col-9">
+              <div className="col-lg-9">
                 <h4 className="e-f-weight-600">MSCI’s new methodology may trigger 850 mn outlfow from equities</h4>
                 <p className="e-c-brown e-p-bottom-10">Business Standard<span className="e-s-txt e-p-left-10">23h ago</span></p>
                 <p className="e-double-l-height e-td-news-content e-m-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly  believable or nice.</p>
