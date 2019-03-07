@@ -508,6 +508,11 @@ header{
   top: 1px;
   margin-right: 6px;
 }
+.e-nav-fixed-search{
+  position: absolute;
+  right: 55px;
+  top: 24px;
+}
 .e-header-logo{
   max-width: 200px;
 }
@@ -543,6 +548,10 @@ header{
   width: 15px;
   height: 15px;
   outline: none;
+  border: 0;
+  top: 2px;
+  position: relative;
+  background-repeat: no-repeat;
   border: 0;  background-image: url("../images/close.svg");
 }
 

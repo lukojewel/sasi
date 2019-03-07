@@ -65,14 +65,20 @@ class Header extends Component {
                   <img className="e-header-logo" src={fyersThematicLogo} alt="Fyers Logo"/>
                 </a>
               </div>
-              <div className="" onClick={this.mMenuClick.bind(this)}>
-                
-                {
-                  this.state.mMenuCliked ?
-                    <button type="button" className="navbar-toggle navbar-close" data-toggle="collapse" data-target=".navbar-collapse"></button>
-                  :
-                    <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
-                }
+
+              <div>
+                <span className="e-nav-search-item e-inline-block e-nav-fixed-search">
+                  <span className="e-search-icn"></span>
+                </span>
+                <div className="e-inline-block" onClick={this.mMenuClick.bind(this)}>
+                  
+                  {
+                    this.state.mMenuCliked ?
+                      <button type="button" className="navbar-toggle navbar-close" data-toggle="collapse" data-target=".navbar-collapse"></button>
+                    :
+                      <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
+                  }
+                </div>
               </div>
             </div>
             <div className="navbar-collapse collapse e-navbar-collapse">

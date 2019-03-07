@@ -118,16 +118,16 @@ whyInvestReadMoreClick() {
             <div className="row">
               <div className="col-12">
                 <ul className="nav nav-tabs e-tab-nav-wrap" id="themesTab" role="tablist">
-                  <li className="nav-item e-m-left-0">
+                  <li className="nav-item e-ellipsis e-m-left-0">
                     <Link className="nav-link active e-m-left-0 e-font-18 e-c-medium-grey e-f-weight-300" to="/theme-detail/overview"><span>Overview</span></Link>
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item e-ellipsis">
                     <Link className="nav-link e-m-left-0 e-font-18 e-c-medium-grey e-f-weight-300" to="/theme-detail/stockweight"><span>Stocks & Weights</span></Link>
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item e-ellipsis">
                     <Link className="nav-link e-m-left-0 e-font-18 e-c-medium-grey e-f-weight-300" to="/theme-detail/news"><span>News & Insights</span></Link>
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item e-ellipsis">
                     <Link className="nav-link e-m-left-0 e-font-18 e-c-medium-grey e-f-weight-300" to="/theme-detail/versions"><span>Version History</span></Link>
                   </li>
                 </ul>
