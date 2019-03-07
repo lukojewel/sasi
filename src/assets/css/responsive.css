@@ -256,6 +256,9 @@
 	.e-p-bottom-50{
 		padding-bottom: 30px;
 	}
+	.em-p-no{
+		padding: 0;
+	}
 	.e-p-left-50{
 		padding-left: 30px;
 	}
@@ -422,6 +425,9 @@
 		overflow: hidden;
 		-webkit-line-clamp: 1;
 		margin-right: 10px;
+	}
+	.e-p-equal-30{
+		padding: 15px;
 	}
 
 }

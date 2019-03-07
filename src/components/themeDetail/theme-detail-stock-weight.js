@@ -56,6 +56,7 @@ componentDidMount() {
     
     return (
       <div className="e-body">
+        
         <section>
           <div className="container">
             <div className="row">
@@ -82,62 +83,62 @@ componentDidMount() {
         <section className="e-p-bottom-100">
           <div className="container">
             <div className="row">
-              <div className="col-7 e-p-top-50 e-p-bottom-50">
+              <div className="col-lg-7 e-p-top-50 e-p-bottom-50">
                 <h5 className="e-sec-head e-c-black e-p-bottom-30">STOCKS & <span className="e-c-grey">WEIGHTS</span></h5>
                 <div className="e-td-sw-table-head d-flex justify-content-between e-m-bottom-10">
                   <div className="e-c-black">Stocks & Segments</div>
                   <div className="e-c-black">Weightage( % )</div>
                 </div>
-                <div className="col-12 d-flex justify-content-between e-td-sw-table-segment">
+                <div className="col-lg-12 d-flex justify-content-between e-td-sw-table-segment">
                   <div className="e-c-black e-f-weight-600">Cement</div>
                   <div className="e-c-black e-f-weight-600">15.00</div>
                 </div>
                 <div className="e-td-sw-table-stock-wrap e-p-bottom-10">
-                  <div className="col-12 d-flex justify-content-between e-td-sw-table-stock">
+                  <div className="col-lg-12 d-flex justify-content-between e-td-sw-table-stock">
                     <div className="e-c-black e-f-weight-500">Ambuja Cements Ltd</div>
                     <div className="e-c-black e-f-weight-500">15.00</div>
                   </div>
                 </div>
-                <div className="col-12 d-flex justify-content-between e-td-sw-table-segment">
+                <div className="col-lg-12 d-flex justify-content-between e-td-sw-table-segment">
                   <div className="e-c-black e-f-weight-600">Fertilizers & Agro Chemicals</div>
                   <div className="e-c-black e-f-weight-600">25.00</div>
                 </div>
                 <div className="e-td-sw-table-stock-wrap e-p-bottom-10">
-                  <div className="col-12 d-flex justify-content-between e-td-sw-table-stock">
+                  <div className="col-lg-12 d-flex justify-content-between e-td-sw-table-stock">
                     <div className="e-c-black e-f-weight-500">Coromandel International Ltd</div>
                     <div className="e-c-black e-f-weight-500">12.50</div>
                   </div>
-                  <div className="col-12 d-flex justify-content-between e-td-sw-table-stock">
+                  <div className="col-lg-12 d-flex justify-content-between e-td-sw-table-stock">
                     <div className="e-c-black e-f-weight-500">Rallis India Pvt Ltd</div>
                     <div className="e-c-black e-f-weight-500">12.50</div>
                   </div>
                 </div>
-                <div className="col-12 d-flex justify-content-between e-td-sw-table-segment">
+                <div className="col-lg-12 d-flex justify-content-between e-td-sw-table-segment">
                   <div className="e-c-black e-f-weight-600">Cement</div>
                   <div className="e-c-black e-f-weight-600">15.00</div>
                 </div>
                 <div className="e-td-sw-table-stock-wrap e-p-bottom-10">
-                  <div className="col-12 d-flex justify-content-between e-td-sw-table-stock">
+                  <div className="col-lg-12 d-flex justify-content-between e-td-sw-table-stock">
                     <div className="e-c-black e-f-weight-500">Ambuja Cements Ltd</div>
                     <div className="e-c-black e-f-weight-500">15.00</div>
                   </div>
                 </div>
-                <div className="col-12 d-flex justify-content-between e-td-sw-table-segment">
+                <div className="col-lg-12 d-flex justify-content-between e-td-sw-table-segment">
                   <div className="e-c-black e-f-weight-600">Fertilizers & Agro Chemicals</div>
                   <div className="e-c-black e-f-weight-600">25.00</div>
                 </div>
                 <div className="e-td-sw-table-stock-wrap e-p-bottom-10">
-                  <div className="col-12 d-flex justify-content-between e-td-sw-table-stock">
+                  <div className="col-lg-12 d-flex justify-content-between e-td-sw-table-stock">
                     <div className="e-c-black e-f-weight-500">Coromandel International Ltd</div>
                     <div className="e-c-black e-f-weight-500">12.50</div>
                   </div>
-                  <div className="col-12 d-flex justify-content-between e-td-sw-table-stock">
+                  <div className="col-lg-12 d-flex justify-content-between e-td-sw-table-stock">
                     <div className="e-c-black e-f-weight-500">Rallis India Pvt Ltd</div>
                     <div className="e-c-black e-f-weight-500">12.50</div>
                   </div>
                 </div>
               </div>
-              <div className="col-5 e-p-top-50 e-p-bottom-50">
+              <div className="col-lg-5 e-p-top-50 e-p-bottom-50">
                 <span className="e-s-txt e-f-weight-500">You can edit stocks & weight before buying</span>
                 <div className="e-p-top-20" >
                   <span className="e-s-btn e-s-btn-up-effect e-s-normal-btn">CUSTOMIZE</span>
