@@ -203,6 +203,9 @@ input{
 .e-loss-value{
   color: #fe1800;
 }
+.rv-xy-plot__inner{
+  width: 100%;
+}
 
 .e-p-0{padding: 0 !important;}
 .e-p-right-0{padding-right: 0 !important;}

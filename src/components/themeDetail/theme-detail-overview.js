@@ -30,6 +30,11 @@ whyInvestReadMoreClick() {
 }
 
   render() {
+
+    // const dWidth = $(window).width();
+
+    // const graphWidth = dWidth * .75;
+
     const DATA = [
     [
       {x: new Date('01/01/2018'), y: 100},
@@ -184,15 +189,16 @@ whyInvestReadMoreClick() {
               </div>
               <div className="tab-content">
                 <div id="menu1"  className="row tab-pane active">
-                  <div className="col-lg-10">
+                  <div className="col-lg-10 e-grpah-wrap">
                     {/*<Line data={data}  options={chartOptions} />*/}
                     <div className="d-flex justify-content-end e-p-top-20 e-doughnut-chart-legend-wrap e-align-right">
                       <div className="e-doughnut-chart-legend-item e-font-13 e-c-brown e-p-right-30"><span style={{background: "#ffc000"}}></span>NIFTY</div>
                       <div className="e-doughnut-chart-legend-item e-font-13 e-c-brown"><span style={{background: "#36A2EB"}}></span>Themes</div>
                     </div>
-                    <FlexibleXYPlot xType="time"
+                    <XYPlot xType="time" makeWidthFlexible
                       yDomain={[0, 1500]}
                       onMouseLeave={() => this.setState({crosshairValues: []})}
+                      width={980}
                       height={380}>
                       <HorizontalGridLines style={{strokeWidth: .5}}/>
                       <XAxis style={{strokeWidth: .1}} />
@@ -200,20 +206,21 @@ whyInvestReadMoreClick() {
                       <LineSeries  color="#ffc000" animation onNearestX={(value, {index}) => this.setState({crosshairValues: DATA.map(d => d[index])})} data={DATA[0]}/>
                       <LineSeries animation onNearestX={(value, {index}) => this.setState({crosshairValues: DATA.map(d => d[index])})} data={DATA[0]} animation data={DATA[1]}/>
                       <Crosshair values={this.state.crosshairValues}/>
-                    </FlexibleXYPlot>
+                    </XYPlot>
                   </div>
                 </div>
 
                 <div id="menu2" className="row tab-pane fade">
-                  <div className="col-lg-10 ">
+                  <div className="col-lg-10 e-grpah-wrap">
                     {/*<Line data={data}  options={chartOptions} />*/}
                     <div className="d-flex justify-content-end e-p-top-20 e-doughnut-chart-legend-wrap e-align-right">
                       <div className="e-doughnut-chart-legend-item e-font-13 e-c-brown e-p-right-30"><span style={{background: "#ffc000"}}></span>NIFTY</div>
                       <div className="e-doughnut-chart-legend-item e-font-13 e-c-brown"><span style={{background: "#36A2EB"}}></span>Themes</div>
                     </div>
-                    <FlexibleXYPlot xType="time"
+                    <XYPlot xType="time"
                       yDomain={[0, 1500]}
                       onMouseLeave={() => this.setState({crosshairValues: []})}
+                      width={980}
                       height={380}>
                       <HorizontalGridLines style={{strokeWidth: .5}}/>
                       <XAxis style={{strokeWidth: .1}} />
@@ -221,7 +228,7 @@ whyInvestReadMoreClick() {
                       <LineSeries  color="#ffc000" animation onNearestX={(value, {index}) => this.setState({crosshairValues: DATA2.map(d => d[index])})} data={DATA2[0]}/>
                       <LineSeries animation onNearestX={(value, {index}) => this.setState({crosshairValues: DATA2.map(d => d[index])})} data={DATA2[0]} animation data={DATA2[1]}/>
                       <Crosshair values={this.state.crosshairValues}/>
-                    </FlexibleXYPlot>
+                    </XYPlot>
                   </div>
                 </div>
               </div>

@@ -81,6 +81,10 @@
 		font-size: 11px;
     	width: 120px;
 	}
+	.e-grpah-wrap{
+		overflow: scroll;
+	}
+	.e-grpah-wrap::-webkit-scrollbar{display: none;}
 
 }
 
