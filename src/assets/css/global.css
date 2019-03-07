@@ -193,6 +193,7 @@ input{
 .e-no-transition{transition: none !important;}
 .e-mobile-hide{display: none;}
 .e-desktop-hide{display: auto;}
+.e-max-width-full{max-width: 100%;}
 
 .e-box-shadow-1{box-shadow: 0px 13px 15px 0 rgba(99, 99, 99, 0.1);}
 .bg-gradient{
@@ -595,10 +596,10 @@ header{
   max-width: 58px;
 }
 .e-cta-create img{
-  content: url("../images/customize.svg");
+  content: url("../images/cta-create-icon.png");
 }
 .e-cta-find img{
-  content: url("../images/customize.svg");
+  content: url("../images/cta-find-icon.png");
 }
 .e-cta-pattern{
   left: 14%;

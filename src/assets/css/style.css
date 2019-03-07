@@ -188,7 +188,30 @@
 .e-dvr-explr-ctheme-pattern{
 	right: 3%;
 }
-
+.e-dv-s-believes-causes-wrap img{
+	content:url("../images/s-believes-causes-wrap.png");
+}
+.e-dv-investStrategies-wrap img{
+	content:url("../images/investStrategies.png");
+}
+.e-dv-dividends-wrap img{
+	content:url("../images/dividends.png");
+}
+.e-dv-geographic-wrap img{
+	content:url("../images/geographic.png");
+}
+.e-dv-government-wrap img{
+	content:url("../images/government.png");
+}
+.e-dv-trackers-wrap img{
+	content:url("../images/trackers.png");
+}
+.e-dv-trends-wrap img{
+	content:url("../images/trends.png");
+}
+.e-dv-conglomerates-wrap img{
+	content:url("../images/conglomerates.png");
+}
 /*Theme detail*/
 .e-td-top-card-bg{
 	background-image: -webkit-linear-gradient(to right, #2e42b6, #298eed);
@@ -264,3 +287,4 @@
     border-radius: 50%;
     max-width: 65px;
 }
+
