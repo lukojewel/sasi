@@ -9,15 +9,21 @@ class Header extends Component {
         searchBoxShow: false,
         skeyward: "",
         mMenuCliked: false,
+        searchInit: false,
     }
   }
   searchClick(e){  
     e.preventDefault();
     this.setState({ searchBoxShow: true});
+    this.setState({ searchInit: true});
   }
   searchClickReturn(e){  
     e.preventDefault();
-    if(this.state.skeyward == ""){this.setState({ searchBoxShow: false});}
+    if(this.state.skeyward == ""){
+      this.setState({ searchBoxShow: false});
+      this.setState({ searchInit: true});
+
+    }
   }
   mMenuClick(e){  
     e.preventDefault();
@@ -45,7 +51,7 @@ class Header extends Component {
                       <input type="text" name="fanme" className="e-nav-search-input" onChange={this.searchChange.bind(this)} value={this.state.skeyward} placeholder="Search themes" onBlur={this.searchClickReturn.bind(this)} autoFocus={true} />
                     </span>
                   :
-                    <span onClick={this.searchClick.bind(this)} className="e-nav-search-item">
+                    <span onClick={this.searchClick.bind(this)} className={"e-nav-search-item " + (this.state.searchInit ? 'noAnimation' : null)}>
                       <span className="e-search-icn"></span>
                       <a href="/" className="e-nav-item e-c-brown e-nav-item e-m-left-0">Search</a>
                     </span>

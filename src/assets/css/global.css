@@ -185,13 +185,14 @@ input{
 .e-uppercase{text-transform: uppercase;}
 .e-w-80{width: 80%!important;}
 .e-w-90{width: 90%!important;}
+.e-vh-40{height: 40vh;}
+.e-vh-50{height: 50vh;}
 .e-h-80{height: 80vh;}
 .e-h-85{height: 85vh;}
 .e-h-90{height: 90vh;}
 .e-border-5{border-radius: 5px;}
 .e-border-8{border-radius: 8px;}
 .e-txt-underline{text-decoration: underline;}
-.e-vh-50{height: 50vh;}
 .e-hide{display: none;}
 .e-show{display: auto;}
 .e-no-transition{transition: none !important;}
@@ -639,6 +640,7 @@ footer{
   position: relative;
   top: 6px;
   line-height: 300%;
+  color: #222222;
 }
 .nav-tabs .nav-link{
   border: 0px solid transparent;
@@ -714,9 +716,7 @@ footer{
 }
 
 /*Modal and popup*/
-.modal.show .modal-dialog{
-  max-width: 90%;
-}
+
 .e-modal-close{
   padding: 15px 20px !important;
   font-size: 30px !important;
@@ -842,8 +842,6 @@ footer{
 }
 
 
-
-
 /*------------------------------------------------------------------
 
 7. Forms fields
@@ -856,6 +854,7 @@ input:focus {
   border: 0;
   animation: ev-width .6s ease;
   width: 190px;
+  padding: 7px 0;
 
 }
 .e-nav-search-item a, .e-nav-search-item span{
@@ -868,7 +867,10 @@ input:focus {
   margin-top: 0;
   margin-bottom: 0;
 }
-
+.e-nav-search-item .noAnimation a{
+  -webkit-animation: none;
+  animation: none;
+}
 @keyframes ev-width{
    0% {
     width: 0;

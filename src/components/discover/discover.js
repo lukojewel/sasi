@@ -44,9 +44,9 @@ popularityOpen() {
         <Header/>
         
         <section className="e-p-top-100 ">
-          <div className="container e-vh-50 d-flex align-items-center">
+          <div className="container e-vh-40 d-flex align-items-center">
             <div className="row">
-              <div className="col-12">
+              <div className="col-12 e-p-top-20">
                 <h6 className="e-c-primary e-letter-space e-s-txt e-p-bottom-10 e-f-weight-600">THEMES</h6>
                 <h2 className="e-p-bottom-10 e-banner-head">Discover <span className="e-c-grey">Themes</span></h2>
                 <h5 className="e-c-brown">Our products are built for long term performance.</h5>

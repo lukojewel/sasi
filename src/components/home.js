@@ -35,7 +35,7 @@ class Home extends Component {
     $("iframe").remove();
   }
   hmPlayClick(e){
-    $(".e-hm-video-m-content").html('<iframe class="embed-responsive-item e-hm-video-iframe" src="https://www.youtube.com/embed/ApXoWvfEYVU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+    $(".e-hm-video-m-content .e-hm-video-m-wrap").html('<iframe class="embed-responsive-item e-hm-video-iframe" src="https://www.youtube.com/embed/ApXoWvfEYVU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
   }
   searchClick(e){  
     e.preventDefault();
@@ -54,7 +54,7 @@ class Home extends Component {
         <Header/>
         <section className="e-banner-wrap e-hm-banner-wrap">
           <div className="container d-flex align-items-center e-hm-banner-content">
-            <div className="align-middle e-p-top-100 e-p-left-50 ">
+            <div className="align-middle e-p-left-50 e-hm-banne-txt ">
               <h6 className="e-c-primary e-letter-space">THEMATIC</h6>
               <h1 className="e-banner-head e-c-black">Invest in the next <span>significant idea.</span></h1>
               <h5 className="e-c-brown e-p-bottom-30">Be wealthy. Be successful.</h5>
@@ -156,7 +156,7 @@ class Home extends Component {
         <section className="e-p-top-100 e-p-bottom-100">
           <div className="container">
             <div className="row">
-              <div className="col-lg-6 e-p-bottom-30 em-no-p-left">
+              // <div className="col-lg-6 e-p-bottom-30 ">
                 <h2 className="e-p-bottom-20 e-c-black">Why investment in <br/><span className="e-c-grey">Ideas?</span></h2>
                 <h5 className="e-c-black">Investing in multiple stocks can reduce risk and can beat other investment techniques, also</h5>
               </div>
@@ -392,8 +392,13 @@ class Home extends Component {
 
         {/* View History modal*/}
         <div className="modal fade" onClick={this.videoOverlyClick.bind(this)} id="vHistoryModal" role="dialog" aria-labelledby="vHistoryModal Label" aria-hidden="true">
-          <div className="modal-dialog"  role="document">
-            <div className="modal-content e-hm-video-m-content"></div>
+          <div className="modal-dialog e-hm-video-modal"  role="document">
+            <div className="modal-content e-hm-video-m-content">
+              <button type="button" className="close e-modal-close e-video-close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div className="e-hm-video-m-wrap"></div>
+            </div>
           </div>
         </div>
 

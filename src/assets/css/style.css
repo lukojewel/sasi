@@ -9,6 +9,9 @@
 .e-hm-banner-content{
 	height: 88vh;
 }
+.e-hm-banne-txt{
+	padding-top: 160px;
+}
 .e-hm-play-icn-wrap{
 	padding: 12px 12px;
 	display: inline-block;
@@ -186,10 +189,23 @@
 }
 .e-hm-video-iframe{
 	height: 600px;
+	width: 100%;
+}
+.e-hm-video-m-wrap{
+
 }
 .e-hm-video-link-txt{
 	position: relative;
     top: 3px;
+}
+.e-video-close{
+	position: absolute;
+	right: -25px;
+	text-align: right;
+	top: -25px;
+	background: #fff !important;
+	border-radius: 50% !important;
+	padding: 10px 15px !important;
 }
 
 /*Discover*/
