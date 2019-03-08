@@ -156,7 +156,7 @@ class Home extends Component {
         <section className="e-p-top-100 e-p-bottom-100">
           <div className="container">
             <div className="row">
-              // <div className="col-lg-6 e-p-bottom-30 ">
+              <div className="col-lg-6 e-p-bottom-30 ">
                 <h2 className="e-p-bottom-20 e-c-black">Why investment in <br/><span className="e-c-grey">Ideas?</span></h2>
                 <h5 className="e-c-black">Investing in multiple stocks can reduce risk and can beat other investment techniques, also</h5>
               </div>
