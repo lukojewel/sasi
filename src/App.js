@@ -46,16 +46,21 @@ class App extends Component {
 	              </div>
 	              <div className="col-lg-4 col-sm-12 e-footer-items-wrap ">
 	                <h4 className="e-m-bottom-10">Connect with us 
-	                  <a className="e-no-animation" aria-label="Facebook" href="/"><span className="e-f-fb-logo e-f-social-logo e-relative e-no-animation e-card-hover"></span></a>
-	                  <a className="e-no-animation" aria-label="Twitter" href="/"><span className="e-f-tw-logo e-f-social-logo e-relative e-no-animation e-card-hover"></span></a>
-	                  <a className="e-no-animation" aria-label="You Tube" href="/"><span className="e-f-yt-logo e-f-social-logo e-relative  e-card-hover"></span></a>
+	                  <a className="e-no-animation" aria-label="Facebook" href="/"><span className="e-f-fb-logo e-f-social-logo e-relative e-no-animation e-card-hover e-border-5"></span></a>
+	                  <a className="e-no-animation" aria-label="Twitter" href="/"><span className="e-f-tw-logo e-f-social-logo e-relative e-no-animation e-card-hover e-border-5"></span></a>
+	                  <a className="e-no-animation" aria-label="You Tube" href="/"><span className="e-f-yt-logo e-f-social-logo e-relative  e-card-hover e-border-5"></span></a>
 	                </h4>
-	                <p className="e-m-0 e-c-grey e-card-p-txt e-f-para">For any complaints pertaining to securities broking please write to complaints@fyers.com for DP related to dp@fyers.com. Please ensure you carefully read the Risk Disclosure Document as prescribed by SEBI | ICF</p>
+	                <p className="e-m-0 e-c-grey e-card-p-txt e-f-para e-txt-justify">For any complaints pertaining to securities broking please write to complaints@fyers.com for DP related to dp@fyers.com. Please ensure you carefully read the Risk Disclosure Document as prescribed by SEBI | ICF</p>
 	              </div>
 	            </div>
-	            <div className="e-footer-copyright-wrap e-p-bottom-10 e-p-top-50 e-font-12 e-c-grey">
-	            	© 2018 Fyers securities. All rights reserved. Powered by <a href="/">Evoque Innovative lab</a>
-	            </div>
+	            <div className="row">
+		            <div className="col-lg-6 col-md-6 col-sm-6 e-footer-copyright-wrap e-p-bottom-10 mt-3 e-font-12 e-c-grey">
+		            	© 2019 Fyers securities. All rights reserved.
+		            </div>
+		            <div className="col-lg-6 col-md-6 col-sm-6 e-align-right e-p-bottom-10 mt-3 e-font-12 e-c-grey em-text-align-left">
+		            	Powered by <a href="https://evoqueinnovativelab.com/" target="_blank">Evoque Innovative lab</a>
+		            </div>
+		        </div>
 	          </div>
 	        </footer>
 

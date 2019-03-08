@@ -37,7 +37,7 @@ class Header extends Component {
                   <img className="e-header-logo" src={fyersThematicLogo} alt="Fyers Logo"/>
                 </a>
               </div>
-              <div className="col-lg-6 col-md-7 e-align-right e-p-right-0 m-linkitem">
+              <div className="col-lg-6 col-md-7 e-align-right e-p-right-0 m-linkitem align-middle">
                 {
                   this.state.searchBoxShow ?
                     <span className="">
@@ -82,7 +82,7 @@ class Header extends Component {
               </div>
             </div>
             <div className="navbar-collapse collapse e-navbar-collapse">
-              <ul className="nav navbar-nav">
+              <ul className="nav navbar-nav ">
                 <li className="dropdown">
                   <a href="/discover/explore" className="e-nav-item e-c-brown e-nav-item">Discover</a>
                 

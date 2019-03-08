@@ -12,6 +12,8 @@ import publicTheme2 from '../assets/images/publicTheme2.png';
 import publicTheme3 from '../assets/images/publicTheme3.png';
 import publicTheme4 from '../assets/images/publicTheme4.png';
 import news1 from '../assets/images/news1.png';
+import news2 from '../assets/images/news2.png';
+import news3 from '../assets/images/news3.png';
 import SEBILogo from '../assets/images/sebi-logo.png';
 import investorsLogo from '../assets/images/investors-logo.png';
 import fyersThematicLogo from '../assets/images/fyers-thematic-logo.png';
@@ -133,19 +135,19 @@ class Home extends Component {
                   <img className="e-p-bottom-10" alt="How to work pick"/>
                   <h3 className="e-c-white e-p-bottom-10">Pick</h3>
                   <p className="e-hm-how-para e-p-bottom-10">Choose an existing theme from our inventory to start investing, evaluating or follow it.</p>
-                  <a aria-label="View Themes" className="e-a-bg-secondary-c" href="/">VIEW THEMES</a>
+                  <a aria-label="View Themes" className="e-a-bg-secondary-c" href="/discover/explore">VIEW THEMES</a>
                 </div>
                 <div className="col-md-3 offset-md-1 e-hm-how-customize-wrap e-m-p-bottom-30">
                   <img className="e-p-bottom-10" alt="How to work pick"/>
-                  <h3 className="e-c-white e-p-bottom-10">Pick</h3>
+                  <h3 className="e-c-white e-p-bottom-10">Customize</h3>
                   <p className="e-hm-how-para e-p-bottom-10">If you want to add or remove any instrument to or from the chosen theme, you can do that.</p>
-                  <a aria-label="View Themes" className="e-a-bg-secondary-c" href="/">VIEW THEMES</a>
+                  <a aria-label="View Themes" className="e-a-bg-secondary-c" href="/discover/explore">VIEW THEMES</a>
                 </div>
                 <div className="col-md-3 offset-md-1 e-hm-how-invest-wrap e-m-p-bottom-30">
                   <img className="e-p-bottom-10" alt="How to work pick"/>
                   <h3 className="e-c-white e-p-bottom-10">Invest</h3>
                   <p className="e-hm-how-para e-p-bottom-10">If you believe the chosen theme or your customised idea can perform, start buying it.</p>
-                  <a aria-label="View Themes" className="e-a-bg-secondary-c" href="/">VIEW THEMES</a>
+                  <a aria-label="View Themes" className="e-a-bg-secondary-c" href="/discover/explore">VIEW THEMES</a>
                 </div>
               </div>
             </div>
@@ -153,9 +155,11 @@ class Home extends Component {
         </section>
         <section className="e-p-top-100 e-p-bottom-100">
           <div className="container">
-            <div className="col-lg-6 e-p-bottom-30 em-no-p-left">
-              <h2 className="e-p-bottom-20 e-c-black">Why investment in <br/><span className="e-c-grey">Ideas?</span></h2>
-              <h5 className="e-c-black">Investing in multiple stocks can reduce risk and can beat other investment techniques, also</h5>
+            <div className="row">
+              <div className="col-lg-6 e-p-bottom-30 em-no-p-left">
+                <h2 className="e-p-bottom-20 e-c-black">Why investment in <br/><span className="e-c-grey">Ideas?</span></h2>
+                <h5 className="e-c-black">Investing in multiple stocks can reduce risk and can beat other investment techniques, also</h5>
+              </div>
             </div>
             <div className=" e-p-top-50 e-hm-why-items-wrap">
               <div className="row e-m-p-bottom-30">
@@ -226,8 +230,8 @@ class Home extends Component {
                 <div className="col-lg-3 col-md-5 col-sm-5 offset-md-1 e-p-bottom-50 e-hm-why-more-wrap">
                   <div className="media">
                     <img alt="Easy & simple method to invest"/>
-                    <div className="media-body">
-                      <p className="e-c-black e-p-left-20">And a lot more</p>
+                    <div className="media-body align-middle">
+                      <p className="e-c-black e-p-left-20 e-hm-why-last-item">And a lot more</p>
                     </div>
                   </div>
                 </div>
@@ -239,10 +243,14 @@ class Home extends Component {
         <section className="e-p-bottom-100 e-top-themes-outer-wrap">
           <div className="">
             <div className="col-9 e-p-bottom-30 e-top-theme-head-wrap ">
-              <h2 className="e-p-bottom-20 e-c-black e-p-top-100">Top performing <br/><span className="e-c-grey">Themes</span></h2>
-            </div>
+              </div>
           </div>
           <div className="container">
+            <div className="row">
+              <div className="col-9 e-p-bottom-30 ">
+                <h2 className="e-p-bottom-20 e-c-black e-p-top-100">Top performing <br/><span className="e-c-grey">Themes</span></h2>
+              </div>
+            </div>
             <div className="row">
               <div className="col-10 col-lg-7">
                 <h5 className="e-c-black">Themes from Fyers which outperform the mutual funds</h5>
@@ -257,8 +265,8 @@ class Home extends Component {
                     <h4>Energy takeout targets</h4>
                     <p className="e-card-p-txt e-c-brown">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
                     <div className="d-flex flex-row d-flex justify-content-between">
-                      <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-green">5.6%</span></p>
-                      <a aria-label="Invest Now" className="e-a-primary-c" href="/">Invest now</a>
+                      <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-green">4.1%</span></p>
+                      <a aria-label="Invest Now" className="e-a-primary-c" href="/theme-detail/overview">Invest now</a>
                     </div>
                   </div>
                 </div>
@@ -269,7 +277,7 @@ class Home extends Component {
                     <p className="e-card-p-txt e-c-brown">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
                     <div className="d-flex flex-row d-flex justify-content-between">
                       <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-green">5.6%</span></p>
-                      <a aria-label="Invest Now" className="e-a-primary-c" href="/">Invest now</a>
+                      <a aria-label="Invest Now" className="e-a-primary-c" href="/theme-detail/overview">Invest now</a>
                     </div>
                   </div>
                 </div>
@@ -279,8 +287,8 @@ class Home extends Component {
                     <h4>Sustainable earnings</h4>
                     <p className="e-card-p-txt e-c-brown">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
                     <div className="d-flex flex-row d-flex justify-content-between">
-                      <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-green">5.6%</span></p>
-                      <a aria-label="Invest Now" className="e-a-primary-c" href="/">Invest now</a>
+                      <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-green">2.6%</span></p>
+                      <a aria-label="Invest Now" className="e-a-primary-c" href="/theme-detail/overview">Invest now</a>
                     </div>
                   </div>
                 </div>
@@ -290,8 +298,8 @@ class Home extends Component {
                     <h4>Banking tracker</h4>
                     <p className="e-card-p-txt e-c-brown">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
                     <div className="d-flex flex-row d-flex justify-content-between">
-                      <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-red">10.6%</span></p>
-                      <a aria-label="Invest Now" className="e-a-primary-c" href="/">Invest now</a>
+                      <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-red">0.6%</span></p>
+                      <a aria-label="Invest Now" className="e-a-primary-c" href="/theme-detail/overview">Invest now</a>
                     </div>
                   </div>
                 </div>
@@ -306,16 +314,18 @@ class Home extends Component {
                 <span className="active">
                   <img className="e-ftheme-card-img e-right-arrow" src={leftArrow} alt="Right arrow"/>
                 </span>
-                <a aria-label="More Themes" className="e-c-primary e-m-left-20 e-relative e-top-themes-more-txt e-a-primary-c" href="/">MORE THEMES</a>
+                <a aria-label="More Themes" className="e-c-primary e-m-left-20 e-relative e-top-themes-more-txt e-a-primary-c e-f-weight-500" href="/discover/explore">MORE THEMES</a>
               </div>
             </div>
           </div>
         </section>
         <section className="e-p-top-100 e-p-bottom-100">
           <div className="container">
-            <div className="col-lg-6 e-p-bottom-30">
-              <h2 className="e-p-bottom-20 e-c-black">Our <br/><span className="e-c-grey">News</span></h2>
-              <h5 className="e-c-black">Latest news, breaking stories & more</h5>
+            <div className="row">
+              <div className="col-lg-6 e-p-bottom-30">
+                <h2 className="e-p-bottom-20 e-c-black">Our <br/><span className="e-c-grey">News</span></h2>
+                <h5 className="e-c-black">Latest news, breaking stories & more</h5>
+              </div>
             </div>
             <div className="col-lg-12 col-md-12 col-sm-12 e-p-top-20 e-ptheme-items-wrap e-p-left-0">
               <div className="row">
@@ -328,16 +338,16 @@ class Home extends Component {
                 </div>
                 <div className="col-lg-4 col-md-4 col-sm-6 col-12">
                   <div className="e-ptheme-card-wrap e-card-hover">
-                    <img className="e-m-bottom-10 e-border-5" src={news1} alt="Themes by Fyers"/>
-                    <h4>Benefits of Investing in a Diversified Portfolio</h4>
-                    <span className="e-x-s-txt e-c-grey">1 day ago</span>
+                    <img className="e-m-bottom-10 e-border-5" src={news2} alt="Themes by Fyers"/>
+                    <h4>Don’t Let Your Emotions Drive Investing Decisions</h4>
+                    <span className="e-x-s-txt e-c-grey">3 day ago</span>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-4 col-sm-6 col-12 em-display-none em-tablet-display-none">
                   <div className="e-ptheme-card-wrap e-card-hover">
-                    <img className="e-m-bottom-10 e-border-5" src={news1} alt="Themes by Fyers"/>
-                    <h4>Benefits of Investing in a Diversified Portfolio</h4>
-                    <span className="e-x-s-txt e-c-grey">1 day ago</span>
+                    <img className="e-m-bottom-10 e-border-5" src={news3} alt="Themes by Fyers"/>
+                    <h4>Why Direct Stock Investors Should Invest in Ideas</h4>
+                    <span className="e-x-s-txt e-c-grey">4 day ago</span>
                   </div>
                 </div>
               </div>
@@ -351,7 +361,7 @@ class Home extends Component {
                 <span className="active">
                   <img className="e-ftheme-card-img e-right-arrow" src={leftArrow} alt="Right arrow"/>
                 </span>
-                <a aria-label="More Themes" className="e-c-primary e-m-left-20 e-relative e-top-themes-more-txt e-a-primary-c" href="/">MORE NEWS</a>
+                <a aria-label="More Themes" className="e-c-primary e-m-left-20 e-relative e-top-themes-more-txt e-a-primary-c e-f-weight-500" href="https://fyers.in/brainstorm/" target="_blank">MORE NEWS</a>
               </div>
             </div>
           </div>

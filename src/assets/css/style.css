@@ -5,7 +5,6 @@
 	background-image: url("../images/home-banner-bg.png");
 	background-repeat: no-repeat;
 	background-position: right bottom;
-	background-size: 49%;
 }
 .e-hm-banner-content{
 	height: 88vh;
@@ -44,10 +43,10 @@
 	max-width: 75px;
 }
 .e-hm-how-pick-wrap img{
-	content:url("../images/pick.svg");
+	content:url("../images/customize.svg");
 }
 .e-hm-how-customize-wrap img{
-	content:url("../images/customize.svg");
+	content:url("../images/pick.svg");
 }
 .e-hm-how-invest-wrap img{
 	content:url("../images/invest.svg");
@@ -63,6 +62,9 @@
 }
 .e-hm-why-items-wrap p{
 	margin: 12px 0;
+}
+.e-hm-why-last-item{
+	margin: 20px 0px;
 }
 .e-hm-why-easy-wrap img{
 	content:url("../images/easy-simple-icon.png");
@@ -95,6 +97,8 @@
 	border-top: 7px solid #298eed;
 	border-right: 7px solid #298eed;
 	padding-left: 9%;
+	height: 240px;
+	position: absolute;
 }
 .e-top-themes-outer-wrap{
 	background-image: -webkit-linear-gradient(bottom,#f2f2f2,#f2f2f2 35%,transparent 35%,transparent 100%);

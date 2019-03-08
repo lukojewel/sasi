@@ -222,6 +222,9 @@
 	.nav-tabs .nav-link{
 		font-size: 14px;
 	}
+	.em-text-align-left{
+		text-align: left !important;
+	}
 
 }
 
@@ -434,6 +437,9 @@
 	}
 	.e-ftheme-card-wrap{
 		padding: 25px 15px 15px 15px;
+	}
+	.em-text-align-left{
+		text-align: left !important;
 	}
 
 }
