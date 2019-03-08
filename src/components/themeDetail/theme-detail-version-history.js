@@ -94,8 +94,8 @@ componentDidMount() {
                 </div>
                 <div className="d-flex justify-content-between m-flex-column e-td-vh-item-wrap e-p-bottom-20 e-p-top-20">
                   <div className="em-p-bottom-10">
-                    <p className="e-f-weight-500 e-m-0">MSCI’s new methodology may trigger 850 mn outlfow from equities</p>
-                    <span className="e-s-txt">Jan 04, 2019</span>
+                    <p className="e-f-weight-500 e-m-0">MSCI’s new methodology may trigger 150 mn outlfow from equities</p>
+                    <span className="e-s-txt">Jan 03, 2019</span>
                   </div>
                   <div className="d-flex align-items-center">
                     <a href="/" className="e-c-primary text-uppercase e-f-weight-600 e-a-primary-c" data-toggle="modal" data-target="#vHistoryModal">VIEW CHANGE</a>

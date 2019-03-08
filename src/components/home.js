@@ -306,7 +306,7 @@ class Home extends Component {
               </div>
               <img className="e-top-theme-pattern-img-2 em-display-none em-tablet-display-none" alt="Fyers pattern"/>
             </div>
-            <div className="em-p-left-30">
+            <div className="">
               <div className="e-card-arrow-wrap e-relative"> 
                 <span className="e-m-right-20">
                   <img className="e-ftheme-card-img" src={leftArrow} alt="Left arrow"/>
@@ -353,7 +353,7 @@ class Home extends Component {
               </div>
               <img className="e-top-theme-pattern-img-2 em-display-none em-tablet-display-none" alt="Fyers pattern"/>
             </div>
-            <div className="em-p-left-30">
+            <div className="">
               <div className="e-card-arrow-wrap e-relative"> 
                 <span className="e-m-right-20">
                   <img className="e-ftheme-card-img" src={leftArrow} alt="Left arrow"/>

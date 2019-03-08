@@ -234,6 +234,9 @@
 	.e-hm-banne-txt{
 		padding-top: 0;
 	}
+	.e-top-theme-head-wrap{
+		height: 169px;
+	}
 
 }
 
@@ -456,10 +459,12 @@
 		width: 100%;
 		padding: 20px;
 	}
-
 	.e-hm-video-iframe{
 		height: 200px;
 		width: 100%;
+	}
+	.e-top-theme-head-wrap{
+		height: 169px;
 	}
 
 }

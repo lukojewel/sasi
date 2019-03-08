@@ -1,9 +1,11 @@
 /*Package importing*/
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-
+ 
 import DetailCTA from '../detail-cta.js';
 import publicTheme1 from '../../assets/images/publicTheme1.png';
+import publicTheme2 from '../../assets/images/publicTheme2.png';
+import publicTheme3 from '../../assets/images/publicTheme3.png';
 
 class ThemeDetailNewsInsight extends Component {
   render() {
@@ -54,7 +56,7 @@ class ThemeDetailNewsInsight extends Component {
               <div className="col-lg-12 col-sm-12 e-box-shadow-1 e-border-5 e-card-hover">
                 <div className="row e-p-equal-30">
                   <div className="col-lg-3 col-sm-12 e-p-left-0 em-p-bottom-10">
-                    <img className="e-border-5 e-full-width" src={publicTheme1} alt="Segment news"/>
+                    <img className="e-border-5 e-full-width" src={publicTheme2} alt="Segment news"/>
                   </div>
                   <div className="col-lg-9 col-sm-12 em-p-no">
                     <h4 className="e-f-weight-600">MSCI’s new methodology may trigger 850 mn outlfow from equities</h4>
@@ -68,7 +70,7 @@ class ThemeDetailNewsInsight extends Component {
               <div className="col-lg-12 col-sm-12 e-box-shadow-1 e-border-5 e-card-hover">
                 <div className="row e-p-equal-30">
                   <div className="col-lg-3 col-sm-12 e-p-left-0 em-p-bottom-10">
-                    <img className="e-border-5 e-full-width" src={publicTheme1} alt="Segment news"/>
+                    <img className="e-border-5 e-full-width" src={publicTheme3} alt="Segment news"/>
                   </div>
                   <div className="col-lg-9 col-sm-12 em-p-no">
                     <h4 className="e-f-weight-600">MSCI’s new methodology may trigger 850 mn outlfow from equities</h4>
