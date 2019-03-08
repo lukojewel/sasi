@@ -727,6 +727,9 @@ footer{
 .modal-body{
   padding: 40px;
 }
+.modal-dialog{
+  min-width: 80%;
+}
 
 /*FadeInUp animations*/
 @keyframes ev-fadeInUp{
