@@ -33,6 +33,7 @@ Use:   Trading domain webapp template
 body,html{
   font-family: 'Lato', sans-serif;
   font-size: 15px;
+  font-weight: 300;
 }
 h1{
   font-family: 'Abril Fatface', cursive;
@@ -184,6 +185,9 @@ input{
 .e-uppercase{text-transform: uppercase;}
 .e-w-80{width: 80%!important;}
 .e-w-90{width: 90%!important;}
+.e-h-80{height: 80vh;}
+.e-h-85{height: 85vh;}
+.e-h-90{height: 90vh;}
 .e-border-5{border-radius: 5px;}
 .e-border-8{border-radius: 8px;}
 .e-txt-underline{text-decoration: underline;}
@@ -282,7 +286,7 @@ input{
 
 -------------------------------------------------------------------*/
 /*links hover*/
-a {
+a, .e-link-text {
   transition: all .3s linear;
   text-decoration: none;
   background: linear-gradient(to right, #2e42b6 0%, #298eed 98%);
@@ -291,7 +295,7 @@ a {
   background-position: left 85%;
   padding-bottom: 7px;
 }
-a:hover {
+a:hover, .e-link-text:hover {
   background-size: 100% 2px;
   color: #2e42b6;
 }

@@ -8,6 +8,9 @@ import playIcon from '../assets/images/play-icon.svg';
 import ideaImage1 from '../assets/images/fyers-themes-images-1.png';
 import leftArrow from '../assets/images/left-arrow.svg';
 import publicTheme1 from '../assets/images/publicTheme1.png';
+import publicTheme2 from '../assets/images/publicTheme2.png';
+import publicTheme3 from '../assets/images/publicTheme3.png';
+import publicTheme4 from '../assets/images/publicTheme4.png';
 import news1 from '../assets/images/news1.png';
 import SEBILogo from '../assets/images/sebi-logo.png';
 import investorsLogo from '../assets/images/investors-logo.png';
@@ -48,7 +51,7 @@ class Home extends Component {
       <div className="e-body">
         <Header/>
         <section className="e-banner-wrap e-hm-banner-wrap">
-          <div className="container vh-100 d-flex align-items-center">
+          <div className="container d-flex align-items-center e-hm-banner-content">
             <div className="align-middle e-p-top-100 e-p-left-50 ">
               <h6 className="e-c-primary e-letter-space">THEMATIC</h6>
               <h1 className="e-banner-head e-c-black">Invest in the next <span>significant idea.</span></h1>
@@ -56,12 +59,14 @@ class Home extends Component {
               <div>
                 <span className="e-p-btn e-m-right-20 e-p-btn-up-effect">LOG IN</span><span className="e-s-btn e-s-btn-up-effect">OPEN AN ACCOUNT</span>
               </div>
+              <a href="/" className="e-c-grey" data-toggle="modal" data-target="#vHistoryModal">
               <div onClick={this.hmPlayClick.bind(this)}>
                 <span className="e-hm-play-icn-wrap e-m-top-20" >
-                  <img className="ev-nav-logo-dark" src={playIcon} alt="Watch about Thematic"/>
+                  <img className="ev-nav-logo-dark e-relative" src={playIcon} alt="Watch about Thematic"/>
                 </span>
-                <span className="e-s-txt e-c-brown e-p-left-10 e-relative e-hm-play-icn-txt "><a href="/" className="e-c-grey" data-toggle="modal" data-target="#vHistoryModal">Watch a quick video</a></span>
+                <span className="e-s-txt e-c-brown e-p-left-10 e-hm-play-icn-txt "><span className="e-c-grey e-link-text e-hm-video-link-txt" href="/">Watch a quick video</span></span>
               </div>
+              </a>
             </div>
           </div>
         </section>
@@ -105,7 +110,7 @@ class Home extends Component {
 
             <div className="e-align-right e-card-arrow-wrap e-ftheme-card-arrow-wrap e-relative"> 
               <span className="e-m-right-20 e-hm-topTheme-leftArrow">
-                <img className="e-ftheme-card-img" src={leftArrow} alt="Left arrow"/>
+                <img className="e-ftheme-card-img e-relative" src={leftArrow} alt="Left arrow"/>
               </span>
               <span className="active e-hm-topTheme-rightArrow">
                 <img className="e-ftheme-card-img e-right-arrow" src={leftArrow} alt="Right arrow"/>
@@ -244,11 +249,11 @@ class Home extends Component {
               </div>
               <img className="e-top-theme-pattern-img-1" alt="Fyers pattern"/>
             </div>
-            <div className="col-md-12 col-sm-12 e-p-top-50 e-ptheme-items-wrap e-p-left-0">
+            <div className="col-md-12 col-sm-12 e-p-top-50 e-ptheme-items-wrap e-p-left-0 e-p-right-0">
               <div className="row">
                 <div className="col-lg-3 col-md-4 col-sm-6 col-12">
                   <div className="e-ptheme-card-wrap e-card-hover">
-                    <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
+                    <img className="e-m-bottom-20 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
                     <h4>Energy takeout targets</h4>
                     <p className="e-card-p-txt e-c-brown">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
                     <div className="d-flex flex-row d-flex justify-content-between">
@@ -259,8 +264,8 @@ class Home extends Component {
                 </div>
                 <div className="col-lg-3 col-md-4 col-sm-6 col-12 em-display-none">
                   <div className="e-ptheme-card-wrap e-card-hover">
-                    <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
-                    <h4>Energy takeout targets</h4>
+                    <img className="e-m-bottom-20 e-border-5" src={publicTheme2} alt="Themes by Fyers"/>
+                    <h4>Rising rural demand</h4>
                     <p className="e-card-p-txt e-c-brown">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
                     <div className="d-flex flex-row d-flex justify-content-between">
                       <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-green">5.6%</span></p>
@@ -270,8 +275,8 @@ class Home extends Component {
                 </div>
                 <div className="col-lg-3 col-md-4 col-sm-6 col-12 em-display-none em-tablet-display-none">
                   <div className="e-ptheme-card-wrap e-card-hover">
-                    <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
-                    <h4>Energy takeout targets</h4>
+                    <img className="e-m-bottom-20 e-border-5" src={publicTheme3} alt="Themes by Fyers"/>
+                    <h4>Sustainable earnings</h4>
                     <p className="e-card-p-txt e-c-brown">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
                     <div className="d-flex flex-row d-flex justify-content-between">
                       <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-green">5.6%</span></p>
@@ -281,11 +286,11 @@ class Home extends Component {
                 </div>
                 <div className="col-lg-3 col-md-4 col-sm-6 col-12 em-display-none em-tablet-display-none e-tl-no-flex-display-none">
                   <div className="e-ptheme-card-wrap e-card-hover">
-                    <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
-                    <h4>Energy takeout targets</h4>
+                    <img className="e-m-bottom-20 e-border-5" src={publicTheme4} alt="Themes by Fyers"/>
+                    <h4>Banking tracker</h4>
                     <p className="e-card-p-txt e-c-brown">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
                     <div className="d-flex flex-row d-flex justify-content-between">
-                      <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-green">5.6%</span></p>
+                      <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-red">10.6%</span></p>
                       <a aria-label="Invest Now" className="e-a-primary-c" href="/">Invest now</a>
                     </div>
                   </div>
@@ -293,8 +298,8 @@ class Home extends Component {
               </div>
               <img className="e-top-theme-pattern-img-2 em-display-none em-tablet-display-none" alt="Fyers pattern"/>
             </div>
-            <div className="row em-p-left-30">
-              <div className="e-align-right e-card-arrow-wrap e-relative"> 
+            <div className="em-p-left-30">
+              <div className="e-card-arrow-wrap e-relative"> 
                 <span className="e-m-right-20">
                   <img className="e-ftheme-card-img" src={leftArrow} alt="Left arrow"/>
                 </span>
@@ -338,15 +343,15 @@ class Home extends Component {
               </div>
               <img className="e-top-theme-pattern-img-2 em-display-none em-tablet-display-none" alt="Fyers pattern"/>
             </div>
-            <div className="row em-p-left-30">
-              <div className="e-align-right e-card-arrow-wrap e-relative"> 
+            <div className="em-p-left-30">
+              <div className="e-card-arrow-wrap e-relative"> 
                 <span className="e-m-right-20">
                   <img className="e-ftheme-card-img" src={leftArrow} alt="Left arrow"/>
                 </span>
                 <span className="active">
                   <img className="e-ftheme-card-img e-right-arrow" src={leftArrow} alt="Right arrow"/>
                 </span>
-                <a aria-label="More Themes" className="e-c-primary e-m-left-20 e-relative e-top-themes-more-txt e-a-primary-c" href="/">MORE THEMES</a>
+                <a aria-label="More Themes" className="e-c-primary e-m-left-20 e-relative e-top-themes-more-txt e-a-primary-c" href="/">MORE NEWS</a>
               </div>
             </div>
           </div>
