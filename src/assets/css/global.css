@@ -212,7 +212,12 @@ input{
 .rv-xy-plot__inner{
   width: 100%;
 }
-
+/*.e-doughnut-wrap{
+  max-height: 110px;
+}
+.e-doughnut-wrap canvas{
+  width: auto;
+}*/
 .e-p-0{padding: 0 !important;}
 .e-p-right-0{padding-right: 0 !important;}
 .e-p-left-0{padding-left: 0 !important;}
@@ -714,7 +719,27 @@ footer{
   max-width: 10px;
   margin-left: 5px;
 }
-
+.e-remove-icon{
+  content: url("../images/remove-icon.svg");
+  width: 14px;
+  display: inline-block;
+}
+.e-dsh-close-btn{
+  content: url("../images/close-icon.svg");
+  width: 14px;
+  position: absolute;
+  right: 35px;
+  top: 15px;
+}
+.e-icon-hover{
+  cursor: pointer;
+  transition: all .5s ease;
+}
+.e-icon-hover:hover{
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+  border-color: transparent;
+}
 /*Modal and popup*/
 
 .e-modal-close{

@@ -15,6 +15,10 @@ import ThemeDetailOverview from './components/themeDetail/theme-detail-overview.
 import ThemeDetailStockWeight from './components/themeDetail/theme-detail-stock-weight.js';
 import ThemeDetailNewsInsight from './components/themeDetail/theme-detail-news-insight.js';
 import ThemeDetailVersionHistory from './components/themeDetail/theme-detail-version-history.js';
+import Dashboard from './components/dashboard/dashboard.js';
+import Investments from './components/dashboard/investments.js';
+import Draft from './components/dashboard/draft.js';
+import Watchlist from './components/dashboard/watchlist.js';
 import test from './components/test.js';
 
 class App extends Component {
@@ -32,6 +36,10 @@ class App extends Component {
 	        <Route path="/theme-detail/stockweight" component={ThemeDetailStockWeight}/>
 	        <Route path="/theme-detail/news" component={ThemeDetailNewsInsight}/>
 	        <Route path="/theme-detail/versions" component={ThemeDetailVersionHistory}/>
+	        <Route path="/dashboard" component={Dashboard}/>
+	        <Route path="/dashboard/investments" component={Investments}/>
+	        <Route path="/dashboard/drafts" component={Draft}/>
+	        <Route path="/dashboard/watchlist" component={Watchlist}/>
 	        
 	        <footer className="e-p-top-100  e-bg-light-gray">
 	          <div className="container e-footer-container">

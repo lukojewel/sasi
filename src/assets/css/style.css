@@ -321,3 +321,53 @@
     max-width: 65px;
 }
 
+/*Dashboard*/
+.e-dsh-top-card-title{
+	border-bottom: 1px solid #efefef;
+}
+.e-dsh-top-card-title h5{
+	line-height: 100%;
+}
+.e-dsh-graph-wrap{
+	border-radius: 0 5px 5px 0;
+}
+.e-dsh-top-card-title h6{
+	line-height: 135%;
+}
+.e-dsh-top-card-title h6 img{
+	margin-bottom: 0;
+	padding-bottom: 5px;
+}
+.e-dsh-top-card-title .e-dsh-top-card-value{
+	padding-left: 10px;
+}
+.e-dsh-pending-card-wrap img{
+	max-width: 70px;
+}
+.e-dsh-pending-card-wrap h4{
+	padding-top: 5px;
+}
+.e-dsh-pending-card-link{
+	top: 50px;
+	position: relative;
+	right: 0px;
+}
+.e-dsh-pending-card-wrap .media{
+	box-shadow: 0px 13px 15px 0 rgba(99, 99, 99, 0.1);
+}
+.e-dsh-invst-card{
+	box-shadow: 0px 13px 15px 0 rgba(99, 99, 99, 0.1);
+}
+.e-dsh-invst-card img{
+	max-width: 100%;
+}
+.e-dsh-invst-card .e-p-btn, .e-dsh-invst-card .e-s-btn{
+	padding: 8px 0px;
+	width: 90px;
+}
+.e-dsh-invst-card .e-td-rcmd-tag{
+	padding: 5px;
+}
+.e-dsh-draft-card .e-p-btn{
+	width: 140px;
+}
