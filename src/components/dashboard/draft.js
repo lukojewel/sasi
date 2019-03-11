@@ -59,7 +59,7 @@ class Draft extends Component {
                   <div className="col-lg-1 col-md-2 col-sm-2 col-3 e-p-0">
                     <img className="e-dsh-invst-img e-m-bottom-10 e-m-max-width-full" src={cthemes7} alt="Themes by Fyers"/>
                   </div>
-                  <div className="col-lg-11 col-md-10 col-sm-12 col-12">
+                  <div className="col-lg-11 col-md-10 col-sm-12 col-12 em-no-p-left">
                     <div className="row ">
                       <div className="col-lg-10">
                         <h4 className="e-c-black e-m-bottom-0 e-f-weight-500">Investicon</h4>
@@ -97,7 +97,7 @@ class Draft extends Component {
                   <div className="col-lg-1 col-md-2 col-sm-2 col-3 e-p-0">
                     <img className="e-dsh-invst-img e-m-bottom-10 e-m-max-width-full" src={cthemes5} alt="Themes by Fyers"/>
                   </div>
-                  <div className="col-lg-11 col-md-10 col-sm-12 col-12">
+                  <div className="col-lg-11 col-md-10 col-sm-12 col-12 em-no-p-left">
                     <div className="row ">
                       <div className="col-lg-10">
                         <h4 className="e-c-black e-m-bottom-0 e-f-weight-500">Automobile</h4>
