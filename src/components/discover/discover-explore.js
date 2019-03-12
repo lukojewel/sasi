@@ -22,7 +22,8 @@ import cthemes5 from '../../assets/images/cthemes5.png';
 import cthemes6 from '../../assets/images/cthemes6.png';
 import cthemes7 from '../../assets/images/cthemes7.png';
 import cthemes8 from '../../assets/images/cthemes8.png';
-
+import $ from 'jquery';
+import config from './../../config/config';
 
 import fyersThematicLogo from '../../assets/images/fyers-thematic-logo.png';
 
@@ -31,33 +32,103 @@ import DetailCTA from '../detail-cta.js';
 
 class DiscoverExplore extends Component {
 
-state = {
-  minInvestOpen: false,
-  catgryOpen: false,
-  riskTypeOpen: false,
-  popularityOpen: false,
-}
+  state = {
+    minInvestOpen: false,
+    catgryOpen: false,
+    riskTypeOpen: false,
+    popularityOpen: false,
+    topRecommended: [],
+    topPerforming: [],
+    offset: 0
+  }
 
-minInvestOpen() {
-  this.setState({
-      minInvestOpen: !this.state.minInvestOpen
-  })
-}
-catgryOpen() {
-  this.setState({
-      catgryOpen: !this.state.catgryOpen
-  })
-}
-riskTypeOpen() {
-  this.setState({
-      riskTypeOpen: !this.state.riskTypeOpen
-  })
-}
-popularityOpen() {
-  this.setState({
-      popularityOpen: !this.state.popularityOpen
-  })
-}
+  minInvestOpen() {
+    this.setState({
+        minInvestOpen: !this.state.minInvestOpen
+    })
+  }
+  catgryOpen() {
+    this.setState({
+        catgryOpen: !this.state.catgryOpen
+    })
+  }
+  riskTypeOpen() {
+    this.setState({
+        riskTypeOpen: !this.state.riskTypeOpen
+    })
+  }
+  popularityOpen() {
+    this.setState({
+        popularityOpen: !this.state.popularityOpen
+    })
+  }
+  componentDidMount(){
+    this.getRecommended(0);
+    this.getTopPerforming(0);
+  }
+  //getting data
+  getRecommended(offset){
+    $.ajax({
+        type: "POST",
+        url: config.server + "themes/fyers",
+        dataType: 'json',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+        },
+        data: JSON.stringify({ 
+          offset: offset,
+          tab: 0
+        })
+    }).then(function (response) {
+      console.log(response)
+      if (response.status) {
+          var responseData = response.data;
+          var data = this.state.topRecommended;
+          var newData = data.concat(responseData);
+          var offset = newData.length;
+          this.setState({ 
+              topRecommended: newData, 
+              offset: offset, 
+              loading: false
+          });
+      } else {
+
+      }
+    }.bind(this)).fail(function(error){
+        this.setState({loading: false})
+        console.log(error)
+    }.bind(this))
+  }
+  getTopPerforming(offset){
+    $.ajax({
+        type: "GET",
+        url: config.server + "themes/list",
+        dataType: 'json',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+        }
+    }).then(function (response) {
+      console.log(response)
+      if (response.status) {
+          var responseData = response.data;
+          var data = this.state.topPerforming;
+          var newData = data.concat(responseData);
+          var offset = newData.length;
+          this.setState({ 
+              topPerforming: newData, 
+              offset: offset, 
+              loading: false
+          });
+      } else {
+
+      }
+    }.bind(this)).fail(function(error){
+        this.setState({loading: false})
+        console.log(error)
+    }.bind(this))
+  }
   render() {
     return (
       <div className="e-body">
@@ -87,45 +158,52 @@ popularityOpen() {
                 <h5 className="e-sec-head e-c-black e-p-bottom-50">HIGHLY <span className="e-c-grey">RECOMMENDED</span></h5>
                 <div className="">
                     <div className="row ">
-                      <div className="col-lg-6 e-p-bottom-30"> 
-                        <div className="col-lg-12 e-bg-white e-ftheme-card-wrap e-card-hover">
-                          <div className="row">
-                            <div className="col-lg-8 col-md-8 col-sm-8 col-8">
-                              <h4 className="e-f-weight-600">Energy takeout targets</h4>
-                              <p className="e-card-p-txt e-p-bottom-10 e-c-brown ">This is to gain exposure to mergers & acquisitions activity among oil & gas companies. Get a complete picture of the energy investment section and decid.</p>
-                            </div>
-                            <div className="col-lg-4 col-md-4 col-sm-4 col-4">
-                              <img className="e-ftheme-card-img e-m-bottom-10 e-m-max-width-full" src={ideaImage2} alt="Themes by Fyers"/>
-                            </div>
-                            <div className="col-lg-12">
+                    {
+                      this.state.topRecommended.map(function(theme, index){
+                        return(
+                          <div key={index} className="col-lg-6 e-p-bottom-30"> 
+                            <div className="col-lg-12 e-bg-white e-ftheme-card-wrap e-card-hover">
                               <div className="row">
-                                <div className="col-lg-5 col-md-7 col-sm-7 col-7">
-                                  <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
-                                    Yearly Return <span className="e-c-green e-f-weight-500"> 25.5%</span>
-                                  </p> 
+                                <div className="col-lg-8 col-md-8 col-sm-8 col-8">
+                                  <h4 className="e-f-weight-600">{theme.name}</h4>
+                                  <p className="e-card-p-txt e-p-bottom-10 e-c-brown ">{theme.long_description.substring(0, 100)}...</p>
                                 </div>
-                                <div className="col-lg-5 col-md-5 col-sm-5 col-5">
-                                  <p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
-                                    Monthly Return <span className="e-c-green e-f-weight-500"> 5.6%</span>
-                                  </p>
+                                <div className="col-lg-4 col-md-4 col-sm-4 col-4">
+                                  <img className="e-ftheme-card-img e-m-bottom-10 e-m-max-width-full" src={theme.image} alt="Themes by Fyers"/>
+                                </div>
+                                <div className="col-lg-12">
+                                  <div className="row">
+                                    <div className="col-lg-5 col-md-7 col-sm-7 col-7">
+                                      <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                                        Yearly Return <span className="e-c-green e-f-weight-500"> {theme.yearly_return}%</span>
+                                      </p> 
+                                    </div>
+                                    <div className="col-lg-5 col-md-5 col-sm-5 col-5">
+                                      <p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                                        Monthly Return <span className="e-c-green e-f-weight-500"> {theme.monthly_return}%</span>
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <div className="row">
+                                    <div className="col-lg-5 col-md-7 col-sm-7 col-7">
+                                      <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                                        Min Investment <span className="e-c-black e-f-weight-500"> ₹{theme.min_investment}</span>
+                                      </p>
+                                    </div>
+                                    <div className="col-lg-5 col-md-5 col-sm-5 col-5">
+                                      <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                                        Index Value <span className="e-c-red e-f-weight-500"> {theme.index_value}</span>
+                                      </p>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
-                              <div className="row">
-                                <div className="col-lg-5 col-md-7 col-sm-7 col-7">
-                                  <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
-                                    Min Investment <span className="e-c-black e-f-weight-500"> ₹14500.00</span>
-                                  </p>
-                                </div>
-                                <div className="col-lg-5 col-md-5 col-sm-5 col-5">
-                                  <p className="e-card-pl-txt e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
-                                    Risk <span className="e-c-red e-f-weight-500"> High</span>
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div> {/*Responsive*/}
+                            </div>{/*Responsive*/}
+                          </div> 
+                        )
+                      }.bind(this))
+                    }
+                      {/*
                       <div className="col-lg-6 e-p-bottom-30 e-tl-no-flex-display-none"> 
                         <div className="col-lg-12 e-bg-white e-ftheme-card-wrap e-card-hover">
                           <div className="row">
@@ -165,6 +243,7 @@ popularityOpen() {
                           </div>
                         </div>
                       </div>
+                      */}
                     </div>
                 </div>
               </div>
@@ -192,74 +271,30 @@ popularityOpen() {
               </div>
               <div className="col-lg-12 e-p-top-50 e-ptheme-items-wrap e-p-left-0 e-p-right-0">
                 <div className="row">
-                  <div className="col-lg-3 col-md-6 col-sm-12">
-                    <div className="e-ptheme-card-wrap e-card-hover e-p-bottom-10">
-                      <img className="e-m-bottom-10 e-border-5" src={publicTheme4} alt="Themes by Fyers"/>
-                      <h4 className="e-f-weight-600">Energy takeout targets</h4>
-                      <p className="e-card-p-txt e-c-brown e-p-bottom-10">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
-                      <div className="d-flex flex-row justify-content-between">
-                        <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-green">5.6%</span></p>
-                        <p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
-                          Monthly Return <span className="e-c-green e-f-weight-500"> 5.6%</span>
-                        </p>
+                {
+                  this.state.topPerforming.map(function(theme, index){
+                    return(
+                      <div key={index} className="col-lg-3 col-md-6 col-sm-12">
+                        <div className="e-ptheme-card-wrap e-card-hover e-p-bottom-10">
+                          <img className="e-m-bottom-10 e-border-5" src={theme.image} alt="Themes by Fyers"/>
+                          <h4 className="e-f-weight-600">{theme.name}</h4>
+                          <p className="e-card-p-txt e-c-brown e-p-bottom-10">{theme.long_description.substring(0,80)}...</p>
+                          <div className="d-flex flex-row justify-content-between">
+                            <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">Index <span className="e-c-green">{theme.index_value}%</span></p>
+                            <p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                              Monthly Return <span className="e-c-green e-f-weight-500"> {theme.monthly_return}%</span>
+                            </p>
+                          </div>
+                          <div className="d-flex flex-row justify-content-between"><p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
+                              Min Investment <span className="e-c-black e-f-weight-500"> ₹{theme.min_investment}</span>
+                            </p>
+                          </div>
+                        </div>
                       </div>
-                      <div className="d-flex flex-row justify-content-between"><p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
-                          Min Investment <span className="e-c-black e-f-weight-500"> ₹14500.00</span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-3 col-md-6 em-tablet-display-none">
-                    <div className="e-ptheme-card-wrap e-card-hover e-p-bottom-10">
-                      <img className="e-m-bottom-10 e-border-5" src={publicTheme2} alt="Themes by Fyers"/>
-                      <h4 className="e-f-weight-600">Rising rural demand</h4>
-                      <p className="e-card-p-txt e-c-brown e-p-bottom-10">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
-                      <div className="d-flex flex-row justify-content-between">
-                        <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-green">9.6%</span></p>
-                        <p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
-                          Monthly Return <span className="e-c-green e-f-weight-500"> 2.6%</span>
-                        </p>
-                      </div>
-                      <div className="d-flex flex-row justify-content-between"><p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
-                          Min Investment <span className="e-c-black e-f-weight-500"> ₹2500.00</span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-3 col-md-6 e-tl-no-flex-display-none em-tablet-display-none">
-                    <div className="e-ptheme-card-wrap e-card-hover e-p-bottom-10">
-                      <img className="e-m-bottom-10 e-border-5 e-full-width" src={publicTheme3} alt="Themes by Fyers"/>
-                      <h4 className="e-f-weight-600">Sustainable earnings</h4>
-                      <p className="e-card-p-txt e-c-brown e-p-bottom-10">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
-                      <div className="d-flex flex-row justify-content-between">
-                        <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-red">5.6%</span></p>
-                        <p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
-                          Monthly Return <span className="e-c-green e-f-weight-500"> 7.1%</span>
-                        </p>
-                      </div>
-                      <div className="d-flex flex-row justify-content-between"><p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
-                          Min Investment <span className="e-c-black e-f-weight-500"> ₹11500.00</span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-3 col-md-6 e-tl-no-flex-display-none">
-                    <div className="e-ptheme-card-wrap e-card-hover e-p-bottom-10">
-                      <img className="e-m-bottom-10 e-border-5" src={publicTheme1} alt="Themes by Fyers"/>
-                      <h4 className="e-f-weight-600">Banking tracker</h4>
-                      <p className="e-card-p-txt e-c-brown e-p-bottom-10">This is to gain exposure to mergers & amo acquisitions activity among oil & gas companies.</p>
-                      <div className="d-flex flex-row justify-content-between">
-                        <p className="e-card-chrg-txt e-c-brown mt-auto e-p-0 e-m-0">CARG <span className="e-c-green">6.2%</span></p>
-                        <p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
-                          Monthly Return <span className="e-c-green e-f-weight-500"> 3.2%</span>
-                        </p>
-                      </div>
-                      <div className="d-flex flex-row justify-content-between"><p className="e-card-pl-txt  e-p-bottom-10 e-m-0 e-c-brown e-f-weight-300">
-                          Min Investment <span className="e-c-black e-f-weight-500"> ₹5560.00</span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                    )
+                  })
+                }
+                      
                 </div>
                 <img className="e-top-theme-pattern-img-2" alt="Fyers pattern"/>
               </div>
